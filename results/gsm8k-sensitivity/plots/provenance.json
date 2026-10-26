@@ -1,0 +1,21 @@
+{
+  "input_sha256": "de2c2550423031c6ee3860e7ea5cc30513b7042a2278dbf9121ff8078860e2b4",
+  "script_sha256": "e76d4ba9769802f0a426356db512fd037f21a33b1e283a9ceaf763ad88265f8f",
+  "python": "3.11.9",
+  "libraries": {
+    "matplotlib": "3.10.8",
+    "numpy": "2.2.6"
+  },
+  "figures": {
+    "calibration-sweep.pdf": "ec39697b12e5c6050d67cba0e06dc93897c1f7529d532809b7a79a1200587810",
+    "calibration-sweep.png": "122beaf64d5f8462b0c678d490189e71bdd4ad524a87f2682193c7fff78dcb65",
+    "calibration-sweep.svg": "11ef9810bdab4e3056be0aa25ee69ef2425734165cde49f7db2621819b7e121f",
+    "risk-cost.pdf": "6ae2fbfc28f84d5900b6ab32a274a4433b8918d35923b3aaa7516b6d62438078",
+    "risk-cost.png": "349d422467646e8fea5e61d54ae19a94698244d9ae253476e4aa463f3467a7d0",
+    "risk-cost.svg": "d73838eedf5604cb4c52da0d49ac54642c2f2f419bcde47cad814ae94e8e5bbb",
+    "seed-advantage.pdf": "2d23acee2bfb7c117c15a693dbd419eec31cffeafde333e83ce157a2fc62f2d2",
+    "seed-advantage.png": "5c883adc3a228a84742f26ac47ba8867aab0b4c5fd8242eccc6573084472d602",
+    "seed-advantage.svg": "beed14cec7ff51bc57a9081237aa149a962af61058ef9cf12d24273e91b66b1c"
+  },
+  "note": "Plots use saved aggregates only. Shading/ranges across seeds are descriptive, not CIs."
+}
