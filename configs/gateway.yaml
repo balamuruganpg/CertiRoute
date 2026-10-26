@@ -1,0 +1,30 @@
+# Paths are relative to the repository root; start the app from that directory.
+models:
+  cheap:
+    base_url: http://127.0.0.1:8001/v1
+    model: replace-with-cheap-model-id
+    api_key_env: CHEAP_API_KEY
+  strong:
+    base_url: http://127.0.0.1:8002/v1
+    model: replace-with-strong-model-id
+    api_key_env: STRONG_API_KEY
+calibration:
+  artifact: artifacts/calibration.json
+  allowed_epsilons: [0.01, 0.02, 0.05, 0.10]
+  default_epsilon: 0.02
+router:
+  kind: logistic_surface_v1
+  artifact: artifacts/router.json
+scope:
+  max_chars: 16000
+  temperature: 0
+  max_tokens: 256
+  top_p: 1
+quality_metric:
+  name: exact_match
+  version: "1"
+audit:
+  sample_rate: 0.02
+safety:
+  fail_open_to: strong
+  log_prompt_text: false

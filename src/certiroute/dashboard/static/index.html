@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>CertiRoute · Offline evaluation</title>
+  <link rel="icon" href="data:,">
+  <link rel="stylesheet" href="/assets/style.css">
+  <script defer src="/assets/app.js"></script>
+</head>
+<body>
+<main>
+  <header><a class="brand" href="/" aria-label="CertiRoute home"><span class="brand-mark">C<span>↗</span></span>CertiRoute</a><span class="badge">OFFLINE EVALUATION <i></i></span></header>
+  <div id="error" class="error" role="alert" hidden></div>
+  <div id="loading" role="status">Loading saved evaluation results…</div>
+  <div id="content" hidden>
+    <section class="hero">
+      <div><p class="eyebrow">CONFORMAL RISK CONTROL · OPENAI-COMPATIBLE GATEWAY</p><h1><span id="hero-savings">—</span> lower cost.<br><span class="quiet">Quality risk, measured.</span></h1><p class="hero-note">Route between Mixtral and GPT-4 with a learned local score<br class="desktop"> and a calibrated threshold. Real frozen outputs. No live API calls.</p></div>
+      <div class="study-stats"><div><strong id="example-count">—</strong><span>paired GSM8K examples</span></div><div><strong id="draw-count">—</strong><span>partition draws · <span id="seed-count"></span> training seeds</span></div><div class="study-foot">Estimated generation costs<br>Historical pricing · <span id="pricing-date"></span></div></div>
+    </section>
+    <section aria-labelledby="comparison-title">
+      <div class="section-heading"><div><p class="eyebrow">01 / POLICY COMPARISON</p><h2 id="comparison-title">Same questions. Three routing policies.</h2></div><div class="controls"><label>Target regret<select id="epsilon" aria-label="Target regret"></select></label><label>Calibration examples<select id="calibration" aria-label="Calibration examples"></select></label></div></div>
+      <div id="cards" class="cards" aria-live="polite"></div>
+      <p class="metric-note">Quality = numeric-answer accuracy. Regret = mean max(0, strong quality − routed quality); it is not the difference in average accuracies. Costs are USD per 1,000 requests, normalized from saved test-set costs.</p>
+      <p id="criterion" class="criterion"></p>
+    </section>
+    <section class="shift" aria-labelledby="shift-title">
+      <div class="shift-header"><div><p class="eyebrow">02 / DISTRIBUTION SHIFT</p><h2 id="shift-title">Calibration does not transfer automatically.</h2></div><span class="tag">LONG → SHORT QUESTIONS</span></div>
+      <div class="shift-values"><div><span>Target regret</span><strong id="shift-target">—</strong></div><span class="arrow" aria-hidden="true">→</span><div><span>Without recalibration</span><strong id="shift-before" class="danger">—</strong><small id="shift-failure"></small></div><span class="arrow" aria-hidden="true">→</span><div><span>After target recalibration</span><strong id="shift-after" class="success">—</strong><small id="shift-recovery"></small></div></div>
+      <p id="shift-note"></p>
+    </section>
+    <div class="limitations"><strong>Evidence, with boundaries.</strong><span>Modeled tokens and historical prices, not bills. One offline benchmark and model pair. Recalibration uses separate labeled target data; no online drift detector or production guarantee.</span></div>
+    <details class="plots"><summary>Explore the saved studies <span>Risk–cost · calibration size · length shift</span></summary><div class="plot-grid"><figure><img loading="lazy" src="/plots/risk-cost" alt="Risk versus modeled cost across calibration sizes"><figcaption>Sensitivity study · all predeclared operating points</figcaption></figure><figure><img loading="lazy" src="/plots/calibration-sweep" alt="Calibration size and realized regret"><figcaption>CRC versus empirical thresholds without correction</figcaption></figure><figure class="wide"><img loading="lazy" src="/plots/shift-risk" alt="Length shift and target recalibration, both directions"><figcaption>Shift study · adjusted Monte Carlo intervals conditional on the finite pool</figcaption></figure></div></details>
+    <footer><span>CertiRoute / Research prototype</span><span id="provenance"></span><a href="/api/results" target="_blank" rel="noopener">View source metrics ↗</a></footer>
+  </div>
+</main>
+</body>
+</html>

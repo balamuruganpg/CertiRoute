@@ -1,0 +1,25 @@
+# Synthetic fixtures only. These hosts must never be contacted.
+models:
+  cheap:
+    base_url: https://fixture-cheap.invalid/v1
+    model: fixture-cheap-v1
+    api_key_env: CERTIROUTE_FIXTURE_UNUSED
+  strong:
+    base_url: https://fixture-strong.invalid/v1
+    model: fixture-strong-v1
+    api_key_env: CERTIROUTE_FIXTURE_UNUSED
+router:
+  kind: logistic_surface_v1
+  artifact: artifacts/router.json
+calibration:
+  artifact: artifacts/calibration.json
+  allowed_epsilons: [0.01, 0.02, 0.05, 0.10]
+  default_epsilon: 0.02
+scope:
+  max_chars: 16000
+  temperature: 0
+  max_tokens: 256
+  top_p: 1
+quality_metric:
+  name: exact_match
+  version: "1"

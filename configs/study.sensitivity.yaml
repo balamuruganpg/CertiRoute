@@ -1,0 +1,7 @@
+# Predeclared before running the sweep; learner/features/epsilon grid stay fixed.
+training_seeds: [17, 42, 73, 101, 137]
+ranking_seeds: [0, 1, 2, 3, 4]
+calibration_sizes: [50, 100, 200, 500]
+test_size: 264
+repeats: 1000
+confidence: 0.95

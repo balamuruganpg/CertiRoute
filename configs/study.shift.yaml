@@ -1,0 +1,6 @@
+# Fixed before inspecting shift outcomes; do not select a direction after seeing results.
+seed: 42
+repeats: 1000
+calibration_size: 100
+test_size: 100
+confidence: 0.95

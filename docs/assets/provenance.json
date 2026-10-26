@@ -1,0 +1,21 @@
+{
+  "kind": "dashboard_screenshot_provenance",
+  "epsilon": 0.05,
+  "calibration_size": 500,
+  "viewport": {
+    "width": 1280,
+    "height": 1100
+  },
+  "note": "Browser screenshots of the real local dashboard. Full-page preview plus a direct screenshot clip of the policy comparison. No new experiments.",
+  "sha256": {
+    "results/gsm8k-sensitivity/results.json": "de2c2550423031c6ee3860e7ea5cc30513b7042a2278dbf9121ff8078860e2b4",
+    "results/gsm8k-shift/results.json": "3ca21526ea48238c00ed95ab56690526d00bcfcbcdd9f0e8f7d1b26e57f50f73",
+    "docs/assets/comparison.png": "6c49b6d37fb408e134382d886acc60641cb044b42dbabe97c7e8f0caebd4daee",
+    "docs/assets/dashboard.png": "b512ef18744bfb360984a601f7b8910e6345b1c0aad9315cece35085b58bf9d6"
+  },
+  "ui_sha256": {
+    "src/certiroute/dashboard/static/app.js": "9d9d18a8d78b0c4b9e2ac37af9e5c5a3bb2da067124a3e31a90660f404894b48",
+    "src/certiroute/dashboard/static/index.html": "d2335646ed508a3e1331da77a750d927c5a3b95ad283a8416ff3bc581fdef285",
+    "src/certiroute/dashboard/static/style.css": "d156ee10ebefe858f0991aeaa6c231f8bf77ea13936e164cd0be61ba1dc45692"
+  }
+}

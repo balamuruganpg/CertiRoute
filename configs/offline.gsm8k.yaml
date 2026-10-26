@@ -1,0 +1,26 @@
+# Frozen public outputs only; these replay hosts must never be contacted.
+models:
+  cheap:
+    base_url: https://replay-cheap.invalid/v1
+    model: mistralai/Mixtral-8x7B-Instruct-v0.1
+    api_key_env: CERTIROUTE_REPLAY_UNUSED
+  strong:
+    base_url: https://replay-strong.invalid/v1
+    model: gpt-4-1106-preview
+    api_key_env: CERTIROUTE_REPLAY_UNUSED
+router:
+  kind: logistic_surface_v1
+  artifact: artifacts/gsm8k-router.json
+calibration:
+  artifact: artifacts/gsm8k-calibration.json
+  allowed_epsilons: [0.01, 0.02, 0.05, 0.10]
+  default_epsilon: 0.02
+scope:
+  max_chars: 16000
+  temperature: 0
+  max_tokens: 1024
+  top_p: 1
+  stop: [Question]
+quality_metric:
+  name: routellm_gsm8k_last_integer
+  version: "1"

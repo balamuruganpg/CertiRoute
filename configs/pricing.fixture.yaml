@@ -1,0 +1,11 @@
+# Invented rates for exercising cost accounting, NOT provider prices.
+as_of: "2026-10-23"
+currency: USD
+synthetic: true
+models:
+  fixture-cheap-v1:
+    input_per_million: 0.10
+    output_per_million: 0.40
+  fixture-strong-v1:
+    input_per_million: 1.00
+    output_per_million: 4.00
