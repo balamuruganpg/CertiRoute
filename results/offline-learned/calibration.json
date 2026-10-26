@@ -1,0 +1,1462 @@
+{
+  "models": {
+    "cheap": "https://fixture-cheap.invalid/v1::fixture-cheap-v1",
+    "strong": "https://fixture-strong.invalid/v1::fixture-strong-v1"
+  },
+  "quality_metric": {
+    "name": "exact_match",
+    "version": "1"
+  },
+  "scope": {
+    "max_chars": 16000,
+    "temperature": 0,
+    "max_tokens": 256,
+    "top_p": 1
+  },
+  "sources": [
+    "synthetic_arithmetic_v1"
+  ],
+  "collected_at": "2026-10-23T00:00:00Z",
+  "rows": [
+    {
+      "request": {
+        "messages": [
+          {
+            "role": "user",
+            "content": "Return only the integer. Compute 417 * 50."
+          }
+        ],
+        "temperature": 0,
+        "max_tokens": 256,
+        "top_p": 1
+      },
+      "q_strong": 1.0,
+      "q_cheap": 0.0
+    },
+    {
+      "request": {
+        "messages": [
+          {
+            "role": "user",
+            "content": "Return only the integer. Compute 115 + 64."
+          }
+        ],
+        "temperature": 0,
+        "max_tokens": 256,
+        "top_p": 1
+      },
+      "q_strong": 1.0,
+      "q_cheap": 1.0
+    },
+    {
+      "request": {
+        "messages": [
+          {
+            "role": "user",
+            "content": "Return only the integer. Compute 373 * 32."
+          }
+        ],
+        "temperature": 0,
+        "max_tokens": 256,
+        "top_p": 1
+      },
+      "q_strong": 0.0,
+      "q_cheap": 1.0
+    },
+    {
+      "request": {
+        "messages": [
+          {
+            "role": "user",
+            "content": "Return only the integer. Compute 223 + 3."
+          }
+        ],
+        "temperature": 0,
+        "max_tokens": 256,
+        "top_p": 1
+      },
+      "q_strong": 1.0,
+      "q_cheap": 1.0
+    },
+    {
+      "request": {
+        "messages": [
+          {
+            "role": "user",
+            "content": "Return only the integer. Compute 297 * 9."
+          }
+        ],
+        "temperature": 0,
+        "max_tokens": 256,
+        "top_p": 1
+      },
+      "q_strong": 1.0,
+      "q_cheap": 0.0
+    },
+    {
+      "request": {
+        "messages": [
+          {
+            "role": "user",
+            "content": "Return only the integer. Compute 283 + 68."
+          }
+        ],
+        "temperature": 0,
+        "max_tokens": 256,
+        "top_p": 1
+      },
+      "q_strong": 1.0,
+      "q_cheap": 1.0
+    },
+    {
+      "request": {
+        "messages": [
+          {
+            "role": "user",
+            "content": "Return only the integer. Compute 363 + 36."
+          }
+        ],
+        "temperature": 0,
+        "max_tokens": 256,
+        "top_p": 1
+      },
+      "q_strong": 1.0,
+      "q_cheap": 1.0
+    },
+    {
+      "request": {
+        "messages": [
+          {
+            "role": "user",
+            "content": "Return only the integer. Compute 91 + 38."
+          }
+        ],
+        "temperature": 0,
+        "max_tokens": 256,
+        "top_p": 1
+      },
+      "q_strong": 1.0,
+      "q_cheap": 1.0
+    },
+    {
+      "request": {
+        "messages": [
+          {
+            "role": "user",
+            "content": "Return only the integer. Compute 437 * 42."
+          }
+        ],
+        "temperature": 0,
+        "max_tokens": 256,
+        "top_p": 1
+      },
+      "q_strong": 1.0,
+      "q_cheap": 0.0
+    },
+    {
+      "request": {
+        "messages": [
+          {
+            "role": "user",
+            "content": "Return only the integer. Compute 427 + 46."
+          }
+        ],
+        "temperature": 0,
+        "max_tokens": 256,
+        "top_p": 1
+      },
+      "q_strong": 1.0,
+      "q_cheap": 1.0
+    },
+    {
+      "request": {
+        "messages": [
+          {
+            "role": "user",
+            "content": "Return only the integer. Compute 259 + 42."
+          }
+        ],
+        "temperature": 0,
+        "max_tokens": 256,
+        "top_p": 1
+      },
+      "q_strong": 1.0,
+      "q_cheap": 1.0
+    },
+    {
+      "request": {
+        "messages": [
+          {
+            "role": "user",
+            "content": "Return only the integer. Compute 335 + 65."
+          }
+        ],
+        "temperature": 0,
+        "max_tokens": 256,
+        "top_p": 1
+      },
+      "q_strong": 1.0,
+      "q_cheap": 1.0
+    },
+    {
+      "request": {
+        "messages": [
+          {
+            "role": "user",
+            "content": "Return only the integer. Compute 463 + 85."
+          }
+        ],
+        "temperature": 0,
+        "max_tokens": 256,
+        "top_p": 1
+      },
+      "q_strong": 1.0,
+      "q_cheap": 1.0
+    },
+    {
+      "request": {
+        "messages": [
+          {
+            "role": "user",
+            "content": "Return only the integer. Compute 45 * 3."
+          }
+        ],
+        "temperature": 0,
+        "max_tokens": 256,
+        "top_p": 1
+      },
+      "q_strong": 1.0,
+      "q_cheap": 0.0
+    },
+    {
+      "request": {
+        "messages": [
+          {
+            "role": "user",
+            "content": "Return only the integer. Compute 393 * 24."
+          }
+        ],
+        "temperature": 0,
+        "max_tokens": 256,
+        "top_p": 1
+      },
+      "q_strong": 1.0,
+      "q_cheap": 1.0
+    },
+    {
+      "request": {
+        "messages": [
+          {
+            "role": "user",
+            "content": "Return only the integer. Compute 211 + 79."
+          }
+        ],
+        "temperature": 0,
+        "max_tokens": 256,
+        "top_p": 1
+      },
+      "q_strong": 1.0,
+      "q_cheap": 1.0
+    },
+    {
+      "request": {
+        "messages": [
+          {
+            "role": "user",
+            "content": "Return only the integer. Compute 441 * 76."
+          }
+        ],
+        "temperature": 0,
+        "max_tokens": 256,
+        "top_p": 1
+      },
+      "q_strong": 1.0,
+      "q_cheap": 0.0
+    },
+    {
+      "request": {
+        "messages": [
+          {
+            "role": "user",
+            "content": "Return only the integer. Compute 379 + 83."
+          }
+        ],
+        "temperature": 0,
+        "max_tokens": 256,
+        "top_p": 1
+      },
+      "q_strong": 1.0,
+      "q_cheap": 1.0
+    },
+    {
+      "request": {
+        "messages": [
+          {
+            "role": "user",
+            "content": "Return only the integer. Compute 95 + 72."
+          }
+        ],
+        "temperature": 0,
+        "max_tokens": 256,
+        "top_p": 1
+      },
+      "q_strong": 1.0,
+      "q_cheap": 1.0
+    },
+    {
+      "request": {
+        "messages": [
+          {
+            "role": "user",
+            "content": "Return only the integer. Compute 443 + 4."
+          }
+        ],
+        "temperature": 0,
+        "max_tokens": 256,
+        "top_p": 1
+      },
+      "q_strong": 1.0,
+      "q_cheap": 1.0
+    },
+    {
+      "request": {
+        "messages": [
+          {
+            "role": "user",
+            "content": "Return only the integer. Compute 449 * 55."
+          }
+        ],
+        "temperature": 0,
+        "max_tokens": 256,
+        "top_p": 1
+      },
+      "q_strong": 1.0,
+      "q_cheap": 0.0
+    },
+    {
+      "request": {
+        "messages": [
+          {
+            "role": "user",
+            "content": "Return only the integer. Compute 9 * 53."
+          }
+        ],
+        "temperature": 0,
+        "max_tokens": 256,
+        "top_p": 1
+      },
+      "q_strong": 1.0,
+      "q_cheap": 0.0
+    },
+    {
+      "request": {
+        "messages": [
+          {
+            "role": "user",
+            "content": "Return only the integer. Compute 227 + 37."
+          }
+        ],
+        "temperature": 0,
+        "max_tokens": 256,
+        "top_p": 1
+      },
+      "q_strong": 1.0,
+      "q_cheap": 1.0
+    },
+    {
+      "request": {
+        "messages": [
+          {
+            "role": "user",
+            "content": "Return only the integer. Compute 147 + 69."
+          }
+        ],
+        "temperature": 0,
+        "max_tokens": 256,
+        "top_p": 1
+      },
+      "q_strong": 1.0,
+      "q_cheap": 1.0
+    },
+    {
+      "request": {
+        "messages": [
+          {
+            "role": "user",
+            "content": "Return only the integer. Compute 347 + 78."
+          }
+        ],
+        "temperature": 0,
+        "max_tokens": 256,
+        "top_p": 1
+      },
+      "q_strong": 1.0,
+      "q_cheap": 1.0
+    },
+    {
+      "request": {
+        "messages": [
+          {
+            "role": "user",
+            "content": "Return only the integer. Compute 251 + 63."
+          }
+        ],
+        "temperature": 0,
+        "max_tokens": 256,
+        "top_p": 1
+      },
+      "q_strong": 1.0,
+      "q_cheap": 1.0
+    },
+    {
+      "request": {
+        "messages": [
+          {
+            "role": "user",
+            "content": "Return only the integer. Compute 219 + 58."
+          }
+        ],
+        "temperature": 0,
+        "max_tokens": 256,
+        "top_p": 1
+      },
+      "q_strong": 1.0,
+      "q_cheap": 1.0
+    },
+    {
+      "request": {
+        "messages": [
+          {
+            "role": "user",
+            "content": "Return only the integer. Compute 209 * 62."
+          }
+        ],
+        "temperature": 0,
+        "max_tokens": 256,
+        "top_p": 1
+      },
+      "q_strong": 1.0,
+      "q_cheap": 0.0
+    },
+    {
+      "request": {
+        "messages": [
+          {
+            "role": "user",
+            "content": "Return only the integer. Compute 431 + 80."
+          }
+        ],
+        "temperature": 0,
+        "max_tokens": 256,
+        "top_p": 1
+      },
+      "q_strong": 1.0,
+      "q_cheap": 1.0
+    },
+    {
+      "request": {
+        "messages": [
+          {
+            "role": "user",
+            "content": "Return only the integer. Compute 473 * 81."
+          }
+        ],
+        "temperature": 0,
+        "max_tokens": 256,
+        "top_p": 1
+      },
+      "q_strong": 1.0,
+      "q_cheap": 1.0
+    },
+    {
+      "request": {
+        "messages": [
+          {
+            "role": "user",
+            "content": "Return only the integer. Compute 273 * 72."
+          }
+        ],
+        "temperature": 0,
+        "max_tokens": 256,
+        "top_p": 1
+      },
+      "q_strong": 1.0,
+      "q_cheap": 1.0
+    },
+    {
+      "request": {
+        "messages": [
+          {
+            "role": "user",
+            "content": "Return only the integer. Compute 249 * 46."
+          }
+        ],
+        "temperature": 0,
+        "max_tokens": 256,
+        "top_p": 1
+      },
+      "q_strong": 1.0,
+      "q_cheap": 0.0
+    },
+    {
+      "request": {
+        "messages": [
+          {
+            "role": "user",
+            "content": "Return only the integer. Compute 303 + 60."
+          }
+        ],
+        "temperature": 0,
+        "max_tokens": 256,
+        "top_p": 1
+      },
+      "q_strong": 1.0,
+      "q_cheap": 1.0
+    },
+    {
+      "request": {
+        "messages": [
+          {
+            "role": "user",
+            "content": "Return only the integer. Compute 435 + 25."
+          }
+        ],
+        "temperature": 0,
+        "max_tokens": 256,
+        "top_p": 1
+      },
+      "q_strong": 1.0,
+      "q_cheap": 1.0
+    },
+    {
+      "request": {
+        "messages": [
+          {
+            "role": "user",
+            "content": "Return only the integer. Compute 299 + 26."
+          }
+        ],
+        "temperature": 0,
+        "max_tokens": 256,
+        "top_p": 1
+      },
+      "q_strong": 0.0,
+      "q_cheap": 1.0
+    },
+    {
+      "request": {
+        "messages": [
+          {
+            "role": "user",
+            "content": "Return only the integer. Compute 167 + 61."
+          }
+        ],
+        "temperature": 0,
+        "max_tokens": 256,
+        "top_p": 1
+      },
+      "q_strong": 1.0,
+      "q_cheap": 1.0
+    },
+    {
+      "request": {
+        "messages": [
+          {
+            "role": "user",
+            "content": "Return only the integer. Compute 93 * 55."
+          }
+        ],
+        "temperature": 0,
+        "max_tokens": 256,
+        "top_p": 1
+      },
+      "q_strong": 1.0,
+      "q_cheap": 1.0
+    },
+    {
+      "request": {
+        "messages": [
+          {
+            "role": "user",
+            "content": "Return only the integer. Compute 199 + 66."
+          }
+        ],
+        "temperature": 0,
+        "max_tokens": 256,
+        "top_p": 1
+      },
+      "q_strong": 1.0,
+      "q_cheap": 1.0
+    },
+    {
+      "request": {
+        "messages": [
+          {
+            "role": "user",
+            "content": "Return only the integer. Compute 479 + 43."
+          }
+        ],
+        "temperature": 0,
+        "max_tokens": 256,
+        "top_p": 1
+      },
+      "q_strong": 1.0,
+      "q_cheap": 1.0
+    },
+    {
+      "request": {
+        "messages": [
+          {
+            "role": "user",
+            "content": "Return only the integer. Compute 405 * 37."
+          }
+        ],
+        "temperature": 0,
+        "max_tokens": 256,
+        "top_p": 1
+      },
+      "q_strong": 1.0,
+      "q_cheap": 0.0
+    },
+    {
+      "request": {
+        "messages": [
+          {
+            "role": "user",
+            "content": "Return only the integer. Compute 327 + 86."
+          }
+        ],
+        "temperature": 0,
+        "max_tokens": 256,
+        "top_p": 1
+      },
+      "q_strong": 1.0,
+      "q_cheap": 1.0
+    },
+    {
+      "request": {
+        "messages": [
+          {
+            "role": "user",
+            "content": "Return only the integer. Compute 139 + 90."
+          }
+        ],
+        "temperature": 0,
+        "max_tokens": 256,
+        "top_p": 1
+      },
+      "q_strong": 1.0,
+      "q_cheap": 1.0
+    },
+    {
+      "request": {
+        "messages": [
+          {
+            "role": "user",
+            "content": "Return only the integer. Compute 213 * 7."
+          }
+        ],
+        "temperature": 0,
+        "max_tokens": 256,
+        "top_p": 1
+      },
+      "q_strong": 1.0,
+      "q_cheap": 1.0
+    },
+    {
+      "request": {
+        "messages": [
+          {
+            "role": "user",
+            "content": "Return only the integer. Compute 77 * 8."
+          }
+        ],
+        "temperature": 0,
+        "max_tokens": 256,
+        "top_p": 1
+      },
+      "q_strong": 0.0,
+      "q_cheap": 0.0
+    },
+    {
+      "request": {
+        "messages": [
+          {
+            "role": "user",
+            "content": "Return only the integer. Compute 71 + 46."
+          }
+        ],
+        "temperature": 0,
+        "max_tokens": 256,
+        "top_p": 1
+      },
+      "q_strong": 1.0,
+      "q_cheap": 1.0
+    },
+    {
+      "request": {
+        "messages": [
+          {
+            "role": "user",
+            "content": "Return only the integer. Compute 415 + 33."
+          }
+        ],
+        "temperature": 0,
+        "max_tokens": 256,
+        "top_p": 1
+      },
+      "q_strong": 1.0,
+      "q_cheap": 1.0
+    },
+    {
+      "request": {
+        "messages": [
+          {
+            "role": "user",
+            "content": "Return only the integer. Compute 279 + 34."
+          }
+        ],
+        "temperature": 0,
+        "max_tokens": 256,
+        "top_p": 1
+      },
+      "q_strong": 1.0,
+      "q_cheap": 1.0
+    },
+    {
+      "request": {
+        "messages": [
+          {
+            "role": "user",
+            "content": "Return only the integer. Compute 87 + 4."
+          }
+        ],
+        "temperature": 0,
+        "max_tokens": 256,
+        "top_p": 1
+      },
+      "q_strong": 1.0,
+      "q_cheap": 1.0
+    },
+    {
+      "request": {
+        "messages": [
+          {
+            "role": "user",
+            "content": "Return only the integer. Compute 47 + 20."
+          }
+        ],
+        "temperature": 0,
+        "max_tokens": 256,
+        "top_p": 1
+      },
+      "q_strong": 1.0,
+      "q_cheap": 1.0
+    },
+    {
+      "request": {
+        "messages": [
+          {
+            "role": "user",
+            "content": "Return only the integer. Compute 317 * 90."
+          }
+        ],
+        "temperature": 0,
+        "max_tokens": 256,
+        "top_p": 1
+      },
+      "q_strong": 1.0,
+      "q_cheap": 0.0
+    },
+    {
+      "request": {
+        "messages": [
+          {
+            "role": "user",
+            "content": "Return only the integer. Compute 325 * 69."
+          }
+        ],
+        "temperature": 0,
+        "max_tokens": 256,
+        "top_p": 1
+      },
+      "q_strong": 1.0,
+      "q_cheap": 0.0
+    },
+    {
+      "request": {
+        "messages": [
+          {
+            "role": "user",
+            "content": "Return only the integer. Compute 411 + 88."
+          }
+        ],
+        "temperature": 0,
+        "max_tokens": 256,
+        "top_p": 1
+      },
+      "q_strong": 1.0,
+      "q_cheap": 1.0
+    },
+    {
+      "request": {
+        "messages": [
+          {
+            "role": "user",
+            "content": "Return only the integer. Compute 421 * 84."
+          }
+        ],
+        "temperature": 0,
+        "max_tokens": 256,
+        "top_p": 1
+      },
+      "q_strong": 1.0,
+      "q_cheap": 0.0
+    },
+    {
+      "request": {
+        "messages": [
+          {
+            "role": "user",
+            "content": "Return only the integer. Compute 27 + 28."
+          }
+        ],
+        "temperature": 0,
+        "max_tokens": 256,
+        "top_p": 1
+      },
+      "q_strong": 1.0,
+      "q_cheap": 1.0
+    },
+    {
+      "request": {
+        "messages": [
+          {
+            "role": "user",
+            "content": "Return only the integer. Compute 101 * 34."
+          }
+        ],
+        "temperature": 0,
+        "max_tokens": 256,
+        "top_p": 1
+      },
+      "q_strong": 1.0,
+      "q_cheap": 0.0
+    },
+    {
+      "request": {
+        "messages": [
+          {
+            "role": "user",
+            "content": "Return only the integer. Compute 37 * 24."
+          }
+        ],
+        "temperature": 0,
+        "max_tokens": 256,
+        "top_p": 1
+      },
+      "q_strong": 1.0,
+      "q_cheap": 0.0
+    },
+    {
+      "request": {
+        "messages": [
+          {
+            "role": "user",
+            "content": "Return only the integer. Compute 401 * 3."
+          }
+        ],
+        "temperature": 0,
+        "max_tokens": 256,
+        "top_p": 1
+      },
+      "q_strong": 1.0,
+      "q_cheap": 0.0
+    },
+    {
+      "request": {
+        "messages": [
+          {
+            "role": "user",
+            "content": "Return only the integer. Compute 367 + 70."
+          }
+        ],
+        "temperature": 0,
+        "max_tokens": 256,
+        "top_p": 1
+      },
+      "q_strong": 1.0,
+      "q_cheap": 1.0
+    },
+    {
+      "request": {
+        "messages": [
+          {
+            "role": "user",
+            "content": "Return only the integer. Compute 369 * 87."
+          }
+        ],
+        "temperature": 0,
+        "max_tokens": 256,
+        "top_p": 1
+      },
+      "q_strong": 1.0,
+      "q_cheap": 0.0
+    },
+    {
+      "request": {
+        "messages": [
+          {
+            "role": "user",
+            "content": "Return only the integer. Compute 433 * 8."
+          }
+        ],
+        "temperature": 0,
+        "max_tokens": 256,
+        "top_p": 1
+      },
+      "q_strong": 1.0,
+      "q_cheap": 1.0
+    },
+    {
+      "request": {
+        "messages": [
+          {
+            "role": "user",
+            "content": "Return only the integer. Compute 375 + 49."
+          }
+        ],
+        "temperature": 0,
+        "max_tokens": 256,
+        "top_p": 1
+      },
+      "q_strong": 1.0,
+      "q_cheap": 1.0
+    },
+    {
+      "request": {
+        "messages": [
+          {
+            "role": "user",
+            "content": "Return only the integer. Compute 409 * 71."
+          }
+        ],
+        "temperature": 0,
+        "max_tokens": 256,
+        "top_p": 1
+      },
+      "q_strong": 1.0,
+      "q_cheap": 0.0
+    },
+    {
+      "request": {
+        "messages": [
+          {
+            "role": "user",
+            "content": "Return only the integer. Compute 69 * 29."
+          }
+        ],
+        "temperature": 0,
+        "max_tokens": 256,
+        "top_p": 1
+      },
+      "q_strong": 1.0,
+      "q_cheap": 0.0
+    },
+    {
+      "request": {
+        "messages": [
+          {
+            "role": "user",
+            "content": "Return only the integer. Compute 79 + 25."
+          }
+        ],
+        "temperature": 0,
+        "max_tokens": 256,
+        "top_p": 1
+      },
+      "q_strong": 1.0,
+      "q_cheap": 1.0
+    },
+    {
+      "request": {
+        "messages": [
+          {
+            "role": "user",
+            "content": "Return only the integer. Compute 237 * 33."
+          }
+        ],
+        "temperature": 0,
+        "max_tokens": 256,
+        "top_p": 1
+      },
+      "q_strong": 1.0,
+      "q_cheap": 0.0
+    },
+    {
+      "request": {
+        "messages": [
+          {
+            "role": "user",
+            "content": "Return only the integer. Compute 31 + 62."
+          }
+        ],
+        "temperature": 0,
+        "max_tokens": 256,
+        "top_p": 1
+      },
+      "q_strong": 1.0,
+      "q_cheap": 1.0
+    },
+    {
+      "request": {
+        "messages": [
+          {
+            "role": "user",
+            "content": "Return only the integer. Compute 357 * 74."
+          }
+        ],
+        "temperature": 0,
+        "max_tokens": 256,
+        "top_p": 1
+      },
+      "q_strong": 1.0,
+      "q_cheap": 0.0
+    },
+    {
+      "request": {
+        "messages": [
+          {
+            "role": "user",
+            "content": "Return only the integer. Compute 399 + 75."
+          }
+        ],
+        "temperature": 0,
+        "max_tokens": 256,
+        "top_p": 1
+      },
+      "q_strong": 1.0,
+      "q_cheap": 1.0
+    },
+    {
+      "request": {
+        "messages": [
+          {
+            "role": "user",
+            "content": "Return only the integer. Compute 183 + 19."
+          }
+        ],
+        "temperature": 0,
+        "max_tokens": 256,
+        "top_p": 1
+      },
+      "q_strong": 1.0,
+      "q_cheap": 1.0
+    },
+    {
+      "request": {
+        "messages": [
+          {
+            "role": "user",
+            "content": "Return only the integer. Compute 85 * 76."
+          }
+        ],
+        "temperature": 0,
+        "max_tokens": 256,
+        "top_p": 1
+      },
+      "q_strong": 1.0,
+      "q_cheap": 0.0
+    },
+    {
+      "request": {
+        "messages": [
+          {
+            "role": "user",
+            "content": "Return only the integer. Compute 13 * 87."
+          }
+        ],
+        "temperature": 0,
+        "max_tokens": 256,
+        "top_p": 1
+      },
+      "q_strong": 1.0,
+      "q_cheap": 1.0
+    },
+    {
+      "request": {
+        "messages": [
+          {
+            "role": "user",
+            "content": "Return only the integer. Compute 275 + 89."
+          }
+        ],
+        "temperature": 0,
+        "max_tokens": 256,
+        "top_p": 1
+      },
+      "q_strong": 1.0,
+      "q_cheap": 1.0
+    },
+    {
+      "request": {
+        "messages": [
+          {
+            "role": "user",
+            "content": "Return only the integer. Compute 155 + 48."
+          }
+        ],
+        "temperature": 0,
+        "max_tokens": 256,
+        "top_p": 1
+      },
+      "q_strong": 1.0,
+      "q_cheap": 1.0
+    },
+    {
+      "request": {
+        "messages": [
+          {
+            "role": "user",
+            "content": "Return only the integer. Compute 173 * 23."
+          }
+        ],
+        "temperature": 0,
+        "max_tokens": 256,
+        "top_p": 1
+      },
+      "q_strong": 1.0,
+      "q_cheap": 1.0
+    },
+    {
+      "request": {
+        "messages": [
+          {
+            "role": "user",
+            "content": "Return only the integer. Compute 235 + 16."
+          }
+        ],
+        "temperature": 0,
+        "max_tokens": 256,
+        "top_p": 1
+      },
+      "q_strong": 1.0,
+      "q_cheap": 1.0
+    },
+    {
+      "request": {
+        "messages": [
+          {
+            "role": "user",
+            "content": "Return only the integer. Compute 65 * 84."
+          }
+        ],
+        "temperature": 0,
+        "max_tokens": 256,
+        "top_p": 1
+      },
+      "q_strong": 1.0,
+      "q_cheap": 0.0
+    },
+    {
+      "request": {
+        "messages": [
+          {
+            "role": "user",
+            "content": "Return only the integer. Compute 315 + 73."
+          }
+        ],
+        "temperature": 0,
+        "max_tokens": 256,
+        "top_p": 1
+      },
+      "q_strong": 1.0,
+      "q_cheap": 1.0
+    },
+    {
+      "request": {
+        "messages": [
+          {
+            "role": "user",
+            "content": "Return only the integer. Compute 477 * 26."
+          }
+        ],
+        "temperature": 0,
+        "max_tokens": 256,
+        "top_p": 1
+      },
+      "q_strong": 1.0,
+      "q_cheap": 0.0
+    },
+    {
+      "request": {
+        "messages": [
+          {
+            "role": "user",
+            "content": "Return only the integer. Compute 39 + 41."
+          }
+        ],
+        "temperature": 0,
+        "max_tokens": 256,
+        "top_p": 1
+      },
+      "q_strong": 1.0,
+      "q_cheap": 1.0
+    },
+    {
+      "request": {
+        "messages": [
+          {
+            "role": "user",
+            "content": "Return only the integer. Compute 269 * 38."
+          }
+        ],
+        "temperature": 0,
+        "max_tokens": 256,
+        "top_p": 1
+      },
+      "q_strong": 1.0,
+      "q_cheap": 0.0
+    },
+    {
+      "request": {
+        "messages": [
+          {
+            "role": "user",
+            "content": "Return only the integer. Compute 429 * 63."
+          }
+        ],
+        "temperature": 0,
+        "max_tokens": 256,
+        "top_p": 1
+      },
+      "q_strong": 1.0,
+      "q_cheap": 0.0
+    },
+    {
+      "request": {
+        "messages": [
+          {
+            "role": "user",
+            "content": "Return only the integer. Compute 261 * 59."
+          }
+        ],
+        "temperature": 0,
+        "max_tokens": 256,
+        "top_p": 1
+      },
+      "q_strong": 1.0,
+      "q_cheap": 0.0
+    },
+    {
+      "request": {
+        "messages": [
+          {
+            "role": "user",
+            "content": "Return only the integer. Compute 61 * 50."
+          }
+        ],
+        "temperature": 0,
+        "max_tokens": 256,
+        "top_p": 1
+      },
+      "q_strong": 1.0,
+      "q_cheap": 0.0
+    },
+    {
+      "request": {
+        "messages": [
+          {
+            "role": "user",
+            "content": "Return only the integer. Compute 215 + 24."
+          }
+        ],
+        "temperature": 0,
+        "max_tokens": 256,
+        "top_p": 1
+      },
+      "q_strong": 1.0,
+      "q_cheap": 1.0
+    },
+    {
+      "request": {
+        "messages": [
+          {
+            "role": "user",
+            "content": "Return only the integer. Compute 3 + 2."
+          }
+        ],
+        "temperature": 0,
+        "max_tokens": 256,
+        "top_p": 1
+      },
+      "q_strong": 0.0,
+      "q_cheap": 1.0
+    },
+    {
+      "request": {
+        "messages": [
+          {
+            "role": "user",
+            "content": "Return only the integer. Compute 353 * 40."
+          }
+        ],
+        "temperature": 0,
+        "max_tokens": 256,
+        "top_p": 1
+      },
+      "q_strong": 1.0,
+      "q_cheap": 1.0
+    },
+    {
+      "request": {
+        "messages": [
+          {
+            "role": "user",
+            "content": "Return only the integer. Compute 105 * 68."
+          }
+        ],
+        "temperature": 0,
+        "max_tokens": 256,
+        "top_p": 1
+      },
+      "q_strong": 1.0,
+      "q_cheap": 0.0
+    },
+    {
+      "request": {
+        "messages": [
+          {
+            "role": "user",
+            "content": "Return only the integer. Compute 99 + 17."
+          }
+        ],
+        "temperature": 0,
+        "max_tokens": 256,
+        "top_p": 1
+      },
+      "q_strong": 1.0,
+      "q_cheap": 1.0
+    },
+    {
+      "request": {
+        "messages": [
+          {
+            "role": "user",
+            "content": "Return only the integer. Compute 313 * 56."
+          }
+        ],
+        "temperature": 0,
+        "max_tokens": 256,
+        "top_p": 1
+      },
+      "q_strong": 1.0,
+      "q_cheap": 1.0
+    },
+    {
+      "request": {
+        "messages": [
+          {
+            "role": "user",
+            "content": "Return only the integer. Compute 121 * 26."
+          }
+        ],
+        "temperature": 0,
+        "max_tokens": 256,
+        "top_p": 1
+      },
+      "q_strong": 1.0,
+      "q_cheap": 0.0
+    },
+    {
+      "request": {
+        "messages": [
+          {
+            "role": "user",
+            "content": "Return only the integer. Compute 135 + 56."
+          }
+        ],
+        "temperature": 0,
+        "max_tokens": 256,
+        "top_p": 1
+      },
+      "q_strong": 1.0,
+      "q_cheap": 1.0
+    },
+    {
+      "request": {
+        "messages": [
+          {
+            "role": "user",
+            "content": "Return only the integer. Compute 311 + 39."
+          }
+        ],
+        "temperature": 0,
+        "max_tokens": 256,
+        "top_p": 1
+      },
+      "q_strong": 1.0,
+      "q_cheap": 1.0
+    },
+    {
+      "request": {
+        "messages": [
+          {
+            "role": "user",
+            "content": "Return only the integer. Compute 165 * 44."
+          }
+        ],
+        "temperature": 0,
+        "max_tokens": 256,
+        "top_p": 1
+      },
+      "q_strong": 1.0,
+      "q_cheap": 0.0
+    },
+    {
+      "request": {
+        "messages": [
+          {
+            "role": "user",
+            "content": "Return only the integer. Compute 133 * 39."
+          }
+        ],
+        "temperature": 0,
+        "max_tokens": 256,
+        "top_p": 1
+      },
+      "q_strong": 1.0,
+      "q_cheap": 1.0
+    },
+    {
+      "request": {
+        "messages": [
+          {
+            "role": "user",
+            "content": "Return only the integer. Compute 445 * 21."
+          }
+        ],
+        "temperature": 0,
+        "max_tokens": 256,
+        "top_p": 1
+      },
+      "q_strong": 1.0,
+      "q_cheap": 0.0
+    },
+    {
+      "request": {
+        "messages": [
+          {
+            "role": "user",
+            "content": "Return only the integer. Compute 33 * 79."
+          }
+        ],
+        "temperature": 0,
+        "max_tokens": 256,
+        "top_p": 1
+      },
+      "q_strong": 1.0,
+      "q_cheap": 1.0
+    }
+  ]
+}

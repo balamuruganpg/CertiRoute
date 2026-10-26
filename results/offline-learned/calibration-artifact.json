@@ -1,0 +1,41 @@
+{
+  "schema_version": 1,
+  "calibration_id": "cal_f96028c14a446a2dbde8dd5696ffe4bba4df4f259a15a22fd74cc41031e5bc40",
+  "method": "crc",
+  "loss": "clipped_regret_v1",
+  "B": 1.0,
+  "n": 96,
+  "lambda_by_epsilon": {
+    "0.01": 1.0,
+    "0.02": 0.22017685517965335,
+    "0.05": 0.16898305782673492,
+    "0.1": 0.16898305782673492
+  },
+  "router": {
+    "version": "logistic_surface_v1",
+    "sha256": "8ace724a47eed152b266164a904f733dbcddeeaf56e111c95923c890b93e848f"
+  },
+  "models": {
+    "cheap": "https://fixture-cheap.invalid/v1::fixture-cheap-v1",
+    "strong": "https://fixture-strong.invalid/v1::fixture-strong-v1"
+  },
+  "quality_metric": {
+    "name": "exact_match",
+    "version": "1"
+  },
+  "scope": {
+    "max_chars": 16000,
+    "temperature": 0,
+    "max_tokens": 256,
+    "top_p": 1
+  },
+  "data": {
+    "sources": [
+      "synthetic_arithmetic_v1"
+    ],
+    "sha256": "823b79797f9961760984eb2761dccee70c0aab4c2f1631b268547be327862c4c",
+    "collected_at": "2026-10-23T00:00:00Z"
+  },
+  "created_at": "2026-10-23T16:00:09.995970Z",
+  "expires_at": "2026-10-30T16:00:09.995970Z"
+}

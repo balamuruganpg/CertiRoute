@@ -1,0 +1,40 @@
+models:
+  cheap:
+    base_url: https://fixture-cheap.invalid/v1
+    model: fixture-cheap-v1
+    api_key_env: CERTIROUTE_FIXTURE_UNUSED
+    connect_timeout: 5.0
+    read_timeout: 60.0
+    total_timeout: 120.0
+  strong:
+    base_url: https://fixture-strong.invalid/v1
+    model: fixture-strong-v1
+    api_key_env: CERTIROUTE_FIXTURE_UNUSED
+    connect_timeout: 5.0
+    read_timeout: 60.0
+    total_timeout: 120.0
+calibration:
+  artifact: A:\certiroute\results\offline-learned\calibration-artifact.json
+  allowed_epsilons:
+  - 0.01
+  - 0.02
+  - 0.05
+  - 0.1
+  default_epsilon: 0.02
+audit:
+  sample_rate: 0.02
+safety:
+  fail_open_to: strong
+  log_prompt_text: false
+router:
+  kind: logistic_surface_v1
+  artifact: A:\certiroute\results\offline-learned\router.json
+  length_scale: 1000.0
+scope:
+  max_chars: 16000
+  temperature: 0
+  max_tokens: 256
+  top_p: 1
+quality_metric:
+  name: exact_match
+  version: '1'
