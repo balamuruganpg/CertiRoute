@@ -1,0 +1,14 @@
+{
+  "input_sha256": "3ca21526ea48238c00ed95ab56690526d00bcfcbcdd9f0e8f7d1b26e57f50f73",
+  "script_sha256": "e98597d3b9145db4530987274f2ef9ba8d0e4a2ee85a38bf7c8993a47da21031",
+  "python": "3.11.9",
+  "libraries": {
+    "matplotlib": "3.10.8",
+    "numpy": "2.2.6"
+  },
+  "figures": {
+    "shift-risk.pdf": "89b89f009838667d99e0562ef97c4b992d7d98f80fe8f402eb245a68140ae24f",
+    "shift-risk.png": "5b1232ab413e12298a1c2ebaf9ca26819778ab248258752074fd1e3c9acd53f1",
+    "shift-risk.svg": "1efc3b577b157f532072f3882147cdd97abe7442dc1d6e8aca54f19a69753751"
+  }
+}
