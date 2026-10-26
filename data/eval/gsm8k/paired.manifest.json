@@ -1,0 +1,173 @@
+{
+  "source": "routellm_gsm8k_v1",
+  "dataset_sha256": "3a6fec941886362c7f778c8e6887e89449773c4e5fa9be073d168738d1e401c9",
+  "frozen_at": "2026-10-24T00:00:00Z",
+  "models": {
+    "cheap": "https://replay-cheap.invalid/v1::mistralai/Mixtral-8x7B-Instruct-v0.1",
+    "strong": "https://replay-strong.invalid/v1::gpt-4-1106-preview"
+  },
+  "quality_metric": {
+    "name": "routellm_gsm8k_last_integer",
+    "version": "1"
+  },
+  "scope": {
+    "max_chars": 16000,
+    "temperature": 0,
+    "max_tokens": 1024,
+    "top_p": 1,
+    "stop": [
+      "Question"
+    ]
+  },
+  "source_files": {
+    "gsm8k_responses.csv": {
+      "url": "https://raw.githubusercontent.com/lm-sys/RouteLLM/0b64fdafe049e596a3f5657c219329f24af24198/routellm/evals/gsm8k/gsm8k_responses.csv",
+      "sha256": "1f38ed03db354a020f71e92022383dc3cf37bbf2694dea4daaeea7b6c43fe57b"
+    },
+    "test.jsonl": {
+      "url": "https://raw.githubusercontent.com/lm-sys/RouteLLM/0b64fdafe049e596a3f5657c219329f24af24198/routellm/evals/gsm8k/test.jsonl",
+      "sha256": "3730d312f6e3440559ace48831e51066acaca737f6eabec99bccb9e4b3c39d14"
+    },
+    "train.jsonl": {
+      "url": "https://raw.githubusercontent.com/lm-sys/RouteLLM/0b64fdafe049e596a3f5657c219329f24af24198/routellm/evals/gsm8k/train.jsonl",
+      "sha256": "17f347dc51477c50d4efb83959dbb7c56297aba886e5544ee2aaed3024813465"
+    },
+    "generate_responses.py": {
+      "url": "https://raw.githubusercontent.com/lm-sys/RouteLLM/0b64fdafe049e596a3f5657c219329f24af24198/routellm/evals/gsm8k/generate_responses.py",
+      "sha256": "c22165fa06a913658b10262c20cd03d1d7246b669d48fdd22153171b21156ca5"
+    },
+    "LICENSE-RouteLLM.txt": {
+      "url": "https://raw.githubusercontent.com/lm-sys/RouteLLM/0b64fdafe049e596a3f5657c219329f24af24198/LICENSE",
+      "sha256": "43070e2d4e532684de521b885f385d0841030efa2b1a20bafb76133a5e1379c1"
+    },
+    "LICENSE-GSM8K.txt": {
+      "url": "https://raw.githubusercontent.com/openai/grade-school-math/3101c7d5072418e28b9008a6636bde82a006892c/LICENSE",
+      "sha256": "86bbb73e855821d7c401912fd4bf82e34313e6e3b6fd6f909f2b6cc9e209a53b"
+    }
+  },
+  "selection": "Sort all 1319 prompts by SHA256(UTF-8 question); greedily retain first 100 with full-prompt token-trigram Jaccard < 0.9 against retained prompts. No selection on labels or outputs.",
+  "selected_source_indices": [
+    796,
+    295,
+    712,
+    87,
+    267,
+    323,
+    1032,
+    110,
+    438,
+    471,
+    701,
+    807,
+    611,
+    236,
+    128,
+    777,
+    460,
+    993,
+    479,
+    1310,
+    820,
+    427,
+    1213,
+    99,
+    229,
+    764,
+    572,
+    57,
+    155,
+    63,
+    998,
+    982,
+    1295,
+    44,
+    1069,
+    727,
+    830,
+    1302,
+    592,
+    1011,
+    13,
+    210,
+    821,
+    1086,
+    994,
+    1131,
+    276,
+    1115,
+    353,
+    246,
+    632,
+    1215,
+    901,
+    932,
+    54,
+    15,
+    1000,
+    1047,
+    19,
+    631,
+    923,
+    415,
+    953,
+    181,
+    494,
+    640,
+    1285,
+    974,
+    1027,
+    1306,
+    208,
+    224,
+    1195,
+    100,
+    407,
+    618,
+    600,
+    284,
+    1221,
+    754,
+    961,
+    1146,
+    683,
+    1192,
+    98,
+    441,
+    939,
+    729,
+    377,
+    425,
+    840,
+    1077,
+    1165,
+    153,
+    173,
+    591,
+    389,
+    442,
+    341,
+    935
+  ],
+  "prompt_template": "Single user message: first 8 GSM8K training examples formatted as 'Question: {question}\\nAnswer: {answer}\\n\\n', then 'Question: {test_question}\\nAnswer:'. Full text is in every row.",
+  "generation": {
+    "temperature": 0,
+    "max_tokens": 1024,
+    "stop": [
+      "Question"
+    ],
+    "top_p": "Not explicit upstream; replay uses 1 (assumed default).",
+    "provider": "Upstream SGLang OpenAI-compatible router; original host not recorded.",
+    "generated_at": null,
+    "finish_reason": null,
+    "latency": null,
+    "provenance": "Settings/model IDs from pinned generation script; original wire requests, provider revisions and generation dates unavailable."
+  },
+  "token_counts": "ESTIMATED independently for prompt and each completion: ceil(Unicode character count / 4), including all 8 few-shot examples. Same approximation for both models; excludes chat framing. Not model-tokenizer counts or billed provider usage.",
+  "limitations": [
+    "Real frozen model outputs and recomputed correctness; estimated tokens and costs.",
+    "Original generation date, provider deployment and exact top_p are not recorded. These artifacts are bound to .invalid replay endpoints, not live deployment.",
+    "Full-prompt deduplication includes a long common few-shot prefix; selection can favor longer or lexically distinctive questions. This is not a random GSM8K sample.",
+    "Metric copies RouteLLM's last unsigned integer rule, including its limitations for decimals, signs and trailing numbers; it is not a general math verifier.",
+    "GSM8K may be in LLM pretraining data; benchmark contamination is unmeasured."
+  ]
+}
