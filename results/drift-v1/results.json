@@ -1,0 +1,153 @@
+{
+  "epsilon": 0.05,
+  "repeats": 1000,
+  "seed": 42,
+  "summaries": [
+    {
+      "direction": "long-to-short",
+      "detection_rate": 1.0,
+      "false_alarm_rate": 0.0,
+      "detection_delay_requests_if_detected": 100,
+      "additional_audit_requests_before_reactivation": 100,
+      "mean_audit_pair_cost_usd": 1.27860639296,
+      "before": {
+        "mean_regret": 0.20215,
+        "regret_ci_family6": [
+          0.19903901699651344,
+          0.20526098300348655
+        ],
+        "non_rejection": false,
+        "mean_savings": 0.8662394800358302
+      },
+      "recalibrated": {
+        "mean_regret": 0.04799,
+        "regret_ci_family6": [
+          0.04544905897655797,
+          0.05053094102344203
+        ],
+        "non_rejection": true,
+        "mean_savings": 0.2222459207352064
+      },
+      "detector_policy": {
+        "mean_regret": 0.04799,
+        "regret_ci_family6": [
+          0.04544905897655797,
+          0.05053094102344203
+        ],
+        "non_rejection": true,
+        "mean_savings": 0.2222459207352064
+      }
+    },
+    {
+      "direction": "short-to-long",
+      "detection_rate": 1.0,
+      "false_alarm_rate": 0.001,
+      "detection_delay_requests_if_detected": 100,
+      "additional_audit_requests_before_reactivation": 100,
+      "mean_audit_pair_cost_usd": 1.44125901232,
+      "before": {
+        "mean_regret": 0.00039,
+        "regret_ci_family6": [
+          0.000215949941544386,
+          0.000564050058455614
+        ],
+        "non_rejection": true,
+        "mean_savings": 0.009156395847010343
+      },
+      "recalibrated": {
+        "mean_regret": 0.04874,
+        "regret_ci_family6": [
+          0.04620214221769413,
+          0.05127785778230587
+        ],
+        "non_rejection": true,
+        "mean_savings": 0.1621895154142425
+      },
+      "detector_policy": {
+        "mean_regret": 0.04874,
+        "regret_ci_family6": [
+          0.04620214221769413,
+          0.05127785778230587
+        ],
+        "non_rejection": true,
+        "mean_savings": 0.1621895154142425
+      }
+    }
+  ],
+  "detector": "Two-sample DKW, alpha=.05 across two predeclared windows; n=100 each.",
+  "source_hashes": {
+    "pool-scores.json": "5ce2b91f051f810d28240d9f46a05e040aaaabc1a2130ea39a8995efb109167a",
+    "split-manifest.json": "50b8d1b948dad7173841ca165063df54b7f1b5b5384d25bd9f3995e32a31b619",
+    "results.json": "3ca21526ea48238c00ed95ab56690526d00bcfcbcdd9f0e8f7d1b26e57f50f73"
+  },
+  "code": {
+    "git_sha": "6e33f753d6650a989e4e14afd26e3f80d1e808e9",
+    "source_sha256": "2cbe7224b46d98f34121ce4d7e4b1d09d5d6fada00b5e3c3347b8d9bba85a58c",
+    "files": {
+      "eval/__init__.py": "5ed0dde16db9d19cfbae65156e607f09bf1684ab47f6c53cad95dd210638df40",
+      "eval/benchmarks.py": "59d0ac194adea7d6f3fac32f21bdaf8d4f2a27b864fb12d2580aeaf2332d0bcf",
+      "eval/calibrate.py": "735f94829129690b5992b54ff1f98aaa444d8b5120c1a5796e77ac7f14a2515f",
+      "eval/code_worker.py": "e7618c55c3ac2bc083d3d90c0c0c0d36968ec969b04a05e223292846e4bad516",
+      "eval/drift.py": "360f30241f07989508c9fbc074596c6989253795201f1401e346f7f4e610083f",
+      "eval/fit_router.py": "7722a25f71de28e3cd1fd128a3fcf55d849ccf66969c5598903d82a1c3e5e0c9",
+      "eval/fixtures.py": "64c1e8a0ee1dfdc367b81141bd258e0845bbb5ad44e3af3b233644d939d88393",
+      "eval/import_benchmarks.py": "d6c42b24fb15dc80fff2a46e8cff7262b84072a92b460aa6b34dc3f79b47d33b",
+      "eval/import_gsm8k.py": "edaacf4ef5cc391075ea307396c30bac89dffcdf7361131884fb0c0f5ce73bb1",
+      "eval/live.py": "1041b4d3e6cbbd957ebe512a3560ca42317873bb5439592c90e663e847047185",
+      "eval/live_study.py": "ef7555290b8b5eeb65441b803b203d4820e8f1d2117b458b5b1a6b58437b5a4c",
+      "eval/make_fixture.py": "52e1a6e48b010335c88754594a274cb8e9584ef30a78be839677406cf532984b",
+      "eval/manifest.py": "4e1cef93aaf20e088bb3bab4957918048513a46bd05b413cce0771af439a4134",
+      "eval/multibench.py": "86a94d779cdcf38d0d0fe976c075432d1f44ad661910761e5e3581da54cdaaf0",
+      "eval/offline.py": "dd8ae9e6549c7ad8d8ac6acfae117be8c7c72f6da54daa682b6d265fc2ce3697",
+      "eval/plot_expansion.py": "d35deeab1bfdc5d8afdb6453e323be3e5352716425ddd790226a1ee6f727ca00",
+      "eval/plot_sensitivity.py": "9b6d5fa7ec878d965ffff3c8c1f12ccd18002312c68af83a222dd4e774b528c7",
+      "eval/plot_shift.py": "e98597d3b9145db4530987274f2ef9ba8d0e4a2ee85a38bf7c8993a47da21031",
+      "eval/repeated.py": "5ade6d222292d5d9076db668afbab9221b9a6fa5ee812e8b909602be20d43b9a",
+      "eval/score_code.py": "01693996bc9a107804ebbaeefc615f24f28c96570dad467d5351be39b9a3f039",
+      "eval/sensitivity.py": "0d222c72e5d62c180512626a3e5b4ebe235048e32371174435fead19ed1e946a",
+      "eval/shift.py": "aa7d7ec3901e85da12e6fd5cc2b0e89d9d087c475112bcc51e822a9556345552",
+      "pyproject.toml": "b194ad27c2375fb154ad3b336e59d2008c5bfcf7e5aa74a89ad5df19a324790e",
+      "requirements-eval.lock": "ee79767244ad366cba6fa39d0ed398a9d236f84f13f15c68f939f5378b7e77a8",
+      "requirements-plot.lock": "17348dcf0e5cfca3bc1ecde01f1ea0d1b11d2681ff447981807c20f55056befd",
+      "src/certiroute/__init__.py": "41f151721d584f09ce252daecfa641d4ac68e20e883fbee8906a071deb6fef27",
+      "src/certiroute/calibration/__init__.py": "9d71bc6f63412f5a88262f2f46fd32ab14b9a49cd47bd119949c5bb38fcc2fb3",
+      "src/certiroute/calibration/artifact.py": "a648155746ea5e1392cec32fe10dc1634903a39775e6832968e436f76b694226",
+      "src/certiroute/calibration/crc.py": "f14c20f353f7a482b4878af7fcdf7739f03ddd70db26027f4af618830f54fe5c",
+      "src/certiroute/calibration/losses.py": "70bd93be7a5260fb7dfe0ee78cd9319aaea62b8c69bcba9c56ed1d03543566ab",
+      "src/certiroute/config.py": "8f37daaa5e90798ed3697c64c83a6081b45a35809106eca54e3e039348901497",
+      "src/certiroute/dashboard/__init__.py": "69526b66dca14af934ca84e7cfbee8dddbb2500a2fa710e1790ba733e9389989",
+      "src/certiroute/dashboard/app.py": "0894d6be849c4038b56e2800afc694167b1add6a40b2b3f42cebebc612316614",
+      "src/certiroute/dashboard/data.py": "af75421d6d34d9a3f16d64e060f3035c4d997fbf8b4f9080ada0f8493ad61215",
+      "src/certiroute/gateway/__init__.py": "d2fd433cf9318d7ab8158833900d1841d61c56af3dbb36a1d816efbf20053efa",
+      "src/certiroute/gateway/app.py": "5e350f738c1b3a2096f2c148184dd911e89e039862796fc181a1a67db1135a8e",
+      "src/certiroute/gateway/schemas.py": "23ea39538a46720c50cdfe09296a2dca93727938d9aa99299a3643c029aca485",
+      "src/certiroute/monitor/__init__.py": "a1a45737936105e1fec97e897e65003105d0df2ebe49a657e7caf98e26826cdd",
+      "src/certiroute/monitor/drift.py": "08efbb652f6a058e9540fd388fde6c6b4540ca55e0a1b603fd881de62addec08",
+      "src/certiroute/provenance.py": "d2fd028bb04984d74467123eaefdbe0289974392026620badca80bb53d64d48c",
+      "src/certiroute/providers/__init__.py": "dc085752313fe564111e94f141841e8c5cbd5789017cf1b8aad0fcc8a35adc39",
+      "src/certiroute/providers/base.py": "45235c860a31463aaec02829b266838e71a4e9a83893f1f25bfefae82b882afd",
+      "src/certiroute/providers/openai_compat.py": "9261cb85f4cba07418bbbf9dbeee5b9f0afd80780c4b06b612a1bfd4f389e927",
+      "src/certiroute/router/__init__.py": "767d79ff4f938cc36967a7cbdf9691d2ba36045e69c3fc1f8235ba532ccc431d",
+      "src/certiroute/router/features.py": "9741eec7a7d22fe745149f301d78a0bda5a109a83666b1e7bbc6c7f75f86602e",
+      "src/certiroute/router/policy.py": "8861dc1827df09e0b7bcfa76f2693902705dfea394889997a552040fedb5a6ff",
+      "src/certiroute/router/predictor.py": "40384ef9dac21824229420bcfcc6aed83d810df5e89ea4cb89da71572e35e42f",
+      "src/certiroute/router/scope.py": "409310f1b73cb7e49437c17bcfbbad472aa9e40e64d18fd67080e092596dfb4a",
+      "src/certiroute/scoring/__init__.py": "95fdda94da14194091541817f9bf8a8ff3fa41c7c4753ee6e4a21e08df32b2be",
+      "src/certiroute/telemetry/__init__.py": "15d9d0deeb498c1c4ad9a3d95d2e49a792603200f345d107b441efe3700537a7"
+    },
+    "python": "3.13.14",
+    "dependencies": {
+      "fastapi": "0.161.1",
+      "httpx": "0.28.1",
+      "pydantic": "2.14.1",
+      "PyYAML": "6.0.3"
+    }
+  },
+  "limitations": [
+    "Finite-pool simulated abrupt within-GSM8K length shift.",
+    "No production monitor or continuous-stream guarantee.",
+    "Detection window serves stale policy; alert switches to strong while 100 separate target pairs are acquired. Before/after uses later holdout.",
+    "Recalibration is fresh/unselected target data, not alarm-window labels.",
+    "Score drift can miss conditional quality drift; periodic label audits remain necessary."
+  ]
+}

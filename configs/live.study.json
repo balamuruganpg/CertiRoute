@@ -1,0 +1,37 @@
+{
+  "cheap": {
+    "base_url": "https://api.groq.com/openai/v1",
+    "model": "openai/gpt-oss-20b",
+    "api_key_env": "CHEAP_API_KEY",
+    "input": 0.075,
+    "cached_input": 0.0375,
+    "output": 0.3
+  },
+  "strong": {
+    "base_url": "https://api.x.ai/v1",
+    "model": "grok-4.20-0309-non-reasoning",
+    "api_key_env": "XAI_API_KEY",
+    "input": 1.25,
+    "cached_input": 0.2,
+    "output": 2.5
+  },
+  "pricing_as_of": "2026-10-30",
+  "pricing_sources": [
+    "https://console.groq.com/docs/model/openai/gpt-oss-20b",
+    "https://docs.x.ai/developers/models.md",
+    "https://docs.x.ai/developers/cost-tracking"
+  ],
+  "train": 60,
+  "calibration": 80,
+  "test": 100,
+  "seed": 20261026,
+  "epsilon": 0.05,
+  "max_tokens": 256,
+  "budget_usd": 2.5,
+  "fee_reserve_usd": 0.49,
+  "total_authorized_usd": 2.99,
+  "pilot_requests": 20,
+  "pilot_budget_usd": 0.1,
+  "interval_seconds": 2.0,
+  "pricing_note": "Global standard service, no tools. xAI non-reasoning model bounds completion output. Provider-reported USD ticks take precedence over token estimates."
+}

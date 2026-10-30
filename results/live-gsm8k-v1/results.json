@@ -1,0 +1,120 @@
+{
+  "status": "complete",
+  "created_at": "2026-10-30T17:49:12.284370+00:00",
+  "summaries": {
+    "cheap-only": {
+      "requests": 100,
+      "error_rate": 0.0,
+      "latency_p50_ms": 883.0884999997579,
+      "latency_p95_ms": 2208.0783650001417,
+      "cost_usd": 0.0135525,
+      "unknown_cost_requests": 0,
+      "known_prompt_tokens": 125372,
+      "known_completion_tokens": 23304,
+      "attempts_without_usage": 0,
+      "quality": 0.4,
+      "regret": 0.5555555555555556,
+      "regret_denominator": 99
+    },
+    "strong-only": {
+      "requests": 100,
+      "error_rate": 0.01,
+      "latency_p50_ms": 1540.7285000003412,
+      "latency_p95_ms": 2310.2167449999115,
+      "cost_usd": 0.0783208,
+      "unknown_cost_requests": 1,
+      "known_prompt_tokens": 134980,
+      "known_completion_tokens": 10890,
+      "attempts_without_usage": 1,
+      "quality": 0.95,
+      "regret": 0.0,
+      "regret_denominator": 99
+    },
+    "CertiRoute": {
+      "requests": 100,
+      "error_rate": 0.0,
+      "latency_p50_ms": 1471.4378500002567,
+      "latency_p95_ms": 2329.3343349999986,
+      "cost_usd": 0.06582315,
+      "unknown_cost_requests": 0,
+      "known_prompt_tokens": 134472,
+      "known_completion_tokens": 13116,
+      "attempts_without_usage": 0,
+      "quality": 0.84,
+      "regret": 0.12121212121212122,
+      "regret_denominator": 99
+    }
+  },
+  "acquisition": {
+    "requests": 281,
+    "error_rate": 0.0035587188612099642,
+    "latency_p50_ms": 1489.614999999958,
+    "latency_p95_ms": 2864.871199999925,
+    "cost_usd": 0.1430889075,
+    "unknown_cost_requests": 1,
+    "known_prompt_tokens": 366291,
+    "known_completion_tokens": 50152,
+    "attempts_without_usage": 1
+  },
+  "upstream_attempts": {
+    "requests": 581,
+    "error_rate": 0.0034423407917383822,
+    "latency_p50_ms": 1369.135599999936,
+    "latency_p95_ms": 2551.451699999916,
+    "cost_usd": 0.3007853575,
+    "unknown_cost_requests": 2,
+    "known_prompt_tokens": 761115,
+    "known_completion_tokens": 97462,
+    "attempts_without_usage": 2
+  },
+  "budget_charged_usd_including_prior_runs": 0.3613503325,
+  "calibration_id": "cal_c19156ea1ab37da9f76556a26103bc0d246c99c2487e828f73cc71fdf8b4bbb5",
+  "limitations": [
+    "Full acquisition retries HTTP 429 up to 3 times; all attempts retained. Test requests are not retried; gateway fallback remains enabled.",
+    "Concurrency=1; nonstreaming latency excludes pacing and acquisition backoff.",
+    "Gateway runs in-process over ASGI; excludes network ingress latency.",
+    "Unknown costs retain full reservation; costs are not invoices.",
+    "Regret excludes prompts whose strong reference request failed.",
+    "One fresh calibration draw is descriptive, not a CRC validity test."
+  ],
+  "spec": {
+    "train": 60,
+    "calibration": 80,
+    "test": 100,
+    "seed": 20261026,
+    "epsilon": 0.05,
+    "max_tokens": 256,
+    "pricing_as_of": "2026-10-30",
+    "pricing_sources": [
+      "https://console.groq.com/docs/model/openai/gpt-oss-20b",
+      "https://docs.x.ai/developers/models.md",
+      "https://docs.x.ai/developers/cost-tracking"
+    ],
+    "pricing_note": "Global standard service, no tools. xAI non-reasoning model bounds completion output. Provider-reported USD ticks take precedence over token estimates.",
+    "cheap": {
+      "base_url": "https://api.groq.com/openai/v1",
+      "model": "openai/gpt-oss-20b",
+      "input": 0.075,
+      "cached_input": 0.0375,
+      "output": 0.3
+    },
+    "strong": {
+      "base_url": "https://api.x.ai/v1",
+      "model": "grok-4.20-0309-non-reasoning",
+      "input": 1.25,
+      "cached_input": 0.2,
+      "output": 2.5
+    }
+  },
+  "execution": {
+    "interval_seconds": 15.0,
+    "acquisition_429_retries": 3,
+    "resumed": true,
+    "reused_acquisition_responses": 86
+  },
+  "publication": {
+    "private_result_sha256": "13fb26da0ccc9bf22d0d9678f6b4484351cc75d883156a64545d80694a00805c",
+    "observations_sha256": "24bc819de047b75fc4bc38fd5c890bbd24cdac087b66cb6490a1ed09f08b4b05",
+    "note": "Frozen live outputs and metrics; account paths, request IDs and credential configuration omitted. This snapshot is not an executable provider config."
+  }
+}

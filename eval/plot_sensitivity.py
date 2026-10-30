@@ -7,7 +7,7 @@ import json
 import platform
 from pathlib import Path
 from statistics import mean
-from typing import Any
+from typing import Any, cast
 
 import matplotlib  # type: ignore[import-not-found]
 
@@ -89,7 +89,7 @@ def render(input_path: Path, out: Path) -> None:
     )
     fig.supylabel("Mean clipped regret")
     handles, labels = axes.flat[0].get_legend_handles_labels()
-    fig.get_layout_engine().set(rect=(0, 0.065, 1, 0.935))
+    cast(Any, fig.get_layout_engine()).set(rect=(0, 0.065, 1, 0.935))
     fig.legend(handles, labels, loc="lower center", ncol=4, frameon=False, fontsize=9)
     save(fig, "calibration-sweep")
 
@@ -137,7 +137,7 @@ def render(input_path: Path, out: Path) -> None:
     )
     fig.supylabel("Mean cost / strong-only cost (lower is cheaper)")
     handles, labels = axes.flat[0].get_legend_handles_labels()
-    fig.get_layout_engine().set(rect=(0, 0.065, 1, 0.935))
+    cast(Any, fig.get_layout_engine()).set(rect=(0, 0.065, 1, 0.935))
     fig.legend(handles, labels, loc="lower center", ncol=4, frameon=False, fontsize=9)
     save(fig, "risk-cost")
 
@@ -164,8 +164,8 @@ def render(input_path: Path, out: Path) -> None:
         rows, 2, figsize=(12, 3.5 * rows + 1), layout="constrained", squeeze=False
     )
     for ax, epsilon in zip(axes.flat, epsilons, strict=False):
-        matrix = values[epsilon]
-        chart = ax.imshow(matrix, cmap="RdBu", vmin=-maximum, vmax=maximum, aspect="auto")
+        grid = values[epsilon]
+        chart = ax.imshow(grid, cmap="RdBu", vmin=-maximum, vmax=maximum, aspect="auto")
         ax.set(
             title=f"Target ε = {epsilon:g}",
             xticks=range(len(sizes)),
@@ -173,15 +173,15 @@ def render(input_path: Path, out: Path) -> None:
             yticks=range(len(seeds)),
             yticklabels=seeds,
         )
-        for i, j in np.ndindex(matrix.shape):
+        for i, j in np.ndindex(grid.shape):
             ax.text(
                 j,
                 i,
-                f"{matrix[i, j]:+.2f}",
+                f"{grid[i, j]:+.2f}",
                 ha="center",
                 va="center",
                 fontsize=10,
-                color="white" if abs(matrix[i, j]) > maximum * 0.6 else "#222222",
+                color="white" if abs(grid[i, j]) > maximum * 0.6 else "#222222",
             )
     for ax in list(axes.flat)[len(epsilons) :]:
         ax.set_visible(False)

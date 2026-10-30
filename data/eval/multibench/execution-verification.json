@@ -1,0 +1,11 @@
+{
+  "runs": 2,
+  "pairs_per_run": 399,
+  "programs_per_run": 798,
+  "timeout_seconds": 15,
+  "dataset_sha256": "4e30daeea2939957456a6a8973917fad2c243cc072d0c00d8165ed1cb18648ec",
+  "worker_sha256": "e7618c55c3ac2bc083d3d90c0c0c0d36968ec969b04a05e223292846e4bad516",
+  "image": "python:3.12-slim@sha256:a0f57064cbdcd6285fa45f51237ab0b35ea8ebaed06a1f5973e89e19dfb86704",
+  "all_scored_jsonl_bytes_identical": true,
+  "correction": "Original 3-second timeout gave one inconsistent timeout/pass label; uniformly increased to15seconds before final report."
+}

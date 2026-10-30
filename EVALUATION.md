@@ -1,6 +1,16 @@
 # CertiRoute — Evaluation Plan
 
-> This document defines the evaluation plan. The [expanded GSM8K study](docs/GSM8K_REPEATED.md) implements G1 on the available finite pool; the [sensitivity study](docs/GSM8K_SENSITIVITY.md) adds G2/G6 comparisons; and the [within-GSM8K shift study](docs/GSM8K_SHIFT.md) tests transfer and target recalibration. Larger-data, cross-dataset shift and live-serving studies remain incomplete. Every reported number must come from a saved, reproducible result file. Where this plan states a *target*, it is a pass/fail criterion we set in advance, not a prediction.
+> This document defines the evaluation plan. The [expanded GSM8K study](docs/GSM8K_REPEATED.md) implements G1 on the available finite pool; the [sensitivity study](docs/GSM8K_SENSITIVITY.md) adds G2/G6 comparisons; and the [within-GSM8K shift study](docs/GSM8K_SHIFT.md) tests transfer and target recalibration. Larger-data, cross-dataset shift and production-serving studies remain incomplete. Every reported number must come from a saved, reproducible result file. Where this plan states a *target*, it is a pass/fail criterion we set in advance, not a prediction.
+
+> **2026-10-26 expansion:** [GSM8K/ARC/MBPP](docs/MULTIBENCH.md) now provides
+> task-specific G1/G3 and baseline evidence, including isolated executable MBPP tests.
+> [Drift replay](docs/DRIFT.md) adds score detection and independent target recalibration
+> on abrupt length shifts. CI and deadline/fallback/concurrency tests are added.
+> **2026-10-30 live result:** [Groq/xAI GSM8K](results/live-gsm8k-v1/REPORT.md) completed
+> 60 training, 80 calibration and 100 held-out test prompts. CertiRoute recorded
+> 15.96% test-cost savings but **12.12% regret**, exceeding the 5% target on this draw.
+> This is live measurement evidence, not successful G9 validity evidence. Cross-dataset
+> S1, gradual S3, production C4 and the audit-rate sweep remain incomplete.
 
 ## 1. Claims under test
 

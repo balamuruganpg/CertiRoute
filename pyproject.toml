@@ -43,3 +43,8 @@ select = ["E", "F", "I", "UP", "B"]
 python_version = "3.12"
 strict = true
 files = ["src", "eval"]
+
+[[tool.mypy.overrides]]
+module = ["eval.plot_sensitivity", "eval.plot_shift", "eval.plot_expansion", "eval.plot_portfolio"]
+# Missing-import guards are needed when optional plotting packages are absent.
+warn_unused_ignores = false

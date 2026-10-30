@@ -1,0 +1,5731 @@
+{
+  "kind": "task_stratified_finite_pool_crc",
+  "repeats": 1000,
+  "seed": 42,
+  "epsilons": [
+    0.01,
+    0.02,
+    0.05,
+    0.1
+  ],
+  "tasks": [
+    {
+      "task": "gsm8k",
+      "sizes": {
+        "raw": 1319,
+        "train": 527,
+        "calibration": 396,
+        "test": 396
+      },
+      "dataset_manifest": {
+        "source": "routellm_gsm8k_v1",
+        "dataset_sha256": "f1a76cd142c5fc9a8e8ca7dfb57ad10cdd834b6a01cee505041accba58a37248",
+        "frozen_at": "2026-10-24T00:00:00Z",
+        "models": {
+          "cheap": "https://replay-cheap.invalid/v1::mistralai/Mixtral-8x7B-Instruct-v0.1",
+          "strong": "https://replay-strong.invalid/v1::gpt-4-1106-preview"
+        },
+        "quality_metric": {
+          "name": "routellm_gsm8k_last_integer",
+          "version": "1"
+        },
+        "scope": {
+          "max_chars": 16000,
+          "temperature": 0,
+          "max_tokens": 1024,
+          "top_p": 1,
+          "stop": [
+            "Question"
+          ]
+        },
+        "source_files": {
+          "gsm8k_responses.csv": {
+            "url": "https://raw.githubusercontent.com/lm-sys/RouteLLM/0b64fdafe049e596a3f5657c219329f24af24198/routellm/evals/gsm8k/gsm8k_responses.csv",
+            "sha256": "1f38ed03db354a020f71e92022383dc3cf37bbf2694dea4daaeea7b6c43fe57b"
+          },
+          "test.jsonl": {
+            "url": "https://raw.githubusercontent.com/lm-sys/RouteLLM/0b64fdafe049e596a3f5657c219329f24af24198/routellm/evals/gsm8k/test.jsonl",
+            "sha256": "3730d312f6e3440559ace48831e51066acaca737f6eabec99bccb9e4b3c39d14"
+          },
+          "train.jsonl": {
+            "url": "https://raw.githubusercontent.com/lm-sys/RouteLLM/0b64fdafe049e596a3f5657c219329f24af24198/routellm/evals/gsm8k/train.jsonl",
+            "sha256": "17f347dc51477c50d4efb83959dbb7c56297aba886e5544ee2aaed3024813465"
+          },
+          "generate_responses.py": {
+            "url": "https://raw.githubusercontent.com/lm-sys/RouteLLM/0b64fdafe049e596a3f5657c219329f24af24198/routellm/evals/gsm8k/generate_responses.py",
+            "sha256": "c22165fa06a913658b10262c20cd03d1d7246b669d48fdd22153171b21156ca5"
+          },
+          "LICENSE-RouteLLM.txt": {
+            "url": "https://raw.githubusercontent.com/lm-sys/RouteLLM/0b64fdafe049e596a3f5657c219329f24af24198/LICENSE",
+            "sha256": "43070e2d4e532684de521b885f385d0841030efa2b1a20bafb76133a5e1379c1"
+          },
+          "LICENSE-GSM8K.txt": {
+            "url": "https://raw.githubusercontent.com/openai/grade-school-math/3101c7d5072418e28b9008a6636bde82a006892c/LICENSE",
+            "sha256": "86bbb73e855821d7c401912fd4bf82e34313e6e3b6fd6f909f2b6cc9e209a53b"
+          }
+        },
+        "selection": "Process all 1319 prompts in SHA256(UTF-8 question) order. Greedy token-trigram Jaccard >= 0.9 deduplication on the test question only, after removing the exact shared eight-example prefix. No selection on outcomes.",
+        "selected_source_indices": [
+          796,
+          295,
+          712,
+          87,
+          267,
+          323,
+          695,
+          89,
+          1024,
+          1032,
+          999,
+          255,
+          110,
+          1270,
+          497,
+          438,
+          471,
+          701,
+          807,
+          611,
+          236,
+          128,
+          1002,
+          1200,
+          524,
+          73,
+          777,
+          460,
+          528,
+          993,
+          911,
+          566,
+          1113,
+          681,
+          479,
+          418,
+          1005,
+          1310,
+          820,
+          427,
+          674,
+          1148,
+          1213,
+          338,
+          848,
+          1243,
+          834,
+          99,
+          55,
+          440,
+          318,
+          229,
+          278,
+          764,
+          572,
+          352,
+          57,
+          155,
+          843,
+          63,
+          140,
+          832,
+          998,
+          486,
+          845,
+          982,
+          1295,
+          44,
+          1069,
+          727,
+          830,
+          1302,
+          1108,
+          365,
+          967,
+          563,
+          56,
+          592,
+          1300,
+          491,
+          511,
+          1011,
+          13,
+          210,
+          1258,
+          484,
+          821,
+          665,
+          1086,
+          77,
+          994,
+          1131,
+          276,
+          507,
+          1115,
+          353,
+          246,
+          625,
+          1129,
+          636,
+          545,
+          632,
+          1215,
+          256,
+          901,
+          932,
+          214,
+          54,
+          552,
+          232,
+          1075,
+          15,
+          616,
+          1000,
+          708,
+          1047,
+          19,
+          652,
+          631,
+          453,
+          1140,
+          589,
+          923,
+          656,
+          415,
+          944,
+          953,
+          181,
+          620,
+          1178,
+          494,
+          43,
+          660,
+          640,
+          468,
+          288,
+          1285,
+          969,
+          458,
+          259,
+          974,
+          489,
+          1027,
+          1306,
+          1106,
+          1184,
+          208,
+          224,
+          931,
+          542,
+          1195,
+          548,
+          424,
+          69,
+          908,
+          748,
+          100,
+          130,
+          217,
+          407,
+          123,
+          618,
+          600,
+          284,
+          1221,
+          849,
+          503,
+          754,
+          277,
+          1274,
+          961,
+          1146,
+          606,
+          683,
+          1192,
+          1191,
+          474,
+          98,
+          441,
+          867,
+          679,
+          939,
+          67,
+          1179,
+          279,
+          729,
+          699,
+          377,
+          24,
+          1281,
+          192,
+          194,
+          1220,
+          1280,
+          50,
+          425,
+          840,
+          216,
+          1077,
+          223,
+          536,
+          671,
+          1136,
+          694,
+          810,
+          1165,
+          153,
+          733,
+          173,
+          689,
+          634,
+          762,
+          591,
+          1196,
+          389,
+          442,
+          218,
+          619,
+          341,
+          935,
+          653,
+          989,
+          949,
+          385,
+          0,
+          515,
+          271,
+          413,
+          597,
+          978,
+          207,
+          1096,
+          942,
+          326,
+          894,
+          984,
+          877,
+          895,
+          922,
+          31,
+          1259,
+          1201,
+          260,
+          274,
+          941,
+          650,
+          1142,
+          769,
+          233,
+          629,
+          41,
+          151,
+          243,
+          92,
+          761,
+          622,
+          1090,
+          412,
+          557,
+          1176,
+          751,
+          981,
+          646,
+          127,
+          973,
+          367,
+          947,
+          964,
+          815,
+          599,
+          705,
+          500,
+          167,
+          957,
+          296,
+          833,
+          307,
+          1087,
+          328,
+          787,
+          534,
+          648,
+          240,
+          692,
+          603,
+          958,
+          995,
+          930,
+          1284,
+          74,
+          558,
+          1158,
+          1288,
+          252,
+          794,
+          222,
+          966,
+          1157,
+          1229,
+          334,
+          242,
+          685,
+          1228,
+          234,
+          475,
+          182,
+          663,
+          107,
+          1025,
+          861,
+          1163,
+          691,
+          880,
+          1257,
+          150,
+          846,
+          410,
+          956,
+          319,
+          562,
+          1073,
+          1160,
+          538,
+          1084,
+          1144,
+          1253,
+          156,
+          1168,
+          920,
+          1053,
+          1170,
+          397,
+          753,
+          928,
+          1154,
+          362,
+          16,
+          960,
+          476,
+          1067,
+          627,
+          289,
+          287,
+          1010,
+          283,
+          1194,
+          721,
+          79,
+          772,
+          49,
+          1225,
+          292,
+          838,
+          898,
+          870,
+          360,
+          88,
+          667,
+          111,
+          17,
+          889,
+          26,
+          12,
+          1169,
+          680,
+          917,
+          84,
+          844,
+          580,
+          1177,
+          929,
+          1118,
+          766,
+          575,
+          1293,
+          285,
+          1232,
+          1244,
+          1078,
+          1212,
+          666,
+          644,
+          874,
+          780,
+          197,
+          1127,
+          1026,
+          1183,
+          249,
+          1262,
+          1193,
+          517,
+          120,
+          559,
+          27,
+          157,
+          855,
+          359,
+          1074,
+          263,
+          682,
+          587,
+          875,
+          1058,
+          1265,
+          417,
+          878,
+          409,
+          310,
+          154,
+          258,
+          451,
+          588,
+          626,
+          280,
+          46,
+          560,
+          396,
+          1222,
+          452,
+          1298,
+          868,
+          926,
+          980,
+          860,
+          482,
+          1070,
+          86,
+          459,
+          321,
+          728,
+          206,
+          1271,
+          1034,
+          791,
+          1079,
+          571,
+          61,
+          250,
+          177,
+          610,
+          101,
+          1031,
+          1012,
+          188,
+          703,
+          702,
+          990,
+          948,
+          231,
+          1102,
+          915,
+          1076,
+          251,
+          186,
+          1282,
+          617,
+          247,
+          526,
+          227,
+          812,
+          641,
+          266,
+          402,
+          549,
+          763,
+          1247,
+          1216,
+          706,
+          81,
+          1180,
+          202,
+          1054,
+          1056,
+          1104,
+          933,
+          347,
+          987,
+          349,
+          872,
+          209,
+          472,
+          1309,
+          212,
+          109,
+          1286,
+          1019,
+          463,
+          704,
+          1030,
+          368,
+          300,
+          1033,
+          1037,
+          1120,
+          104,
+          414,
+          268,
+          759,
+          1233,
+          66,
+          1014,
+          781,
+          822,
+          1040,
+          740,
+          1267,
+          1227,
+          1105,
+          1173,
+          335,
+          488,
+          608,
+          355,
+          556,
+          897,
+          533,
+          983,
+          1080,
+          201,
+          291,
+          59,
+          905,
+          790,
+          1137,
+          462,
+          370,
+          797,
+          760,
+          398,
+          238,
+          615,
+          125,
+          997,
+          1138,
+          1065,
+          132,
+          829,
+          7,
+          793,
+          688,
+          805,
+          124,
+          298,
+          1052,
+          811,
+          1092,
+          1237,
+          435,
+          1283,
+          746,
+          736,
+          419,
+          213,
+          955,
+          344,
+          304,
+          850,
+          436,
+          918,
+          350,
+          723,
+          225,
+          306,
+          1273,
+          798,
+          358,
+          770,
+          163,
+          502,
+          1121,
+          1208,
+          464,
+          450,
+          448,
+          896,
+          1255,
+          988,
+          884,
+          621,
+          6,
+          605,
+          1048,
+          20,
+          426,
+          262,
+          783,
+          670,
+          390,
+          659,
+          885,
+          669,
+          661,
+          42,
+          757,
+          21,
+          147,
+          332,
+          720,
+          1242,
+          501,
+          715,
+          741,
+          852,
+          1250,
+          525,
+          477,
+          1314,
+          230,
+          431,
+          401,
+          384,
+          1089,
+          919,
+          325,
+          175,
+          863,
+          1159,
+          1130,
+          379,
+          934,
+          237,
+          299,
+          921,
+          859,
+          235,
+          94,
+          25,
+          372,
+          509,
+          554,
+          303,
+          470,
+          373,
+          1235,
+          1151,
+          65,
+          519,
+          445,
+          428,
+          936,
+          1190,
+          122,
+          457,
+          1290,
+          219,
+          598,
+          148,
+          856,
+          199,
+          80,
+          496,
+          103,
+          673,
+          1264,
+          568,
+          119,
+          1088,
+          775,
+          1185,
+          456,
+          305,
+          1153,
+          40,
+          635,
+          145,
+          480,
+          864,
+          520,
+          1317,
+          963,
+          53,
+          239,
+          765,
+          354,
+          642,
+          393,
+          1303,
+          779,
+          187,
+          1126,
+          1204,
+          1141,
+          193,
+          1304,
+          711,
+          596,
+          637,
+          687,
+          1217,
+          205,
+          602,
+          1055,
+          1245,
+          18,
+          411,
+          518,
+          185,
+          546,
+          734,
+          758,
+          400,
+          801,
+          827,
+          493,
+          1175,
+          732,
+          968,
+          129,
+          33,
+          1066,
+          170,
+          1246,
+          342,
+          499,
+          1172,
+          628,
+          244,
+          387,
+          651,
+          117,
+          565,
+          14,
+          1268,
+          1050,
+          1252,
+          802,
+          697,
+          1278,
+          1166,
+          200,
+          824,
+          1020,
+          1071,
+          1017,
+          1007,
+          467,
+          241,
+          858,
+          1099,
+          324,
+          747,
+          112,
+          264,
+          726,
+          137,
+          144,
+          886,
+          904,
+          160,
+          1143,
+          951,
+          1117,
+          1072,
+          282,
+          1128,
+          655,
+          469,
+          1254,
+          381,
+          327,
+          38,
+          1112,
+          95,
+          1123,
+          1043,
+          1155,
+          927,
+          785,
+          58,
+          553,
+          700,
+          713,
+          383,
+          792,
+          1276,
+          1091,
+          1156,
+          690,
+          847,
+          85,
+          3,
+          1093,
+          806,
+          881,
+          755,
+          551,
+          742,
+          423,
+          899,
+          78,
+          51,
+          624,
+          1124,
+          133,
+          60,
+          382,
+          1057,
+          657,
+          823,
+          871,
+          1122,
+          607,
+          9,
+          171,
+          564,
+          774,
+          45,
+          1248,
+          707,
+          826,
+          854,
+          1083,
+          1218,
+          614,
+          584,
+          767,
+          1004,
+          865,
+          773,
+          421,
+          245,
+          444,
+          888,
+          893,
+          254,
+          709,
+          1205,
+          478,
+          215,
+          577,
+          346,
+          311,
+          70,
+          795,
+          172,
+          1275,
+          808,
+          970,
+          35,
+          658,
+          1238,
+          343,
+          882,
+          1081,
+          339,
+          851,
+          1251,
+          1003,
+          583,
+          1202,
+          211,
+          719,
+          725,
+          143,
+          876,
+          162,
+          131,
+          149,
+          293,
+          523,
+          544,
+          196,
+          1296,
+          1016,
+          902,
+          1209,
+          940,
+          48,
+          71,
+          1164,
+          1134,
+          1149,
+          466,
+          937,
+          677,
+          97,
+          406,
+          275,
+          537,
+          504,
+          169,
+          1109,
+          1111,
+          146,
+          576,
+          532,
+          83,
+          1256,
+          369,
+          39,
+          1297,
+          433,
+          90,
+          1206,
+          82,
+          910,
+          668,
+          814,
+          962,
+          664,
+          52,
+          601,
+          1315,
+          165,
+          32,
+          1085,
+          375,
+          351,
+          1199,
+          809,
+          514,
+          1132,
+          724,
+          716,
+          138,
+          320,
+          403,
+          1036,
+          228,
+          378,
+          1241,
+          788,
+          121,
+          804,
+          248,
+          29,
+          916,
+          686,
+          75,
+          34,
+          735,
+          737,
+          609,
+          1234,
+          485,
+          64,
+          174,
+          1312,
+          582,
+          675,
+          437,
+          405,
+          159,
+          116,
+          1042,
+          366,
+          950,
+          1125,
+          1097,
+          1277,
+          161,
+          62,
+          693,
+          91,
+          118,
+          869,
+          1044,
+          744,
+          817,
+          862,
+          487,
+          315,
+          1150,
+          752,
+          316,
+          731,
+          432,
+          364,
+          1116,
+          541,
+          198,
+          581,
+          738,
+          1038,
+          180,
+          337,
+          388,
+          348,
+          386,
+          376,
+          912,
+          164,
+          399,
+          37,
+          714,
+          72,
+          813,
+          416,
+          1316,
+          972,
+          439,
+          800,
+          570,
+          946,
+          483,
+          569,
+          567,
+          114,
+          529,
+          392,
+          771,
+          717,
+          1133,
+          340,
+          1051,
+          68,
+          654,
+          971,
+          645,
+          630,
+          903,
+          540,
+          395,
+          380,
+          595,
+          756,
+          900,
+          835,
+          696,
+          309,
+          1161,
+          391,
+          730,
+          879,
+          1063,
+          561,
+          317,
+          1095,
+          996,
+          907,
+          253,
+          604,
+          613,
+          778,
+          330,
+          449,
+          312,
+          273,
+          265,
+          857,
+          1291,
+          1269,
+          135,
+          220,
+          204,
+          404,
+          272,
+          134,
+          1182,
+          1119,
+          539,
+          991,
+          1008,
+          1139,
+          11,
+          1230,
+          141,
+          892,
+          676,
+          836,
+          1028,
+          521,
+          1145,
+          1110,
+          818,
+          839,
+          643,
+          992,
+          979,
+          126,
+          394,
+          578,
+          506,
+          47,
+          776,
+          1203,
+          799,
+          887,
+          495,
+          1046,
+          639,
+          1308,
+          473,
+          28,
+          590,
+          4,
+          270,
+          1018,
+          1289,
+          446,
+          1021,
+          1287,
+          166,
+          308,
+          93,
+          1094,
+          913,
+          2,
+          345,
+          1187,
+          1239,
+          1299,
+          1103,
+          8,
+          498,
+          30,
+          1261,
+          481,
+          455,
+          1279,
+          1041,
+          959,
+          594,
+          420,
+          1101,
+          684,
+          226,
+          678,
+          1318,
+          986,
+          490,
+          203,
+          322,
+          76,
+          722,
+          1224,
+          943,
+          333,
+          331,
+          1207,
+          647,
+          573,
+          1266,
+          819,
+          136,
+          906,
+          837,
+          672,
+          1023,
+          1022,
+          1272,
+          1001,
+          1292,
+          357,
+          555,
+          745,
+          1236,
+          750,
+          662,
+          371,
+          336,
+          139,
+          527,
+          543,
+          924,
+          1226,
+          286,
+          1,
+          361,
+          184,
+          1029,
+          633,
+          1068,
+          302,
+          586,
+          269,
+          985,
+          158,
+          891,
+          698,
+          1260,
+          191,
+          429,
+          1171,
+          434,
+          579,
+          522,
+          221,
+          261,
+          1013,
+          789,
+          1039,
+          178,
+          1181,
+          1114,
+          492,
+          1210,
+          1061,
+          914,
+          443,
+          1307,
+          1313,
+          408,
+          1045,
+          142,
+          10,
+          1294,
+          954,
+          1311,
+          152,
+          96,
+          531,
+          1107,
+          623,
+          828,
+          585,
+          36,
+          176,
+          189,
+          513,
+          1060,
+          374,
+          853,
+          1135,
+          784,
+          535,
+          593,
+          447,
+          301,
+          1188,
+          1198,
+          1189,
+          547,
+          430,
+          976,
+          1162,
+          739,
+          329,
+          22,
+          314,
+          108,
+          1211,
+          281,
+          1100,
+          530,
+          508,
+          510,
+          825,
+          612,
+          1098,
+          257,
+          925,
+          1064,
+          105,
+          831,
+          1059,
+          183,
+          718,
+          1223,
+          883,
+          290,
+          422,
+          106,
+          965,
+          505,
+          1015,
+          516,
+          938,
+          1062,
+          909,
+          842,
+          975,
+          1035,
+          952,
+          1231,
+          461,
+          550,
+          574,
+          195,
+          1174,
+          5,
+          1301,
+          803,
+          1214,
+          866,
+          294,
+          1167,
+          297,
+          356,
+          465,
+          115,
+          710,
+          873,
+          841,
+          743,
+          1219,
+          1049,
+          179,
+          1305,
+          649,
+          945,
+          1263,
+          638,
+          768,
+          1147,
+          168,
+          890,
+          190,
+          313,
+          786,
+          1082,
+          816,
+          749,
+          1186,
+          1006,
+          977,
+          23,
+          363,
+          102,
+          1152,
+          512,
+          1197,
+          1009,
+          1249,
+          782,
+          113,
+          454,
+          1240
+        ],
+        "prompt_template": "Single user message: first 8 GSM8K training examples formatted as 'Question: {question}\\nAnswer: {answer}\\n\\n', then 'Question: {test_question}\\nAnswer:'. Full text is in every row.",
+        "generation": {
+          "temperature": 0,
+          "max_tokens": 1024,
+          "stop": [
+            "Question"
+          ],
+          "top_p": "Not explicit upstream; replay uses 1 (assumed default).",
+          "provider": "Upstream SGLang OpenAI-compatible router; original host not recorded.",
+          "generated_at": null,
+          "finish_reason": null,
+          "latency": null,
+          "provenance": "Settings/model IDs from pinned generation script; original wire requests, provider revisions and generation dates unavailable."
+        },
+        "token_counts": "ESTIMATED independently for prompt and each completion: ceil(Unicode character count / 4), including all 8 few-shot examples. Same approximation for both models; excludes chat framing. Not model-tokenizer counts or billed provider usage.",
+        "limitations": [
+          "Real frozen model outputs and recomputed correctness; estimated tokens and costs.",
+          "Original generation date, provider deployment and exact top_p are not recorded. These artifacts are bound to .invalid replay endpoints, not live deployment.",
+          "Question-only lexical deduplication does not detect all semantic duplicates. This is one finite public benchmark, not a representative sample of live traffic.",
+          "Metric copies RouteLLM's last unsigned integer rule, including its limitations for decimals, signs and trailing numbers; it is not a general math verifier.",
+          "GSM8K may be in LLM pretraining data; benchmark contamination is unmeasured."
+        ],
+        "signature_prefix": "Question: Natalia sold clips to 48 of her friends in April, and then she sold half as many clips in May. How many clips did Natalia sell altogether in April and May?\nAnswer: Natalia sold 48/2 = <<48/2=24>>24 clips in May.\nNatalia sold 48+24 = <<48+24=72>>72 clips altogether in April and May.\n#### 72\n\nQuestion: Weng earns $12 an hour for babysitting. Yesterday, she just did 50 minutes of babysitting. How much did she earn?\nAnswer: Weng earns 12/60 = $<<12/60=0.2>>0.2 per minute.\nWorking 50 minutes, she earned 0.2 x 50 = $<<0.2*50=10>>10.\n#### 10\n\nQuestion: Betty is saving money for a new wallet which costs $100. Betty has only half of the money she needs. Her parents decided to give her $15 for that purpose, and her grandparents twice as much as her parents. How much more money does Betty need to buy the wallet?\nAnswer: In the beginning, Betty has only 100 / 2 = $<<100/2=50>>50.\nBetty's grandparents gave her 15 * 2 = $<<15*2=30>>30.\nThis means, Betty needs 100 - 50 - 30 - 15 = $<<100-50-30-15=5>>5 more.\n#### 5\n\nQuestion: Julie is reading a 120-page book. Yesterday, she was able to read 12 pages and today, she read twice as many pages as yesterday. If she wants to read half of the remaining pages tomorrow, how many pages should she read?\nAnswer: Maila read 12 x 2 = <<12*2=24>>24 pages today.\nSo she was able to read a total of 12 + 24 = <<12+24=36>>36 pages since yesterday.\nThere are 120 - 36 = <<120-36=84>>84 pages left to be read.\nSince she wants to read half of the remaining pages tomorrow, then she should read 84/2 = <<84/2=42>>42 pages.\n#### 42\n\nQuestion: James writes a 3-page letter to 2 different friends twice a week.  How many pages does he write a year?\nAnswer: He writes each friend 3*2=<<3*2=6>>6 pages a week\nSo he writes 6*2=<<6*2=12>>12 pages every week\nThat means he writes 12*52=<<12*52=624>>624 pages a year\n#### 624\n\nQuestion: Mark has a garden with flowers. He planted plants of three different colors in it. Ten of them are yellow, and there are 80% more of those in purple. There are only 25% as many green flowers as there are yellow and purple flowers. How many flowers does Mark have in his garden?\nAnswer: There are 80/100 * 10 = <<80/100*10=8>>8 more purple flowers than yellow flowers.\nSo in Mark's garden, there are 10 + 8 = <<10+8=18>>18 purple flowers.\nPurple and yellow flowers sum up to 10 + 18 = <<10+18=28>>28 flowers.\nThat means in Mark's garden there are 25/100 * 28 = <<25/100*28=7>>7 green flowers.\nSo in total Mark has 28 + 7 = <<28+7=35>>35 plants in his garden.\n#### 35\n\nQuestion: Albert is wondering how much pizza he can eat in one day. He buys 2 large pizzas and 2 small pizzas. A large pizza has 16 slices and a small pizza has 8 slices. If he eats it all, how many pieces does he eat that day?\nAnswer: He eats 32 from the largest pizzas because 2 x 16 = <<2*16=32>>32\nHe eats 16 from the small pizza because 2 x 8 = <<2*8=16>>16\nHe eats 48 pieces because 32 + 16 = <<32+16=48>>48\n#### 48\n\nQuestion: Ken created a care package to send to his brother, who was away at boarding school.  Ken placed a box on a scale, and then he poured into the box enough jelly beans to bring the weight to 2 pounds.  Then, he added enough brownies to cause the weight to triple.  Next, he added another 2 pounds of jelly beans.  And finally, he added enough gummy worms to double the weight once again.  What was the final weight of the box of goodies, in pounds?\nAnswer: To the initial 2 pounds of jelly beans, he added enough brownies to cause the weight to triple, bringing the weight to 2*3=<<2*3=6>>6 pounds.\nNext, he added another 2 pounds of jelly beans, bringing the weight to 6+2=<<6+2=8>>8 pounds.\nAnd finally, he added enough gummy worms to double the weight once again, to a final weight of 8*2=<<8*2=16>>16 pounds.\n#### 16\n\n",
+        "excluded_source_indices": [],
+        "pricing": {
+          "cheap": [
+            0.24,
+            0.24
+          ],
+          "strong": [
+            10,
+            30
+          ],
+          "as_of": "2024-06-26",
+          "description": "Historical modeled USD/M"
+        }
+      },
+      "summaries": [
+        {
+          "policy": "cheap-only",
+          "epsilon": null,
+          "probability": null,
+          "repeats": 1000,
+          "mean_regret": 0.29109090909090907,
+          "regret_ci": [
+            0.2900887432014805,
+            0.29209307498033765
+          ],
+          "regret_ci_bonferroni": [
+            0.28981378601719987,
+            0.29236803216461826
+          ],
+          "regret_quantiles": {
+            "0.05": 0.26515151515151514,
+            "0.5": 0.2904040404040404,
+            "0.95": 0.3181818181818182
+          },
+          "max_regret": 0.3484848484848485,
+          "fraction_exceeding_epsilon": {
+            "0.01": 1.0,
+            "0.02": 1.0,
+            "0.05": 1.0,
+            "0.1": 1.0
+          },
+          "non_rejection": null,
+          "mean_quality": 0.6382777777777778,
+          "mean_cost_usd": 0.0002613049,
+          "mean_savings_vs_strong": 0.9803028301452846,
+          "mean_strong_fraction": 0.0
+        },
+        {
+          "policy": "strong-only",
+          "epsilon": null,
+          "probability": null,
+          "repeats": 1000,
+          "mean_regret": 0.0,
+          "regret_ci": [
+            0,
+            0.0
+          ],
+          "regret_ci_bonferroni": [
+            0,
+            0.0
+          ],
+          "regret_quantiles": {
+            "0.05": 0.0,
+            "0.5": 0.0,
+            "0.95": 0.0
+          },
+          "max_regret": 0.0,
+          "fraction_exceeding_epsilon": {
+            "0.01": 0.0,
+            "0.02": 0.0,
+            "0.05": 0.0,
+            "0.1": 0.0
+          },
+          "non_rejection": null,
+          "mean_quality": 0.8583181818181819,
+          "mean_cost_usd": 0.013266302095959597,
+          "mean_savings_vs_strong": 0.0,
+          "mean_strong_fraction": 1.0
+        },
+        {
+          "policy": "fixed-threshold",
+          "epsilon": null,
+          "probability": null,
+          "repeats": 1000,
+          "mean_regret": 0.2821994949494949,
+          "regret_ci": [
+            0.2812023209642789,
+            0.28319666893471096
+          ],
+          "regret_ci_bonferroni": [
+            0.28092873337353663,
+            0.2834702565254532
+          ],
+          "regret_quantiles": {
+            "0.05": 0.255050505050505,
+            "0.5": 0.2828282828282828,
+            "0.95": 0.3106060606060606
+          },
+          "max_regret": 0.33585858585858586,
+          "fraction_exceeding_epsilon": {
+            "0.01": 1.0,
+            "0.02": 1.0,
+            "0.05": 1.0,
+            "0.1": 1.0
+          },
+          "non_rejection": null,
+          "mean_quality": 0.647169191919192,
+          "mean_cost_usd": 0.00044991807373737373,
+          "mean_savings_vs_strong": 0.9660878674137675,
+          "mean_strong_fraction": 0.012593434343434334
+        },
+        {
+          "policy": "random-mix-expected",
+          "epsilon": null,
+          "probability": 0.1,
+          "repeats": 1000,
+          "mean_regret": 0.02910909090909091,
+          "regret_ci": [
+            0.02900887432014805,
+            0.02920930749803377
+          ],
+          "regret_ci_bonferroni": [
+            0.028981378601719992,
+            0.02923680321646183
+          ],
+          "regret_quantiles": {
+            "0.05": 0.026515151515151516,
+            "0.5": 0.02904040404040404,
+            "0.95": 0.03181818181818182
+          },
+          "max_regret": 0.03484848484848485,
+          "fraction_exceeding_epsilon": {
+            "0.01": 1.0,
+            "0.02": 1.0,
+            "0.05": 0.0,
+            "0.1": 0.0
+          },
+          "non_rejection": null,
+          "mean_quality": 0.8363141414141414,
+          "mean_cost_usd": 0.011965802376363638,
+          "mean_savings_vs_strong": 0.09803028301452843,
+          "mean_strong_fraction": 0.9
+        },
+        {
+          "policy": "random-mix-expected",
+          "epsilon": null,
+          "probability": 0.25,
+          "repeats": 1000,
+          "mean_regret": 0.07277272727272727,
+          "regret_ci": [
+            0.07252218580037012,
+            0.07302326874508441
+          ],
+          "regret_ci_bonferroni": [
+            0.07245344650429997,
+            0.07309200804115457
+          ],
+          "regret_quantiles": {
+            "0.05": 0.06628787878787878,
+            "0.5": 0.0726010101010101,
+            "0.95": 0.07954545454545454
+          },
+          "max_regret": 0.08712121212121213,
+          "fraction_exceeding_epsilon": {
+            "0.01": 1.0,
+            "0.02": 1.0,
+            "0.05": 1.0,
+            "0.1": 0.0
+          },
+          "non_rejection": null,
+          "mean_quality": 0.8033080808080808,
+          "mean_cost_usd": 0.010015052796969697,
+          "mean_savings_vs_strong": 0.24507570753632116,
+          "mean_strong_fraction": 0.75
+        },
+        {
+          "policy": "random-mix-expected",
+          "epsilon": null,
+          "probability": 0.5,
+          "repeats": 1000,
+          "mean_regret": 0.14554545454545453,
+          "regret_ci": [
+            0.14504437160074024,
+            0.14604653749016883
+          ],
+          "regret_ci_bonferroni": [
+            0.14490689300859994,
+            0.14618401608230913
+          ],
+          "regret_quantiles": {
+            "0.05": 0.13257575757575757,
+            "0.5": 0.1452020202020202,
+            "0.95": 0.1590909090909091
+          },
+          "max_regret": 0.17424242424242425,
+          "fraction_exceeding_epsilon": {
+            "0.01": 1.0,
+            "0.02": 1.0,
+            "0.05": 1.0,
+            "0.1": 1.0
+          },
+          "non_rejection": null,
+          "mean_quality": 0.7482979797979799,
+          "mean_cost_usd": 0.006763803497979798,
+          "mean_savings_vs_strong": 0.4901514150726423,
+          "mean_strong_fraction": 0.5
+        },
+        {
+          "policy": "random-mix-expected",
+          "epsilon": null,
+          "probability": 0.75,
+          "repeats": 1000,
+          "mean_regret": 0.21831818181818183,
+          "regret_ci": [
+            0.2175665574011104,
+            0.21906980623525327
+          ],
+          "regret_ci_bonferroni": [
+            0.21736033951289993,
+            0.21927602412346373
+          ],
+          "regret_quantiles": {
+            "0.05": 0.19886363636363635,
+            "0.5": 0.2178030303030303,
+            "0.95": 0.23863636363636365
+          },
+          "max_regret": 0.26136363636363635,
+          "fraction_exceeding_epsilon": {
+            "0.01": 1.0,
+            "0.02": 1.0,
+            "0.05": 1.0,
+            "0.1": 1.0
+          },
+          "non_rejection": null,
+          "mean_quality": 0.6932878787878788,
+          "mean_cost_usd": 0.003512554198989899,
+          "mean_savings_vs_strong": 0.7352271226089634,
+          "mean_strong_fraction": 0.25
+        },
+        {
+          "policy": "random-mix-expected",
+          "epsilon": null,
+          "probability": 0.9,
+          "repeats": 1000,
+          "mean_regret": 0.2619818181818182,
+          "regret_ci": [
+            0.2610798688813325,
+            0.2628837674823039
+          ],
+          "regret_ci_bonferroni": [
+            0.2608324074154799,
+            0.2631312289481565
+          ],
+          "regret_quantiles": {
+            "0.05": 0.23863636363636365,
+            "0.5": 0.26136363636363635,
+            "0.95": 0.2863636363636364
+          },
+          "max_regret": 0.31363636363636366,
+          "fraction_exceeding_epsilon": {
+            "0.01": 1.0,
+            "0.02": 1.0,
+            "0.05": 1.0,
+            "0.1": 1.0
+          },
+          "non_rejection": null,
+          "mean_quality": 0.6602818181818182,
+          "mean_cost_usd": 0.0015618046195959594,
+          "mean_savings_vs_strong": 0.8822725471307561,
+          "mean_strong_fraction": 0.09999999999999987
+        },
+        {
+          "policy": "CertiRoute",
+          "epsilon": 0.01,
+          "probability": null,
+          "repeats": 1000,
+          "mean_regret": 0.007500000000000001,
+          "regret_ci": [
+            0.007119410044287044,
+            0.007880589955712957
+          ],
+          "regret_ci_bonferroni": [
+            0.007014990263398288,
+            0.007985009736601713
+          ],
+          "regret_quantiles": {
+            "0.05": 0.0,
+            "0.5": 0.005050505050505051,
+            "0.95": 0.020202020202020204
+          },
+          "max_regret": 0.03535353535353535,
+          "fraction_exceeding_epsilon": {
+            "0.01": 0.335,
+            "0.02": 0.053,
+            "0.05": 0.0,
+            "0.1": 0.0
+          },
+          "non_rejection": true,
+          "mean_quality": 0.8588585858585859,
+          "mean_cost_usd": 0.012791130555353535,
+          "mean_savings_vs_strong": 0.03582349330564695,
+          "mean_strong_fraction": 0.959510101010101,
+          "regret_ci_family16": [
+            0.006926159445538213,
+            0.008073840554461788
+          ],
+          "non_rejection_family16": true
+        },
+        {
+          "policy": "CertiRoute",
+          "epsilon": 0.02,
+          "probability": null,
+          "repeats": 1000,
+          "mean_regret": 0.017174242424242425,
+          "regret_ci": [
+            0.01657534324899846,
+            0.01777314159948639
+          ],
+          "regret_ci_bonferroni": [
+            0.016411027507832143,
+            0.017937457340652708
+          ],
+          "regret_quantiles": {
+            "0.05": 0.005050505050505051,
+            "0.5": 0.015151515151515152,
+            "0.95": 0.03535353535353535
+          },
+          "max_regret": 0.07828282828282829,
+          "fraction_exceeding_epsilon": {
+            "0.01": 0.814,
+            "0.02": 0.373,
+            "0.05": 0.006,
+            "0.1": 0.0
+          },
+          "non_rejection": true,
+          "mean_quality": 0.8556666666666667,
+          "mean_cost_usd": 0.012324316460808081,
+          "mean_savings_vs_strong": 0.07101445529048289,
+          "mean_strong_fraction": 0.9212449494949495,
+          "regret_ci_family16": [
+            0.016271242674433202,
+            0.01807724217405165
+          ],
+          "non_rejection_family16": true
+        },
+        {
+          "policy": "CertiRoute",
+          "epsilon": 0.05,
+          "probability": null,
+          "repeats": 1000,
+          "mean_regret": 0.04728282828282828,
+          "regret_ci": [
+            0.04632288067236322,
+            0.048242775893293344
+          ],
+          "regret_ci_bonferroni": [
+            0.0460595066194099,
+            0.04850614994624666
+          ],
+          "regret_quantiles": {
+            "0.05": 0.025252525252525252,
+            "0.5": 0.045454545454545456,
+            "0.95": 0.07575757575757576
+          },
+          "max_regret": 0.10101010101010101,
+          "fraction_exceeding_epsilon": {
+            "0.01": 0.999,
+            "0.02": 0.985,
+            "0.05": 0.385,
+            "0.1": 0.001
+          },
+          "non_rejection": true,
+          "mean_quality": 0.8392020202020202,
+          "mean_cost_usd": 0.01044466754929293,
+          "mean_savings_vs_strong": 0.21271719231152253,
+          "mean_strong_fraction": 0.768489898989899,
+          "regret_ci_family16": [
+            0.045835452016653254,
+            0.04873020454900331
+          ],
+          "non_rejection_family16": true
+        },
+        {
+          "policy": "CertiRoute",
+          "epsilon": 0.1,
+          "probability": null,
+          "repeats": 1000,
+          "mean_regret": 0.09640404040404041,
+          "regret_ci": [
+            0.0951106889800685,
+            0.09769739182801232
+          ],
+          "regret_ci_bonferroni": [
+            0.09475584127514072,
+            0.0980522395329401
+          ],
+          "regret_quantiles": {
+            "0.05": 0.06313131313131314,
+            "0.5": 0.09595959595959595,
+            "0.95": 0.13143939393939383
+          },
+          "max_regret": 0.17424242424242425,
+          "fraction_exceeding_epsilon": {
+            "0.01": 1.0,
+            "0.02": 1.0,
+            "0.05": 0.998,
+            "0.1": 0.411
+          },
+          "non_rejection": true,
+          "mean_quality": 0.8021464646464647,
+          "mean_cost_usd": 0.008219626893737373,
+          "mean_savings_vs_strong": 0.38044337986977994,
+          "mean_strong_fraction": 0.58964898989899,
+          "regret_ci_family16": [
+            0.09445396923924662,
+            0.0983541115688342
+          ],
+          "non_rejection_family16": true
+        },
+        {
+          "policy": "random-score-CRC",
+          "epsilon": 0.01,
+          "probability": null,
+          "repeats": 1000,
+          "mean_regret": 0.0075151515151515155,
+          "regret_ci": [
+            0.007138436603445001,
+            0.007891866426858029
+          ],
+          "regret_ci_bonferroni": [
+            0.007035079991039841,
+            0.00799522303926319
+          ],
+          "regret_quantiles": {
+            "0.05": 0.0,
+            "0.5": 0.005050505050505051,
+            "0.95": 0.017676767676767676
+          },
+          "max_regret": 0.04040404040404041,
+          "fraction_exceeding_epsilon": {
+            "0.01": 0.338,
+            "0.02": 0.044,
+            "0.05": 0.0,
+            "0.1": 0.0
+          },
+          "non_rejection": true,
+          "mean_quality": 0.8515757575757575,
+          "mean_cost_usd": 0.013077811822020202,
+          "mean_savings_vs_strong": 0.01420158559501732,
+          "mean_strong_fraction": 0.9863838383838384
+        },
+        {
+          "policy": "random-score-CRC",
+          "epsilon": 0.02,
+          "probability": null,
+          "repeats": 1000,
+          "mean_regret": 0.017585858585858587,
+          "regret_ci": [
+            0.017035003237119463,
+            0.01813671393459771
+          ],
+          "regret_ci_bonferroni": [
+            0.01688386894165708,
+            0.018287848230060095
+          ],
+          "regret_quantiles": {
+            "0.05": 0.005050505050505051,
+            "0.5": 0.015151515151515152,
+            "0.95": 0.03282828282828283
+          },
+          "max_regret": 0.05303030303030303,
+          "fraction_exceeding_epsilon": {
+            "0.01": 0.847,
+            "0.02": 0.397,
+            "0.05": 0.002,
+            "0.1": 0.0
+          },
+          "non_rejection": true,
+          "mean_quality": 0.8470984848484848,
+          "mean_cost_usd": 0.012613515405050506,
+          "mean_savings_vs_strong": 0.04919186558504462,
+          "mean_strong_fraction": 0.9505631313131313
+        },
+        {
+          "policy": "random-score-CRC",
+          "epsilon": 0.05,
+          "probability": null,
+          "repeats": 1000,
+          "mean_regret": 0.04808838383838384,
+          "regret_ci": [
+            0.04715868028348914,
+            0.04901808739327854
+          ],
+          "regret_ci_bonferroni": [
+            0.04690360407867511,
+            0.04927316359809257
+          ],
+          "regret_quantiles": {
+            "0.05": 0.025252525252525252,
+            "0.5": 0.04671717171717171,
+            "0.95": 0.07323232323232323
+          },
+          "max_regret": 0.11868686868686869,
+          "fraction_exceeding_epsilon": {
+            "0.01": 0.999,
+            "0.02": 0.988,
+            "0.05": 0.433,
+            "0.1": 0.002
+          },
+          "non_rejection": true,
+          "mean_quality": 0.8253510101010101,
+          "mean_cost_usd": 0.010873406608484848,
+          "mean_savings_vs_strong": 0.180362754129341,
+          "mean_strong_fraction": 0.8144570707070707
+        },
+        {
+          "policy": "random-score-CRC",
+          "epsilon": 0.1,
+          "probability": null,
+          "repeats": 1000,
+          "mean_regret": 0.09768181818181819,
+          "regret_ci": [
+            0.09637558308499491,
+            0.09898805327864146
+          ],
+          "regret_ci_bonferroni": [
+            0.09601720057764791,
+            0.09934643578598847
+          ],
+          "regret_quantiles": {
+            "0.05": 0.06565656565656566,
+            "0.5": 0.09595959595959595,
+            "0.95": 0.13383838383838384
+          },
+          "max_regret": 0.19444444444444445,
+          "fraction_exceeding_epsilon": {
+            "0.01": 1.0,
+            "0.02": 1.0,
+            "0.05": 0.995,
+            "0.1": 0.435
+          },
+          "non_rejection": true,
+          "mean_quality": 0.7871540404040404,
+          "mean_cost_usd": 0.008832011386464646,
+          "mean_savings_vs_strong": 0.33421879580511626,
+          "mean_strong_fraction": 0.6603207070707071
+        }
+      ],
+      "gateway_check": "All first-draw thresholds and decisions match.",
+      "router_sha256": "64fa0a2814c1a73d3d60f4883a20b846a3de9174c5ea14800867165f94f84106"
+    },
+    {
+      "task": "arc",
+      "sizes": {
+        "raw": 1470,
+        "train": 588,
+        "calibration": 441,
+        "test": 441
+      },
+      "dataset_manifest": {
+        "models": {
+          "cheap": "mistralai/mixtral-8x7b-chat",
+          "strong": "gpt-4-1106-preview"
+        },
+        "source_files": [
+          {
+            "url": "https://huggingface.co/datasets/withmartian/routerbench/resolve/784021482c3f320c6619ed4b3bb3b41a21424fcb/routerbench_0shot.pkl",
+            "sha256": "ba4f77f19517610a707c374e99322d7750c30fc4ae7ff5527888595a1e65d36d"
+          }
+        ],
+        "selection": "All ARC-Challenge rows, original order; no outcome selection.",
+        "quality": "RouterBench published exact-match correctness; retained, not regraded.",
+        "generation": "Frozen zero-shot prompts/responses; upstream decoding metadata unavailable.",
+        "pricing": {
+          "as_of": "2024-06-26",
+          "cheap": [
+            0.24,
+            0.24
+          ],
+          "strong": [
+            10,
+            30
+          ],
+          "description": "Historical scenario, USD per million estimated tokens."
+        },
+        "dataset_sha256": "bb9322ee2e06bf0e43ccd28fea824ba762a82e52f0b31f48a6fbeae26e82af94",
+        "rows": 1470,
+        "token_counts": "Estimated ceil(characters/4); excludes hidden chat-template tokens.",
+        "frozen_at": "2026-10-26"
+      },
+      "summaries": [
+        {
+          "policy": "cheap-only",
+          "epsilon": null,
+          "probability": null,
+          "repeats": 1000,
+          "mean_regret": 0.13146031746031747,
+          "regret_ci": [
+            0.1307453521808141,
+            0.13217528273982085
+          ],
+          "regret_ci_bonferroni": [
+            0.13054919220152889,
+            0.13237144271910606
+          ],
+          "regret_quantiles": {
+            "0.05": 0.11337868480725624,
+            "0.5": 0.13151927437641722,
+            "0.95": 0.14965986394557823
+          },
+          "max_regret": 0.1655328798185941,
+          "fraction_exceeding_epsilon": {
+            "0.01": 1.0,
+            "0.02": 1.0,
+            "0.05": 1.0,
+            "0.1": 0.997
+          },
+          "non_rejection": null,
+          "mean_quality": 0.8368526077097506,
+          "mean_cost_usd": 2.1389516190476188e-05,
+          "mean_savings_vs_strong": 0.9765265448790071,
+          "mean_strong_fraction": 0.0
+        },
+        {
+          "policy": "strong-only",
+          "epsilon": null,
+          "probability": null,
+          "repeats": 1000,
+          "mean_regret": 0.0,
+          "regret_ci": [
+            0,
+            0.0
+          ],
+          "regret_ci_bonferroni": [
+            0,
+            0.0
+          ],
+          "regret_quantiles": {
+            "0.05": 0.0,
+            "0.5": 0.0,
+            "0.95": 0.0
+          },
+          "max_regret": 0.0,
+          "fraction_exceeding_epsilon": {
+            "0.01": 0.0,
+            "0.02": 0.0,
+            "0.05": 0.0,
+            "0.1": 0.0
+          },
+          "non_rejection": null,
+          "mean_quality": 0.9560181405895691,
+          "mean_cost_usd": 0.0009112188435374149,
+          "mean_savings_vs_strong": 0.0,
+          "mean_strong_fraction": 1.0
+        },
+        {
+          "policy": "fixed-threshold",
+          "epsilon": null,
+          "probability": null,
+          "repeats": 1000,
+          "mean_regret": 0.12808843537414966,
+          "regret_ci": [
+            0.12738071768881393,
+            0.12879615305948539
+          ],
+          "regret_ci_bonferroni": [
+            0.12718654618080497,
+            0.12899032456749435
+          ],
+          "regret_quantiles": {
+            "0.05": 0.10884353741496598,
+            "0.5": 0.1292517006802721,
+            "0.95": 0.1473922902494331
+          },
+          "max_regret": 0.1655328798185941,
+          "fraction_exceeding_epsilon": {
+            "0.01": 1.0,
+            "0.02": 1.0,
+            "0.05": 1.0,
+            "0.1": 0.995
+          },
+          "non_rejection": null,
+          "mean_quality": 0.8402244897959184,
+          "mean_cost_usd": 3.2518842267573696e-05,
+          "mean_savings_vs_strong": 0.9643149014188815,
+          "mean_strong_fraction": 0.012689342403628134
+        },
+        {
+          "policy": "random-mix-expected",
+          "epsilon": null,
+          "probability": 0.1,
+          "repeats": 1000,
+          "mean_regret": 0.013146031746031748,
+          "regret_ci": [
+            0.013074535218081409,
+            0.013217528273982086
+          ],
+          "regret_ci_bonferroni": [
+            0.013054919220152887,
+            0.013237144271910608
+          ],
+          "regret_quantiles": {
+            "0.05": 0.011337868480725623,
+            "0.5": 0.013151927437641726,
+            "0.95": 0.014965986394557824
+          },
+          "max_regret": 0.016553287981859413,
+          "fraction_exceeding_epsilon": {
+            "0.01": 0.997,
+            "0.02": 0.0,
+            "0.05": 0.0,
+            "0.1": 0.0
+          },
+          "non_rejection": null,
+          "mean_quality": 0.9441015873015873,
+          "mean_cost_usd": 0.0008222359108027212,
+          "mean_savings_vs_strong": 0.0976526544879007,
+          "mean_strong_fraction": 0.9
+        },
+        {
+          "policy": "random-mix-expected",
+          "epsilon": null,
+          "probability": 0.25,
+          "repeats": 1000,
+          "mean_regret": 0.03286507936507937,
+          "regret_ci": [
+            0.032686338045203524,
+            0.03304382068495521
+          ],
+          "regret_ci_bonferroni": [
+            0.03263729805038222,
+            0.033092860679776515
+          ],
+          "regret_quantiles": {
+            "0.05": 0.02834467120181406,
+            "0.5": 0.032879818594104306,
+            "0.95": 0.03741496598639456
+          },
+          "max_regret": 0.041383219954648526,
+          "fraction_exceeding_epsilon": {
+            "0.01": 1.0,
+            "0.02": 1.0,
+            "0.05": 0.0,
+            "0.1": 0.0
+          },
+          "non_rejection": null,
+          "mean_quality": 0.9262267573696145,
+          "mean_cost_usd": 0.0006887615117006803,
+          "mean_savings_vs_strong": 0.24413163621975179,
+          "mean_strong_fraction": 0.75
+        },
+        {
+          "policy": "random-mix-expected",
+          "epsilon": null,
+          "probability": 0.5,
+          "repeats": 1000,
+          "mean_regret": 0.06573015873015874,
+          "regret_ci": [
+            0.06537267609040705,
+            0.06608764136991042
+          ],
+          "regret_ci_bonferroni": [
+            0.06527459610076444,
+            0.06618572135955303
+          ],
+          "regret_quantiles": {
+            "0.05": 0.05668934240362812,
+            "0.5": 0.06575963718820861,
+            "0.95": 0.07482993197278912
+          },
+          "max_regret": 0.08276643990929705,
+          "fraction_exceeding_epsilon": {
+            "0.01": 1.0,
+            "0.02": 1.0,
+            "0.05": 0.997,
+            "0.1": 0.0
+          },
+          "non_rejection": null,
+          "mean_quality": 0.8964353741496599,
+          "mean_cost_usd": 0.0004663041798639456,
+          "mean_savings_vs_strong": 0.48826327243950357,
+          "mean_strong_fraction": 0.5
+        },
+        {
+          "policy": "random-mix-expected",
+          "epsilon": null,
+          "probability": 0.75,
+          "repeats": 1000,
+          "mean_regret": 0.0985952380952381,
+          "regret_ci": [
+            0.09805901413561055,
+            0.09913146205486564
+          ],
+          "regret_ci_bonferroni": [
+            0.09791189415114665,
+            0.09927858203932954
+          ],
+          "regret_quantiles": {
+            "0.05": 0.08503401360544217,
+            "0.5": 0.09863945578231292,
+            "0.95": 0.11224489795918367
+          },
+          "max_regret": 0.12414965986394558,
+          "fraction_exceeding_epsilon": {
+            "0.01": 1.0,
+            "0.02": 1.0,
+            "0.05": 1.0,
+            "0.1": 0.462
+          },
+          "non_rejection": null,
+          "mean_quality": 0.8666439909297052,
+          "mean_cost_usd": 0.00024384684802721088,
+          "mean_savings_vs_strong": 0.7323949086592554,
+          "mean_strong_fraction": 0.25
+        },
+        {
+          "policy": "random-mix-expected",
+          "epsilon": null,
+          "probability": 0.9,
+          "repeats": 1000,
+          "mean_regret": 0.11831428571428572,
+          "regret_ci": [
+            0.11767081696273267,
+            0.11895775446583877
+          ],
+          "regret_ci_bonferroni": [
+            0.11749427298137598,
+            0.11913429844719546
+          ],
+          "regret_quantiles": {
+            "0.05": 0.10204081632653061,
+            "0.5": 0.11836734693877551,
+            "0.95": 0.1346938775510204
+          },
+          "max_regret": 0.1489795918367347,
+          "fraction_exceeding_epsilon": {
+            "0.01": 1.0,
+            "0.02": 1.0,
+            "0.05": 1.0,
+            "0.1": 0.953
+          },
+          "non_rejection": null,
+          "mean_quality": 0.8487691609977325,
+          "mean_cost_usd": 0.00011037244892517005,
+          "mean_savings_vs_strong": 0.8788738903911064,
+          "mean_strong_fraction": 0.09999999999999998
+        },
+        {
+          "policy": "CertiRoute",
+          "epsilon": 0.01,
+          "probability": null,
+          "repeats": 1000,
+          "mean_regret": 0.008929705215419501,
+          "regret_ci": [
+            0.00852709494766294,
+            0.009332315483176062
+          ],
+          "regret_ci_bonferroni": [
+            0.008416633609123541,
+            0.009442776821715461
+          ],
+          "regret_quantiles": {
+            "0.05": 0.0,
+            "0.5": 0.006802721088435374,
+            "0.95": 0.02040816326530612
+          },
+          "max_regret": 0.04308390022675737,
+          "fraction_exceeding_epsilon": {
+            "0.01": 0.353,
+            "0.02": 0.067,
+            "0.05": 0.0,
+            "0.1": 0.0
+          },
+          "non_rejection": true,
+          "mean_quality": 0.9470884353741497,
+          "mean_cost_usd": 0.0008129054303854875,
+          "mean_savings_vs_strong": 0.10775951983943709,
+          "mean_strong_fraction": 0.9299092970521542,
+          "regret_ci_family16": [
+            0.008322663185504026,
+            0.009536747245334976
+          ],
+          "non_rejection_family16": true
+        },
+        {
+          "policy": "CertiRoute",
+          "epsilon": 0.02,
+          "probability": null,
+          "repeats": 1000,
+          "mean_regret": 0.017959183673469388,
+          "regret_ci": [
+            0.017391767160849496,
+            0.01852660018608928
+          ],
+          "regret_ci_bonferroni": [
+            0.017236089095700773,
+            0.018682278251238003
+          ],
+          "regret_quantiles": {
+            "0.05": 0.0045351473922902496,
+            "0.5": 0.015873015873015872,
+            "0.95": 0.034013605442176874
+          },
+          "max_regret": 0.05668934240362812,
+          "fraction_exceeding_epsilon": {
+            "0.01": 0.802,
+            "0.02": 0.378,
+            "0.05": 0.005,
+            "0.1": 0.0
+          },
+          "non_rejection": true,
+          "mean_quality": 0.938063492063492,
+          "mean_cost_usd": 0.0007572825917460317,
+          "mean_savings_vs_strong": 0.16877386792005578,
+          "mean_strong_fraction": 0.8842607709750567,
+          "regret_ci_family16": [
+            0.017103652408587168,
+            0.018814714938351608
+          ],
+          "non_rejection_family16": true
+        },
+        {
+          "policy": "CertiRoute",
+          "epsilon": 0.05,
+          "probability": null,
+          "repeats": 1000,
+          "mean_regret": 0.050303854875283445,
+          "regret_ci": [
+            0.049391078357349905,
+            0.051216631393216985
+          ],
+          "regret_ci_bonferroni": [
+            0.049140646304237846,
+            0.051467063446329044
+          ],
+          "regret_quantiles": {
+            "0.05": 0.027210884353741496,
+            "0.5": 0.049886621315192746,
+            "0.95": 0.07709750566893424
+          },
+          "max_regret": 0.10430839002267574,
+          "fraction_exceeding_epsilon": {
+            "0.01": 1.0,
+            "0.02": 0.996,
+            "0.05": 0.45,
+            "0.1": 0.001
+          },
+          "non_rejection": true,
+          "mean_quality": 0.9073605442176871,
+          "mean_cost_usd": 0.0005302451796825397,
+          "mean_savings_vs_strong": 0.417839404334182,
+          "mean_strong_fraction": 0.6621065759637188,
+          "regret_ci_family16": [
+            0.04892760157356539,
+            0.0516801081770015
+          ],
+          "non_rejection_family16": true
+        },
+        {
+          "policy": "CertiRoute",
+          "epsilon": 0.1,
+          "probability": null,
+          "repeats": 1000,
+          "mean_regret": 0.10042630385487528,
+          "regret_ci": [
+            0.09916055615425823,
+            0.10169205155549232
+          ],
+          "regret_ci_bonferroni": [
+            0.09881328188814868,
+            0.10203932582160187
+          ],
+          "regret_quantiles": {
+            "0.05": 0.06802721088435375,
+            "0.5": 0.09977324263038549,
+            "0.95": 0.1360544217687075
+          },
+          "max_regret": 0.1655328798185941,
+          "fraction_exceeding_epsilon": {
+            "0.01": 1.0,
+            "0.02": 1.0,
+            "0.05": 0.997,
+            "0.1": 0.485
+          },
+          "non_rejection": true,
+          "mean_quality": 0.8641927437641723,
+          "mean_cost_usd": 0.00017206426267573697,
+          "mean_savings_vs_strong": 0.8111061235550875,
+          "mean_strong_fraction": 0.1854625850340136,
+          "regret_ci_family16": [
+            0.09851785264267715,
+            0.1023347550670734
+          ],
+          "non_rejection_family16": true
+        },
+        {
+          "policy": "random-score-CRC",
+          "epsilon": 0.01,
+          "probability": null,
+          "repeats": 1000,
+          "mean_regret": 0.00891609977324263,
+          "regret_ci": [
+            0.00852501809358051,
+            0.00930718145290475
+          ],
+          "regret_ci_bonferroni": [
+            0.008417719772416395,
+            0.009414479774068864
+          ],
+          "regret_quantiles": {
+            "0.05": 0.0,
+            "0.5": 0.006802721088435374,
+            "0.95": 0.02040816326530612
+          },
+          "max_regret": 0.04081632653061224,
+          "fraction_exceeding_epsilon": {
+            "0.01": 0.351,
+            "0.02": 0.068,
+            "0.05": 0.0,
+            "0.1": 0.0
+          },
+          "non_rejection": true,
+          "mean_quality": 0.9471201814058957,
+          "mean_cost_usd": 0.0008743535918367347,
+          "mean_savings_vs_strong": 0.04046759679079508,
+          "mean_strong_fraction": 0.9575238095238096
+        },
+        {
+          "policy": "random-score-CRC",
+          "epsilon": 0.02,
+          "probability": null,
+          "repeats": 1000,
+          "mean_regret": 0.01785034013605442,
+          "regret_ci": [
+            0.017318687227201632,
+            0.01838199304490721
+          ],
+          "regret_ci_bonferroni": [
+            0.017172821369687653,
+            0.018527858902421188
+          ],
+          "regret_quantiles": {
+            "0.05": 0.0045351473922902496,
+            "0.5": 0.015873015873015872,
+            "0.95": 0.034013605442176874
+          },
+          "max_regret": 0.049886621315192746,
+          "fraction_exceeding_epsilon": {
+            "0.01": 0.816,
+            "0.02": 0.393,
+            "0.05": 0.0,
+            "0.1": 0.0
+          },
+          "non_rejection": true,
+          "mean_quality": 0.9386802721088435,
+          "mean_cost_usd": 0.0008184205785034014,
+          "mean_savings_vs_strong": 0.10183952001990217,
+          "mean_strong_fraction": 0.8967006802721088
+        },
+        {
+          "policy": "random-score-CRC",
+          "epsilon": 0.05,
+          "probability": null,
+          "repeats": 1000,
+          "mean_regret": 0.04958503401360544,
+          "regret_ci": [
+            0.04868456661502585,
+            0.05048550141218504
+          ],
+          "regret_ci_bonferroni": [
+            0.048437511728143694,
+            0.05073255629906719
+          ],
+          "regret_quantiles": {
+            "0.05": 0.027210884353741496,
+            "0.5": 0.047619047619047616,
+            "0.95": 0.07482993197278912
+          },
+          "max_regret": 0.10430839002267574,
+          "fraction_exceeding_epsilon": {
+            "0.01": 1.0,
+            "0.02": 0.997,
+            "0.05": 0.428,
+            "0.1": 0.002
+          },
+          "non_rejection": true,
+          "mean_quality": 0.9108571428571428,
+          "mean_cost_usd": 0.000609106163446712,
+          "mean_savings_vs_strong": 0.33154266559100387,
+          "mean_strong_fraction": 0.6613401360544218
+        },
+        {
+          "policy": "random-score-CRC",
+          "epsilon": 0.1,
+          "probability": null,
+          "repeats": 1000,
+          "mean_regret": 0.09971428571428571,
+          "regret_ci": [
+            0.09848527841825175,
+            0.10094329301031968
+          ],
+          "regret_ci_bonferroni": [
+            0.09814808435772499,
+            0.10128048707084644
+          ],
+          "regret_quantiles": {
+            "0.05": 0.07029478458049887,
+            "0.5": 0.09750566893424037,
+            "0.95": 0.13378684807256236
+          },
+          "max_regret": 0.1655328798185941,
+          "fraction_exceeding_epsilon": {
+            "0.01": 1.0,
+            "0.02": 1.0,
+            "0.05": 0.998,
+            "0.1": 0.445
+          },
+          "non_rejection": true,
+          "mean_quality": 0.8658798185941043,
+          "mean_cost_usd": 0.0002570339377777778,
+          "mean_savings_vs_strong": 0.717893959965582,
+          "mean_strong_fraction": 0.2600907029478458
+        }
+      ],
+      "gateway_check": "All first-draw thresholds and decisions match.",
+      "router_sha256": "82b8cadbc9c6647f2bef9a706471564f1bcf410ac711e473ead0daed7b23e7a6"
+    },
+    {
+      "task": "mbpp",
+      "sizes": {
+        "raw": 399,
+        "train": 158,
+        "calibration": 119,
+        "test": 120
+      },
+      "dataset_manifest": {
+        "models": {
+          "cheap": "gpt-3.5-turbo",
+          "strong": "gpt-4-1106-preview"
+        },
+        "source_files": [
+          {
+            "url": "https://raw.githubusercontent.com/google-research/google-research/f82046ba5aabbbb427dbfd38a254d26bff08b533/mbpp/sanitized-mbpp.json",
+            "sha256": "ca95deaa9a01ef0a6f439f88bcf0dd3db3563d22f22aad6cae04ebb9a8d8c8e9"
+          },
+          {
+            "url": "https://github.com/evalplus/evalplus/releases/download/v0.2.0/gpt-3.5-turbo_temp_0.0.zip",
+            "sha256": "44c228692d438ffe788cee12a997d711d1e87ea4a904c2149fea9cb2f9f1f7cf"
+          },
+          {
+            "url": "https://github.com/evalplus/evalplus/releases/download/v0.2.0/gpt-4-1106-preview_temp_0.0.zip",
+            "sha256": "4e060bf3473b09b763567e042c693fd99d4922d9602124dcb70ab184bcbb252d"
+          }
+        ],
+        "selection": "Intersection of sanitized MBPP and both archives.",
+        "quality": "Pass all sanitized MBPP base assertions after fenced-code extraction; timeout=15s.",
+        "generation": "EvalPlus v0.2.0 greedy chat generations; gpt-3.5 alias snapshot unknown. Prompt field is task text; original chat wrapper not recoverable here.",
+        "pricing": {
+          "as_of": "2024-06-26",
+          "cheap": [
+            0.5,
+            1.5
+          ],
+          "strong": [
+            10,
+            30
+          ],
+          "description": "Historical scenario using GPT-3.5 Feb-2024 rates; generation snapshot unknown, not actual bills."
+        },
+        "dataset_sha256": "4e30daeea2939957456a6a8973917fad2c243cc072d0c00d8165ed1cb18648ec",
+        "rows": 399,
+        "token_counts": "Estimated ceil(characters/4); excludes hidden chat-template tokens.",
+        "frozen_at": "2026-10-26",
+        "execution": {
+          "image": "python:3.12-slim@sha256:a0f57064cbdcd6285fa45f51237ab0b35ea8ebaed06a1f5973e89e19dfb86704",
+          "network": "none",
+          "memory_mb": 512,
+          "worker_sha256": "e7618c55c3ac2bc083d3d90c0c0c0d36968ec969b04a05e223292846e4bad516",
+          "unscored_sha256": "62c89dcb3b225aea3510c5eaf73469015d2855f48a67e0a9e57ab339e3a707c3",
+          "verdicts": [
+            {
+              "id": "mbpp/2",
+              "cheap": "pass",
+              "strong": "pass"
+            },
+            {
+              "id": "mbpp/3",
+              "cheap": "pass",
+              "strong": "pass"
+            },
+            {
+              "id": "mbpp/4",
+              "cheap": "pass",
+              "strong": "pass"
+            },
+            {
+              "id": "mbpp/6",
+              "cheap": "pass",
+              "strong": "pass"
+            },
+            {
+              "id": "mbpp/7",
+              "cheap": "pass",
+              "strong": "pass"
+            },
+            {
+              "id": "mbpp/8",
+              "cheap": "pass",
+              "strong": "pass"
+            },
+            {
+              "id": "mbpp/9",
+              "cheap": "fail",
+              "strong": "pass"
+            },
+            {
+              "id": "mbpp/11",
+              "cheap": "pass",
+              "strong": "pass"
+            },
+            {
+              "id": "mbpp/12",
+              "cheap": "pass",
+              "strong": "fail"
+            },
+            {
+              "id": "mbpp/14",
+              "cheap": "pass",
+              "strong": "pass"
+            },
+            {
+              "id": "mbpp/16",
+              "cheap": "pass",
+              "strong": "pass"
+            },
+            {
+              "id": "mbpp/17",
+              "cheap": "pass",
+              "strong": "pass"
+            },
+            {
+              "id": "mbpp/18",
+              "cheap": "pass",
+              "strong": "pass"
+            },
+            {
+              "id": "mbpp/19",
+              "cheap": "pass",
+              "strong": "pass"
+            },
+            {
+              "id": "mbpp/20",
+              "cheap": "pass",
+              "strong": "fail"
+            },
+            {
+              "id": "mbpp/56",
+              "cheap": "pass",
+              "strong": "pass"
+            },
+            {
+              "id": "mbpp/57",
+              "cheap": "pass",
+              "strong": "pass"
+            },
+            {
+              "id": "mbpp/58",
+              "cheap": "pass",
+              "strong": "pass"
+            },
+            {
+              "id": "mbpp/59",
+              "cheap": "pass",
+              "strong": "pass"
+            },
+            {
+              "id": "mbpp/61",
+              "cheap": "pass",
+              "strong": "pass"
+            },
+            {
+              "id": "mbpp/62",
+              "cheap": "pass",
+              "strong": "pass"
+            },
+            {
+              "id": "mbpp/63",
+              "cheap": "pass",
+              "strong": "pass"
+            },
+            {
+              "id": "mbpp/64",
+              "cheap": "pass",
+              "strong": "pass"
+            },
+            {
+              "id": "mbpp/65",
+              "cheap": "pass",
+              "strong": "pass"
+            },
+            {
+              "id": "mbpp/66",
+              "cheap": "pass",
+              "strong": "pass"
+            },
+            {
+              "id": "mbpp/67",
+              "cheap": "pass",
+              "strong": "pass"
+            },
+            {
+              "id": "mbpp/68",
+              "cheap": "pass",
+              "strong": "pass"
+            },
+            {
+              "id": "mbpp/69",
+              "cheap": "pass",
+              "strong": "fail"
+            },
+            {
+              "id": "mbpp/70",
+              "cheap": "pass",
+              "strong": "pass"
+            },
+            {
+              "id": "mbpp/71",
+              "cheap": "pass",
+              "strong": "pass"
+            },
+            {
+              "id": "mbpp/72",
+              "cheap": "fail",
+              "strong": "pass"
+            },
+            {
+              "id": "mbpp/74",
+              "cheap": "fail",
+              "strong": "pass"
+            },
+            {
+              "id": "mbpp/75",
+              "cheap": "pass",
+              "strong": "pass"
+            },
+            {
+              "id": "mbpp/77",
+              "cheap": "pass",
+              "strong": "fail"
+            },
+            {
+              "id": "mbpp/79",
+              "cheap": "pass",
+              "strong": "pass"
+            },
+            {
+              "id": "mbpp/80",
+              "cheap": "pass",
+              "strong": "pass"
+            },
+            {
+              "id": "mbpp/82",
+              "cheap": "pass",
+              "strong": "pass"
+            },
+            {
+              "id": "mbpp/83",
+              "cheap": "fail",
+              "strong": "fail"
+            },
+            {
+              "id": "mbpp/84",
+              "cheap": "pass",
+              "strong": "pass"
+            },
+            {
+              "id": "mbpp/85",
+              "cheap": "pass",
+              "strong": "pass"
+            },
+            {
+              "id": "mbpp/86",
+              "cheap": "pass",
+              "strong": "pass"
+            },
+            {
+              "id": "mbpp/87",
+              "cheap": "fail",
+              "strong": "fail"
+            },
+            {
+              "id": "mbpp/88",
+              "cheap": "pass",
+              "strong": "pass"
+            },
+            {
+              "id": "mbpp/89",
+              "cheap": "pass",
+              "strong": "pass"
+            },
+            {
+              "id": "mbpp/90",
+              "cheap": "pass",
+              "strong": "pass"
+            },
+            {
+              "id": "mbpp/91",
+              "cheap": "pass",
+              "strong": "pass"
+            },
+            {
+              "id": "mbpp/92",
+              "cheap": "fail",
+              "strong": "pass"
+            },
+            {
+              "id": "mbpp/93",
+              "cheap": "pass",
+              "strong": "pass"
+            },
+            {
+              "id": "mbpp/94",
+              "cheap": "pass",
+              "strong": "pass"
+            },
+            {
+              "id": "mbpp/95",
+              "cheap": "pass",
+              "strong": "pass"
+            },
+            {
+              "id": "mbpp/96",
+              "cheap": "pass",
+              "strong": "pass"
+            },
+            {
+              "id": "mbpp/97",
+              "cheap": "pass",
+              "strong": "pass"
+            },
+            {
+              "id": "mbpp/98",
+              "cheap": "pass",
+              "strong": "pass"
+            },
+            {
+              "id": "mbpp/99",
+              "cheap": "pass",
+              "strong": "pass"
+            },
+            {
+              "id": "mbpp/100",
+              "cheap": "pass",
+              "strong": "pass"
+            },
+            {
+              "id": "mbpp/101",
+              "cheap": "fail",
+              "strong": "fail"
+            },
+            {
+              "id": "mbpp/102",
+              "cheap": "pass",
+              "strong": "pass"
+            },
+            {
+              "id": "mbpp/103",
+              "cheap": "pass",
+              "strong": "fail"
+            },
+            {
+              "id": "mbpp/104",
+              "cheap": "fail",
+              "strong": "pass"
+            },
+            {
+              "id": "mbpp/105",
+              "cheap": "pass",
+              "strong": "pass"
+            },
+            {
+              "id": "mbpp/106",
+              "cheap": "pass",
+              "strong": "pass"
+            },
+            {
+              "id": "mbpp/108",
+              "cheap": "pass",
+              "strong": "fail"
+            },
+            {
+              "id": "mbpp/109",
+              "cheap": "fail",
+              "strong": "fail"
+            },
+            {
+              "id": "mbpp/111",
+              "cheap": "pass",
+              "strong": "pass"
+            },
+            {
+              "id": "mbpp/113",
+              "cheap": "pass",
+              "strong": "pass"
+            },
+            {
+              "id": "mbpp/115",
+              "cheap": "fail",
+              "strong": "fail"
+            },
+            {
+              "id": "mbpp/116",
+              "cheap": "pass",
+              "strong": "pass"
+            },
+            {
+              "id": "mbpp/117",
+              "cheap": "pass",
+              "strong": "pass"
+            },
+            {
+              "id": "mbpp/118",
+              "cheap": "pass",
+              "strong": "pass"
+            },
+            {
+              "id": "mbpp/119",
+              "cheap": "pass",
+              "strong": "pass"
+            },
+            {
+              "id": "mbpp/120",
+              "cheap": "pass",
+              "strong": "pass"
+            },
+            {
+              "id": "mbpp/123",
+              "cheap": "pass",
+              "strong": "pass"
+            },
+            {
+              "id": "mbpp/124",
+              "cheap": "fail",
+              "strong": "fail"
+            },
+            {
+              "id": "mbpp/125",
+              "cheap": "pass",
+              "strong": "fail"
+            },
+            {
+              "id": "mbpp/126",
+              "cheap": "fail",
+              "strong": "fail"
+            },
+            {
+              "id": "mbpp/127",
+              "cheap": "pass",
+              "strong": "pass"
+            },
+            {
+              "id": "mbpp/128",
+              "cheap": "pass",
+              "strong": "pass"
+            },
+            {
+              "id": "mbpp/129",
+              "cheap": "pass",
+              "strong": "fail"
+            },
+            {
+              "id": "mbpp/130",
+              "cheap": "pass",
+              "strong": "pass"
+            },
+            {
+              "id": "mbpp/131",
+              "cheap": "pass",
+              "strong": "pass"
+            },
+            {
+              "id": "mbpp/132",
+              "cheap": "pass",
+              "strong": "pass"
+            },
+            {
+              "id": "mbpp/133",
+              "cheap": "pass",
+              "strong": "pass"
+            },
+            {
+              "id": "mbpp/135",
+              "cheap": "pass",
+              "strong": "pass"
+            },
+            {
+              "id": "mbpp/137",
+              "cheap": "pass",
+              "strong": "pass"
+            },
+            {
+              "id": "mbpp/138",
+              "cheap": "fail",
+              "strong": "fail"
+            },
+            {
+              "id": "mbpp/139",
+              "cheap": "pass",
+              "strong": "pass"
+            },
+            {
+              "id": "mbpp/140",
+              "cheap": "pass",
+              "strong": "pass"
+            },
+            {
+              "id": "mbpp/141",
+              "cheap": "pass",
+              "strong": "pass"
+            },
+            {
+              "id": "mbpp/142",
+              "cheap": "pass",
+              "strong": "pass"
+            },
+            {
+              "id": "mbpp/143",
+              "cheap": "fail",
+              "strong": "fail"
+            },
+            {
+              "id": "mbpp/145",
+              "cheap": "pass",
+              "strong": "pass"
+            },
+            {
+              "id": "mbpp/160",
+              "cheap": "pass",
+              "strong": "fail"
+            },
+            {
+              "id": "mbpp/161",
+              "cheap": "pass",
+              "strong": "pass"
+            },
+            {
+              "id": "mbpp/162",
+              "cheap": "pass",
+              "strong": "pass"
+            },
+            {
+              "id": "mbpp/164",
+              "cheap": "fail",
+              "strong": "fail"
+            },
+            {
+              "id": "mbpp/165",
+              "cheap": "pass",
+              "strong": "pass"
+            },
+            {
+              "id": "mbpp/166",
+              "cheap": "pass",
+              "strong": "pass"
+            },
+            {
+              "id": "mbpp/167",
+              "cheap": "pass",
+              "strong": "pass"
+            },
+            {
+              "id": "mbpp/168",
+              "cheap": "pass",
+              "strong": "pass"
+            },
+            {
+              "id": "mbpp/170",
+              "cheap": "pass",
+              "strong": "pass"
+            },
+            {
+              "id": "mbpp/171",
+              "cheap": "pass",
+              "strong": "pass"
+            },
+            {
+              "id": "mbpp/172",
+              "cheap": "pass",
+              "strong": "pass"
+            },
+            {
+              "id": "mbpp/222",
+              "cheap": "pass",
+              "strong": "pass"
+            },
+            {
+              "id": "mbpp/223",
+              "cheap": "fail",
+              "strong": "fail"
+            },
+            {
+              "id": "mbpp/224",
+              "cheap": "pass",
+              "strong": "pass"
+            },
+            {
+              "id": "mbpp/226",
+              "cheap": "pass",
+              "strong": "pass"
+            },
+            {
+              "id": "mbpp/227",
+              "cheap": "pass",
+              "strong": "pass"
+            },
+            {
+              "id": "mbpp/229",
+              "cheap": "fail",
+              "strong": "fail"
+            },
+            {
+              "id": "mbpp/230",
+              "cheap": "pass",
+              "strong": "pass"
+            },
+            {
+              "id": "mbpp/232",
+              "cheap": "pass",
+              "strong": "pass"
+            },
+            {
+              "id": "mbpp/233",
+              "cheap": "fail",
+              "strong": "fail"
+            },
+            {
+              "id": "mbpp/234",
+              "cheap": "pass",
+              "strong": "pass"
+            },
+            {
+              "id": "mbpp/235",
+              "cheap": "fail",
+              "strong": "fail"
+            },
+            {
+              "id": "mbpp/237",
+              "cheap": "fail",
+              "strong": "pass"
+            },
+            {
+              "id": "mbpp/238",
+              "cheap": "pass",
+              "strong": "pass"
+            },
+            {
+              "id": "mbpp/239",
+              "cheap": "fail",
+              "strong": "pass"
+            },
+            {
+              "id": "mbpp/240",
+              "cheap": "pass",
+              "strong": "pass"
+            },
+            {
+              "id": "mbpp/242",
+              "cheap": "pass",
+              "strong": "pass"
+            },
+            {
+              "id": "mbpp/244",
+              "cheap": "pass",
+              "strong": "fail"
+            },
+            {
+              "id": "mbpp/245",
+              "cheap": "fail",
+              "strong": "fail"
+            },
+            {
+              "id": "mbpp/247",
+              "cheap": "pass",
+              "strong": "pass"
+            },
+            {
+              "id": "mbpp/249",
+              "cheap": "fail",
+              "strong": "fail"
+            },
+            {
+              "id": "mbpp/250",
+              "cheap": "pass",
+              "strong": "pass"
+            },
+            {
+              "id": "mbpp/251",
+              "cheap": "pass",
+              "strong": "pass"
+            },
+            {
+              "id": "mbpp/252",
+              "cheap": "pass",
+              "strong": "pass"
+            },
+            {
+              "id": "mbpp/253",
+              "cheap": "pass",
+              "strong": "pass"
+            },
+            {
+              "id": "mbpp/255",
+              "cheap": "pass",
+              "strong": "fail"
+            },
+            {
+              "id": "mbpp/256",
+              "cheap": "pass",
+              "strong": "pass"
+            },
+            {
+              "id": "mbpp/257",
+              "cheap": "pass",
+              "strong": "pass"
+            },
+            {
+              "id": "mbpp/259",
+              "cheap": "pass",
+              "strong": "fail"
+            },
+            {
+              "id": "mbpp/260",
+              "cheap": "fail",
+              "strong": "fail"
+            },
+            {
+              "id": "mbpp/261",
+              "cheap": "pass",
+              "strong": "pass"
+            },
+            {
+              "id": "mbpp/262",
+              "cheap": "pass",
+              "strong": "pass"
+            },
+            {
+              "id": "mbpp/264",
+              "cheap": "pass",
+              "strong": "pass"
+            },
+            {
+              "id": "mbpp/265",
+              "cheap": "pass",
+              "strong": "pass"
+            },
+            {
+              "id": "mbpp/266",
+              "cheap": "pass",
+              "strong": "pass"
+            },
+            {
+              "id": "mbpp/267",
+              "cheap": "pass",
+              "strong": "fail"
+            },
+            {
+              "id": "mbpp/268",
+              "cheap": "pass",
+              "strong": "pass"
+            },
+            {
+              "id": "mbpp/269",
+              "cheap": "pass",
+              "strong": "pass"
+            },
+            {
+              "id": "mbpp/270",
+              "cheap": "pass",
+              "strong": "pass"
+            },
+            {
+              "id": "mbpp/271",
+              "cheap": "pass",
+              "strong": "pass"
+            },
+            {
+              "id": "mbpp/272",
+              "cheap": "pass",
+              "strong": "pass"
+            },
+            {
+              "id": "mbpp/273",
+              "cheap": "fail",
+              "strong": "pass"
+            },
+            {
+              "id": "mbpp/274",
+              "cheap": "fail",
+              "strong": "pass"
+            },
+            {
+              "id": "mbpp/276",
+              "cheap": "pass",
+              "strong": "pass"
+            },
+            {
+              "id": "mbpp/277",
+              "cheap": "pass",
+              "strong": "pass"
+            },
+            {
+              "id": "mbpp/278",
+              "cheap": "pass",
+              "strong": "pass"
+            },
+            {
+              "id": "mbpp/279",
+              "cheap": "fail",
+              "strong": "pass"
+            },
+            {
+              "id": "mbpp/280",
+              "cheap": "pass",
+              "strong": "pass"
+            },
+            {
+              "id": "mbpp/281",
+              "cheap": "pass",
+              "strong": "pass"
+            },
+            {
+              "id": "mbpp/282",
+              "cheap": "pass",
+              "strong": "pass"
+            },
+            {
+              "id": "mbpp/283",
+              "cheap": "pass",
+              "strong": "pass"
+            },
+            {
+              "id": "mbpp/284",
+              "cheap": "pass",
+              "strong": "pass"
+            },
+            {
+              "id": "mbpp/285",
+              "cheap": "pass",
+              "strong": "pass"
+            },
+            {
+              "id": "mbpp/286",
+              "cheap": "pass",
+              "strong": "pass"
+            },
+            {
+              "id": "mbpp/287",
+              "cheap": "pass",
+              "strong": "fail"
+            },
+            {
+              "id": "mbpp/290",
+              "cheap": "pass",
+              "strong": "pass"
+            },
+            {
+              "id": "mbpp/292",
+              "cheap": "pass",
+              "strong": "pass"
+            },
+            {
+              "id": "mbpp/293",
+              "cheap": "pass",
+              "strong": "pass"
+            },
+            {
+              "id": "mbpp/294",
+              "cheap": "pass",
+              "strong": "pass"
+            },
+            {
+              "id": "mbpp/295",
+              "cheap": "pass",
+              "strong": "pass"
+            },
+            {
+              "id": "mbpp/296",
+              "cheap": "pass",
+              "strong": "pass"
+            },
+            {
+              "id": "mbpp/297",
+              "cheap": "pass",
+              "strong": "pass"
+            },
+            {
+              "id": "mbpp/299",
+              "cheap": "pass",
+              "strong": "pass"
+            },
+            {
+              "id": "mbpp/300",
+              "cheap": "fail",
+              "strong": "pass"
+            },
+            {
+              "id": "mbpp/301",
+              "cheap": "pass",
+              "strong": "fail"
+            },
+            {
+              "id": "mbpp/305",
+              "cheap": "pass",
+              "strong": "pass"
+            },
+            {
+              "id": "mbpp/306",
+              "cheap": "fail",
+              "strong": "fail"
+            },
+            {
+              "id": "mbpp/308",
+              "cheap": "pass",
+              "strong": "pass"
+            },
+            {
+              "id": "mbpp/309",
+              "cheap": "pass",
+              "strong": "pass"
+            },
+            {
+              "id": "mbpp/310",
+              "cheap": "fail",
+              "strong": "fail"
+            },
+            {
+              "id": "mbpp/311",
+              "cheap": "fail",
+              "strong": "fail"
+            },
+            {
+              "id": "mbpp/312",
+              "cheap": "pass",
+              "strong": "pass"
+            },
+            {
+              "id": "mbpp/388",
+              "cheap": "pass",
+              "strong": "pass"
+            },
+            {
+              "id": "mbpp/389",
+              "cheap": "pass",
+              "strong": "pass"
+            },
+            {
+              "id": "mbpp/390",
+              "cheap": "pass",
+              "strong": "pass"
+            },
+            {
+              "id": "mbpp/391",
+              "cheap": "pass",
+              "strong": "pass"
+            },
+            {
+              "id": "mbpp/392",
+              "cheap": "fail",
+              "strong": "pass"
+            },
+            {
+              "id": "mbpp/394",
+              "cheap": "pass",
+              "strong": "pass"
+            },
+            {
+              "id": "mbpp/395",
+              "cheap": "pass",
+              "strong": "pass"
+            },
+            {
+              "id": "mbpp/396",
+              "cheap": "pass",
+              "strong": "pass"
+            },
+            {
+              "id": "mbpp/397",
+              "cheap": "pass",
+              "strong": "pass"
+            },
+            {
+              "id": "mbpp/398",
+              "cheap": "fail",
+              "strong": "fail"
+            },
+            {
+              "id": "mbpp/400",
+              "cheap": "fail",
+              "strong": "fail"
+            },
+            {
+              "id": "mbpp/404",
+              "cheap": "pass",
+              "strong": "pass"
+            },
+            {
+              "id": "mbpp/405",
+              "cheap": "pass",
+              "strong": "pass"
+            },
+            {
+              "id": "mbpp/406",
+              "cheap": "pass",
+              "strong": "pass"
+            },
+            {
+              "id": "mbpp/407",
+              "cheap": "fail",
+              "strong": "fail"
+            },
+            {
+              "id": "mbpp/409",
+              "cheap": "pass",
+              "strong": "pass"
+            },
+            {
+              "id": "mbpp/410",
+              "cheap": "fail",
+              "strong": "pass"
+            },
+            {
+              "id": "mbpp/412",
+              "cheap": "pass",
+              "strong": "pass"
+            },
+            {
+              "id": "mbpp/413",
+              "cheap": "pass",
+              "strong": "pass"
+            },
+            {
+              "id": "mbpp/414",
+              "cheap": "pass",
+              "strong": "pass"
+            },
+            {
+              "id": "mbpp/415",
+              "cheap": "pass",
+              "strong": "pass"
+            },
+            {
+              "id": "mbpp/418",
+              "cheap": "pass",
+              "strong": "pass"
+            },
+            {
+              "id": "mbpp/419",
+              "cheap": "pass",
+              "strong": "pass"
+            },
+            {
+              "id": "mbpp/420",
+              "cheap": "pass",
+              "strong": "fail"
+            },
+            {
+              "id": "mbpp/421",
+              "cheap": "pass",
+              "strong": "pass"
+            },
+            {
+              "id": "mbpp/422",
+              "cheap": "pass",
+              "strong": "pass"
+            },
+            {
+              "id": "mbpp/424",
+              "cheap": "pass",
+              "strong": "pass"
+            },
+            {
+              "id": "mbpp/425",
+              "cheap": "pass",
+              "strong": "pass"
+            },
+            {
+              "id": "mbpp/426",
+              "cheap": "pass",
+              "strong": "pass"
+            },
+            {
+              "id": "mbpp/427",
+              "cheap": "pass",
+              "strong": "pass"
+            },
+            {
+              "id": "mbpp/428",
+              "cheap": "pass",
+              "strong": "pass"
+            },
+            {
+              "id": "mbpp/429",
+              "cheap": "pass",
+              "strong": "pass"
+            },
+            {
+              "id": "mbpp/430",
+              "cheap": "fail",
+              "strong": "fail"
+            },
+            {
+              "id": "mbpp/431",
+              "cheap": "fail",
+              "strong": "fail"
+            },
+            {
+              "id": "mbpp/432",
+              "cheap": "pass",
+              "strong": "pass"
+            },
+            {
+              "id": "mbpp/433",
+              "cheap": "pass",
+              "strong": "pass"
+            },
+            {
+              "id": "mbpp/435",
+              "cheap": "fail",
+              "strong": "pass"
+            },
+            {
+              "id": "mbpp/436",
+              "cheap": "pass",
+              "strong": "pass"
+            },
+            {
+              "id": "mbpp/437",
+              "cheap": "pass",
+              "strong": "pass"
+            },
+            {
+              "id": "mbpp/438",
+              "cheap": "fail",
+              "strong": "fail"
+            },
+            {
+              "id": "mbpp/439",
+              "cheap": "pass",
+              "strong": "pass"
+            },
+            {
+              "id": "mbpp/440",
+              "cheap": "fail",
+              "strong": "pass"
+            },
+            {
+              "id": "mbpp/441",
+              "cheap": "pass",
+              "strong": "pass"
+            },
+            {
+              "id": "mbpp/442",
+              "cheap": "pass",
+              "strong": "pass"
+            },
+            {
+              "id": "mbpp/445",
+              "cheap": "fail",
+              "strong": "fail"
+            },
+            {
+              "id": "mbpp/446",
+              "cheap": "pass",
+              "strong": "pass"
+            },
+            {
+              "id": "mbpp/447",
+              "cheap": "pass",
+              "strong": "pass"
+            },
+            {
+              "id": "mbpp/448",
+              "cheap": "pass",
+              "strong": "fail"
+            },
+            {
+              "id": "mbpp/450",
+              "cheap": "pass",
+              "strong": "pass"
+            },
+            {
+              "id": "mbpp/451",
+              "cheap": "pass",
+              "strong": "pass"
+            },
+            {
+              "id": "mbpp/453",
+              "cheap": "pass",
+              "strong": "pass"
+            },
+            {
+              "id": "mbpp/454",
+              "cheap": "pass",
+              "strong": "pass"
+            },
+            {
+              "id": "mbpp/455",
+              "cheap": "pass",
+              "strong": "pass"
+            },
+            {
+              "id": "mbpp/456",
+              "cheap": "pass",
+              "strong": "pass"
+            },
+            {
+              "id": "mbpp/457",
+              "cheap": "pass",
+              "strong": "pass"
+            },
+            {
+              "id": "mbpp/458",
+              "cheap": "pass",
+              "strong": "pass"
+            },
+            {
+              "id": "mbpp/459",
+              "cheap": "pass",
+              "strong": "pass"
+            },
+            {
+              "id": "mbpp/460",
+              "cheap": "pass",
+              "strong": "pass"
+            },
+            {
+              "id": "mbpp/461",
+              "cheap": "fail",
+              "strong": "fail"
+            },
+            {
+              "id": "mbpp/462",
+              "cheap": "fail",
+              "strong": "fail"
+            },
+            {
+              "id": "mbpp/463",
+              "cheap": "pass",
+              "strong": "fail"
+            },
+            {
+              "id": "mbpp/465",
+              "cheap": "pass",
+              "strong": "pass"
+            },
+            {
+              "id": "mbpp/468",
+              "cheap": "fail",
+              "strong": "fail"
+            },
+            {
+              "id": "mbpp/470",
+              "cheap": "pass",
+              "strong": "pass"
+            },
+            {
+              "id": "mbpp/471",
+              "cheap": "pass",
+              "strong": "pass"
+            },
+            {
+              "id": "mbpp/472",
+              "cheap": "pass",
+              "strong": "pass"
+            },
+            {
+              "id": "mbpp/473",
+              "cheap": "fail",
+              "strong": "fail"
+            },
+            {
+              "id": "mbpp/474",
+              "cheap": "pass",
+              "strong": "pass"
+            },
+            {
+              "id": "mbpp/475",
+              "cheap": "pass",
+              "strong": "pass"
+            },
+            {
+              "id": "mbpp/476",
+              "cheap": "pass",
+              "strong": "pass"
+            },
+            {
+              "id": "mbpp/477",
+              "cheap": "pass",
+              "strong": "pass"
+            },
+            {
+              "id": "mbpp/478",
+              "cheap": "pass",
+              "strong": "pass"
+            },
+            {
+              "id": "mbpp/479",
+              "cheap": "pass",
+              "strong": "pass"
+            },
+            {
+              "id": "mbpp/554",
+              "cheap": "pass",
+              "strong": "pass"
+            },
+            {
+              "id": "mbpp/555",
+              "cheap": "pass",
+              "strong": "pass"
+            },
+            {
+              "id": "mbpp/556",
+              "cheap": "pass",
+              "strong": "pass"
+            },
+            {
+              "id": "mbpp/557",
+              "cheap": "pass",
+              "strong": "pass"
+            },
+            {
+              "id": "mbpp/558",
+              "cheap": "pass",
+              "strong": "pass"
+            },
+            {
+              "id": "mbpp/559",
+              "cheap": "pass",
+              "strong": "pass"
+            },
+            {
+              "id": "mbpp/560",
+              "cheap": "pass",
+              "strong": "pass"
+            },
+            {
+              "id": "mbpp/562",
+              "cheap": "pass",
+              "strong": "pass"
+            },
+            {
+              "id": "mbpp/563",
+              "cheap": "pass",
+              "strong": "pass"
+            },
+            {
+              "id": "mbpp/564",
+              "cheap": "pass",
+              "strong": "pass"
+            },
+            {
+              "id": "mbpp/565",
+              "cheap": "pass",
+              "strong": "pass"
+            },
+            {
+              "id": "mbpp/566",
+              "cheap": "pass",
+              "strong": "pass"
+            },
+            {
+              "id": "mbpp/567",
+              "cheap": "pass",
+              "strong": "pass"
+            },
+            {
+              "id": "mbpp/568",
+              "cheap": "pass",
+              "strong": "pass"
+            },
+            {
+              "id": "mbpp/569",
+              "cheap": "pass",
+              "strong": "pass"
+            },
+            {
+              "id": "mbpp/572",
+              "cheap": "fail",
+              "strong": "pass"
+            },
+            {
+              "id": "mbpp/573",
+              "cheap": "pass",
+              "strong": "fail"
+            },
+            {
+              "id": "mbpp/574",
+              "cheap": "fail",
+              "strong": "fail"
+            },
+            {
+              "id": "mbpp/576",
+              "cheap": "pass",
+              "strong": "pass"
+            },
+            {
+              "id": "mbpp/577",
+              "cheap": "pass",
+              "strong": "pass"
+            },
+            {
+              "id": "mbpp/578",
+              "cheap": "pass",
+              "strong": "pass"
+            },
+            {
+              "id": "mbpp/579",
+              "cheap": "pass",
+              "strong": "pass"
+            },
+            {
+              "id": "mbpp/580",
+              "cheap": "fail",
+              "strong": "pass"
+            },
+            {
+              "id": "mbpp/581",
+              "cheap": "pass",
+              "strong": "fail"
+            },
+            {
+              "id": "mbpp/582",
+              "cheap": "fail",
+              "strong": "pass"
+            },
+            {
+              "id": "mbpp/583",
+              "cheap": "pass",
+              "strong": "pass"
+            },
+            {
+              "id": "mbpp/585",
+              "cheap": "pass",
+              "strong": "pass"
+            },
+            {
+              "id": "mbpp/586",
+              "cheap": "pass",
+              "strong": "pass"
+            },
+            {
+              "id": "mbpp/587",
+              "cheap": "pass",
+              "strong": "pass"
+            },
+            {
+              "id": "mbpp/588",
+              "cheap": "pass",
+              "strong": "pass"
+            },
+            {
+              "id": "mbpp/589",
+              "cheap": "pass",
+              "strong": "pass"
+            },
+            {
+              "id": "mbpp/590",
+              "cheap": "fail",
+              "strong": "fail"
+            },
+            {
+              "id": "mbpp/591",
+              "cheap": "pass",
+              "strong": "pass"
+            },
+            {
+              "id": "mbpp/592",
+              "cheap": "pass",
+              "strong": "pass"
+            },
+            {
+              "id": "mbpp/593",
+              "cheap": "pass",
+              "strong": "pass"
+            },
+            {
+              "id": "mbpp/594",
+              "cheap": "pass",
+              "strong": "pass"
+            },
+            {
+              "id": "mbpp/595",
+              "cheap": "fail",
+              "strong": "fail"
+            },
+            {
+              "id": "mbpp/596",
+              "cheap": "pass",
+              "strong": "pass"
+            },
+            {
+              "id": "mbpp/597",
+              "cheap": "pass",
+              "strong": "pass"
+            },
+            {
+              "id": "mbpp/598",
+              "cheap": "pass",
+              "strong": "pass"
+            },
+            {
+              "id": "mbpp/599",
+              "cheap": "pass",
+              "strong": "pass"
+            },
+            {
+              "id": "mbpp/600",
+              "cheap": "pass",
+              "strong": "pass"
+            },
+            {
+              "id": "mbpp/602",
+              "cheap": "pass",
+              "strong": "pass"
+            },
+            {
+              "id": "mbpp/603",
+              "cheap": "fail",
+              "strong": "timeout"
+            },
+            {
+              "id": "mbpp/604",
+              "cheap": "pass",
+              "strong": "pass"
+            },
+            {
+              "id": "mbpp/605",
+              "cheap": "pass",
+              "strong": "pass"
+            },
+            {
+              "id": "mbpp/606",
+              "cheap": "pass",
+              "strong": "pass"
+            },
+            {
+              "id": "mbpp/607",
+              "cheap": "pass",
+              "strong": "pass"
+            },
+            {
+              "id": "mbpp/608",
+              "cheap": "fail",
+              "strong": "fail"
+            },
+            {
+              "id": "mbpp/610",
+              "cheap": "pass",
+              "strong": "fail"
+            },
+            {
+              "id": "mbpp/611",
+              "cheap": "pass",
+              "strong": "pass"
+            },
+            {
+              "id": "mbpp/612",
+              "cheap": "fail",
+              "strong": "fail"
+            },
+            {
+              "id": "mbpp/614",
+              "cheap": "fail",
+              "strong": "pass"
+            },
+            {
+              "id": "mbpp/615",
+              "cheap": "fail",
+              "strong": "fail"
+            },
+            {
+              "id": "mbpp/616",
+              "cheap": "pass",
+              "strong": "pass"
+            },
+            {
+              "id": "mbpp/618",
+              "cheap": "pass",
+              "strong": "pass"
+            },
+            {
+              "id": "mbpp/619",
+              "cheap": "pass",
+              "strong": "pass"
+            },
+            {
+              "id": "mbpp/620",
+              "cheap": "pass",
+              "strong": "fail"
+            },
+            {
+              "id": "mbpp/622",
+              "cheap": "fail",
+              "strong": "pass"
+            },
+            {
+              "id": "mbpp/623",
+              "cheap": "pass",
+              "strong": "pass"
+            },
+            {
+              "id": "mbpp/624",
+              "cheap": "pass",
+              "strong": "pass"
+            },
+            {
+              "id": "mbpp/626",
+              "cheap": "fail",
+              "strong": "fail"
+            },
+            {
+              "id": "mbpp/628",
+              "cheap": "pass",
+              "strong": "pass"
+            },
+            {
+              "id": "mbpp/629",
+              "cheap": "pass",
+              "strong": "pass"
+            },
+            {
+              "id": "mbpp/630",
+              "cheap": "pass",
+              "strong": "fail"
+            },
+            {
+              "id": "mbpp/631",
+              "cheap": "fail",
+              "strong": "pass"
+            },
+            {
+              "id": "mbpp/632",
+              "cheap": "pass",
+              "strong": "pass"
+            },
+            {
+              "id": "mbpp/633",
+              "cheap": "pass",
+              "strong": "fail"
+            },
+            {
+              "id": "mbpp/635",
+              "cheap": "pass",
+              "strong": "pass"
+            },
+            {
+              "id": "mbpp/637",
+              "cheap": "pass",
+              "strong": "pass"
+            },
+            {
+              "id": "mbpp/638",
+              "cheap": "pass",
+              "strong": "fail"
+            },
+            {
+              "id": "mbpp/639",
+              "cheap": "pass",
+              "strong": "pass"
+            },
+            {
+              "id": "mbpp/640",
+              "cheap": "fail",
+              "strong": "fail"
+            },
+            {
+              "id": "mbpp/641",
+              "cheap": "pass",
+              "strong": "pass"
+            },
+            {
+              "id": "mbpp/643",
+              "cheap": "pass",
+              "strong": "pass"
+            },
+            {
+              "id": "mbpp/644",
+              "cheap": "pass",
+              "strong": "pass"
+            },
+            {
+              "id": "mbpp/720",
+              "cheap": "pass",
+              "strong": "pass"
+            },
+            {
+              "id": "mbpp/721",
+              "cheap": "pass",
+              "strong": "fail"
+            },
+            {
+              "id": "mbpp/722",
+              "cheap": "fail",
+              "strong": "fail"
+            },
+            {
+              "id": "mbpp/723",
+              "cheap": "pass",
+              "strong": "pass"
+            },
+            {
+              "id": "mbpp/724",
+              "cheap": "pass",
+              "strong": "pass"
+            },
+            {
+              "id": "mbpp/725",
+              "cheap": "pass",
+              "strong": "pass"
+            },
+            {
+              "id": "mbpp/726",
+              "cheap": "pass",
+              "strong": "pass"
+            },
+            {
+              "id": "mbpp/728",
+              "cheap": "pass",
+              "strong": "pass"
+            },
+            {
+              "id": "mbpp/730",
+              "cheap": "pass",
+              "strong": "pass"
+            },
+            {
+              "id": "mbpp/731",
+              "cheap": "pass",
+              "strong": "pass"
+            },
+            {
+              "id": "mbpp/732",
+              "cheap": "pass",
+              "strong": "pass"
+            },
+            {
+              "id": "mbpp/733",
+              "cheap": "pass",
+              "strong": "pass"
+            },
+            {
+              "id": "mbpp/734",
+              "cheap": "fail",
+              "strong": "fail"
+            },
+            {
+              "id": "mbpp/735",
+              "cheap": "fail",
+              "strong": "fail"
+            },
+            {
+              "id": "mbpp/736",
+              "cheap": "pass",
+              "strong": "pass"
+            },
+            {
+              "id": "mbpp/737",
+              "cheap": "pass",
+              "strong": "pass"
+            },
+            {
+              "id": "mbpp/739",
+              "cheap": "pass",
+              "strong": "pass"
+            },
+            {
+              "id": "mbpp/740",
+              "cheap": "pass",
+              "strong": "pass"
+            },
+            {
+              "id": "mbpp/741",
+              "cheap": "pass",
+              "strong": "pass"
+            },
+            {
+              "id": "mbpp/742",
+              "cheap": "pass",
+              "strong": "pass"
+            },
+            {
+              "id": "mbpp/743",
+              "cheap": "pass",
+              "strong": "pass"
+            },
+            {
+              "id": "mbpp/744",
+              "cheap": "pass",
+              "strong": "pass"
+            },
+            {
+              "id": "mbpp/745",
+              "cheap": "fail",
+              "strong": "pass"
+            },
+            {
+              "id": "mbpp/746",
+              "cheap": "pass",
+              "strong": "pass"
+            },
+            {
+              "id": "mbpp/748",
+              "cheap": "pass",
+              "strong": "pass"
+            },
+            {
+              "id": "mbpp/749",
+              "cheap": "pass",
+              "strong": "fail"
+            },
+            {
+              "id": "mbpp/750",
+              "cheap": "pass",
+              "strong": "pass"
+            },
+            {
+              "id": "mbpp/751",
+              "cheap": "pass",
+              "strong": "pass"
+            },
+            {
+              "id": "mbpp/752",
+              "cheap": "fail",
+              "strong": "pass"
+            },
+            {
+              "id": "mbpp/753",
+              "cheap": "pass",
+              "strong": "pass"
+            },
+            {
+              "id": "mbpp/754",
+              "cheap": "pass",
+              "strong": "pass"
+            },
+            {
+              "id": "mbpp/755",
+              "cheap": "pass",
+              "strong": "pass"
+            },
+            {
+              "id": "mbpp/757",
+              "cheap": "pass",
+              "strong": "pass"
+            },
+            {
+              "id": "mbpp/758",
+              "cheap": "pass",
+              "strong": "pass"
+            },
+            {
+              "id": "mbpp/759",
+              "cheap": "pass",
+              "strong": "pass"
+            },
+            {
+              "id": "mbpp/760",
+              "cheap": "pass",
+              "strong": "fail"
+            },
+            {
+              "id": "mbpp/762",
+              "cheap": "pass",
+              "strong": "pass"
+            },
+            {
+              "id": "mbpp/763",
+              "cheap": "fail",
+              "strong": "pass"
+            },
+            {
+              "id": "mbpp/764",
+              "cheap": "pass",
+              "strong": "pass"
+            },
+            {
+              "id": "mbpp/765",
+              "cheap": "fail",
+              "strong": "fail"
+            },
+            {
+              "id": "mbpp/766",
+              "cheap": "pass",
+              "strong": "pass"
+            },
+            {
+              "id": "mbpp/767",
+              "cheap": "pass",
+              "strong": "fail"
+            },
+            {
+              "id": "mbpp/769",
+              "cheap": "fail",
+              "strong": "fail"
+            },
+            {
+              "id": "mbpp/770",
+              "cheap": "pass",
+              "strong": "pass"
+            },
+            {
+              "id": "mbpp/771",
+              "cheap": "pass",
+              "strong": "pass"
+            },
+            {
+              "id": "mbpp/772",
+              "cheap": "pass",
+              "strong": "pass"
+            },
+            {
+              "id": "mbpp/773",
+              "cheap": "fail",
+              "strong": "pass"
+            },
+            {
+              "id": "mbpp/775",
+              "cheap": "pass",
+              "strong": "pass"
+            },
+            {
+              "id": "mbpp/777",
+              "cheap": "fail",
+              "strong": "fail"
+            },
+            {
+              "id": "mbpp/778",
+              "cheap": "pass",
+              "strong": "pass"
+            },
+            {
+              "id": "mbpp/780",
+              "cheap": "pass",
+              "strong": "pass"
+            },
+            {
+              "id": "mbpp/781",
+              "cheap": "pass",
+              "strong": "pass"
+            },
+            {
+              "id": "mbpp/782",
+              "cheap": "pass",
+              "strong": "pass"
+            },
+            {
+              "id": "mbpp/783",
+              "cheap": "fail",
+              "strong": "fail"
+            },
+            {
+              "id": "mbpp/784",
+              "cheap": "fail",
+              "strong": "pass"
+            },
+            {
+              "id": "mbpp/785",
+              "cheap": "pass",
+              "strong": "pass"
+            },
+            {
+              "id": "mbpp/786",
+              "cheap": "pass",
+              "strong": "pass"
+            },
+            {
+              "id": "mbpp/787",
+              "cheap": "pass",
+              "strong": "fail"
+            },
+            {
+              "id": "mbpp/788",
+              "cheap": "pass",
+              "strong": "pass"
+            },
+            {
+              "id": "mbpp/790",
+              "cheap": "pass",
+              "strong": "pass"
+            },
+            {
+              "id": "mbpp/791",
+              "cheap": "fail",
+              "strong": "pass"
+            },
+            {
+              "id": "mbpp/792",
+              "cheap": "pass",
+              "strong": "pass"
+            },
+            {
+              "id": "mbpp/793",
+              "cheap": "pass",
+              "strong": "pass"
+            },
+            {
+              "id": "mbpp/794",
+              "cheap": "pass",
+              "strong": "pass"
+            },
+            {
+              "id": "mbpp/796",
+              "cheap": "pass",
+              "strong": "pass"
+            },
+            {
+              "id": "mbpp/797",
+              "cheap": "pass",
+              "strong": "pass"
+            },
+            {
+              "id": "mbpp/798",
+              "cheap": "pass",
+              "strong": "pass"
+            },
+            {
+              "id": "mbpp/799",
+              "cheap": "pass",
+              "strong": "pass"
+            },
+            {
+              "id": "mbpp/800",
+              "cheap": "pass",
+              "strong": "pass"
+            },
+            {
+              "id": "mbpp/801",
+              "cheap": "pass",
+              "strong": "pass"
+            },
+            {
+              "id": "mbpp/803",
+              "cheap": "pass",
+              "strong": "pass"
+            },
+            {
+              "id": "mbpp/804",
+              "cheap": "pass",
+              "strong": "pass"
+            },
+            {
+              "id": "mbpp/805",
+              "cheap": "pass",
+              "strong": "pass"
+            },
+            {
+              "id": "mbpp/806",
+              "cheap": "pass",
+              "strong": "pass"
+            },
+            {
+              "id": "mbpp/807",
+              "cheap": "pass",
+              "strong": "pass"
+            },
+            {
+              "id": "mbpp/808",
+              "cheap": "pass",
+              "strong": "pass"
+            },
+            {
+              "id": "mbpp/809",
+              "cheap": "pass",
+              "strong": "pass"
+            }
+          ]
+        }
+      },
+      "summaries": [
+        {
+          "policy": "cheap-only",
+          "epsilon": null,
+          "probability": null,
+          "repeats": 1000,
+          "mean_regret": 0.05391666666666667,
+          "regret_ci": [
+            0.053006958913944434,
+            0.0548263744193889
+          ],
+          "regret_ci_bonferroni": [
+            0.052757368816291665,
+            0.05507596451704167
+          ],
+          "regret_quantiles": {
+            "0.05": 0.03333333333333333,
+            "0.5": 0.05,
+            "0.95": 0.075
+          },
+          "max_regret": 0.1,
+          "fraction_exceeding_epsilon": {
+            "0.01": 0.997,
+            "0.02": 0.987,
+            "0.05": 0.499,
+            "0.1": 0.0
+          },
+          "non_rejection": null,
+          "mean_quality": 0.820825,
+          "mean_cost_usd": 0.0002804249916666667,
+          "mean_savings_vs_strong": 0.9160792075589704,
+          "mean_strong_fraction": 0.0
+        },
+        {
+          "policy": "strong-only",
+          "epsilon": null,
+          "probability": null,
+          "repeats": 1000,
+          "mean_regret": 0.0,
+          "regret_ci": [
+            0,
+            0.0
+          ],
+          "regret_ci_bonferroni": [
+            0,
+            0.0
+          ],
+          "regret_quantiles": {
+            "0.05": 0.0,
+            "0.5": 0.0,
+            "0.95": 0.0
+          },
+          "max_regret": 0.0,
+          "fraction_exceeding_epsilon": {
+            "0.01": 0.0,
+            "0.02": 0.0,
+            "0.05": 0.0,
+            "0.1": 0.0
+          },
+          "non_rejection": null,
+          "mean_quality": 0.8116833333333333,
+          "mean_cost_usd": 0.0033427353333333335,
+          "mean_savings_vs_strong": 0.0,
+          "mean_strong_fraction": 1.0
+        },
+        {
+          "policy": "fixed-threshold",
+          "epsilon": null,
+          "probability": null,
+          "repeats": 1000,
+          "mean_regret": 0.05391666666666667,
+          "regret_ci": [
+            0.053006958913944434,
+            0.0548263744193889
+          ],
+          "regret_ci_bonferroni": [
+            0.052757368816291665,
+            0.05507596451704167
+          ],
+          "regret_quantiles": {
+            "0.05": 0.03333333333333333,
+            "0.5": 0.05,
+            "0.95": 0.075
+          },
+          "max_regret": 0.1,
+          "fraction_exceeding_epsilon": {
+            "0.01": 0.997,
+            "0.02": 0.987,
+            "0.05": 0.499,
+            "0.1": 0.0
+          },
+          "non_rejection": null,
+          "mean_quality": 0.820825,
+          "mean_cost_usd": 0.0002804249916666667,
+          "mean_savings_vs_strong": 0.9160792075589704,
+          "mean_strong_fraction": 0.0
+        },
+        {
+          "policy": "random-mix-expected",
+          "epsilon": null,
+          "probability": 0.1,
+          "repeats": 1000,
+          "mean_regret": 0.005391666666666667,
+          "regret_ci": [
+            0.005300695891394443,
+            0.005482637441938891
+          ],
+          "regret_ci_bonferroni": [
+            0.005275736881629167,
+            0.005507596451704167
+          ],
+          "regret_quantiles": {
+            "0.05": 0.0033333333333333335,
+            "0.5": 0.005000000000000001,
+            "0.95": 0.007500000000000001
+          },
+          "max_regret": 0.010000000000000002,
+          "fraction_exceeding_epsilon": {
+            "0.01": 0.001,
+            "0.02": 0.0,
+            "0.05": 0.0,
+            "0.1": 0.0
+          },
+          "non_rejection": null,
+          "mean_quality": 0.8125975,
+          "mean_cost_usd": 0.003036504299166667,
+          "mean_savings_vs_strong": 0.09160792075589702,
+          "mean_strong_fraction": 0.9
+        },
+        {
+          "policy": "random-mix-expected",
+          "epsilon": null,
+          "probability": 0.25,
+          "repeats": 1000,
+          "mean_regret": 0.013479166666666667,
+          "regret_ci": [
+            0.013251739728486108,
+            0.013706593604847226
+          ],
+          "regret_ci_bonferroni": [
+            0.013189342204072916,
+            0.013768991129260418
+          ],
+          "regret_quantiles": {
+            "0.05": 0.008333333333333333,
+            "0.5": 0.0125,
+            "0.95": 0.01875
+          },
+          "max_regret": 0.025,
+          "fraction_exceeding_epsilon": {
+            "0.01": 0.864,
+            "0.02": 0.042,
+            "0.05": 0.0,
+            "0.1": 0.0
+          },
+          "non_rejection": null,
+          "mean_quality": 0.81396875,
+          "mean_cost_usd": 0.0025771577479166666,
+          "mean_savings_vs_strong": 0.2290198018897426,
+          "mean_strong_fraction": 0.75
+        },
+        {
+          "policy": "random-mix-expected",
+          "epsilon": null,
+          "probability": 0.5,
+          "repeats": 1000,
+          "mean_regret": 0.026958333333333334,
+          "regret_ci": [
+            0.026503479456972217,
+            0.02741318720969445
+          ],
+          "regret_ci_bonferroni": [
+            0.026378684408145833,
+            0.027537982258520836
+          ],
+          "regret_quantiles": {
+            "0.05": 0.016666666666666666,
+            "0.5": 0.025,
+            "0.95": 0.0375
+          },
+          "max_regret": 0.05,
+          "fraction_exceeding_epsilon": {
+            "0.01": 0.987,
+            "0.02": 0.864,
+            "0.05": 0.0,
+            "0.1": 0.0
+          },
+          "non_rejection": null,
+          "mean_quality": 0.8162541666666666,
+          "mean_cost_usd": 0.0018115801625,
+          "mean_savings_vs_strong": 0.4580396037794852,
+          "mean_strong_fraction": 0.5
+        },
+        {
+          "policy": "random-mix-expected",
+          "epsilon": null,
+          "probability": 0.75,
+          "repeats": 1000,
+          "mean_regret": 0.0404375,
+          "regret_ci": [
+            0.039755219185458324,
+            0.04111978081454168
+          ],
+          "regret_ci_bonferroni": [
+            0.03956802661221875,
+            0.041306973387781255
+          ],
+          "regret_quantiles": {
+            "0.05": 0.025,
+            "0.5": 0.0375,
+            "0.95": 0.05625
+          },
+          "max_regret": 0.075,
+          "fraction_exceeding_epsilon": {
+            "0.01": 0.997,
+            "0.02": 0.962,
+            "0.05": 0.123,
+            "0.1": 0.0
+          },
+          "non_rejection": null,
+          "mean_quality": 0.8185395833333333,
+          "mean_cost_usd": 0.0010460025770833332,
+          "mean_savings_vs_strong": 0.6870594056692279,
+          "mean_strong_fraction": 0.25
+        },
+        {
+          "policy": "random-mix-expected",
+          "epsilon": null,
+          "probability": 0.9,
+          "repeats": 1000,
+          "mean_regret": 0.048525,
+          "regret_ci": [
+            0.04770626302254999,
+            0.04934373697745001
+          ],
+          "regret_ci_bonferroni": [
+            0.0474816319346625,
+            0.0495683680653375
+          ],
+          "regret_quantiles": {
+            "0.05": 0.030000000000000002,
+            "0.5": 0.045000000000000005,
+            "0.95": 0.06749999999999999
+          },
+          "max_regret": 0.09000000000000001,
+          "fraction_exceeding_epsilon": {
+            "0.01": 0.997,
+            "0.02": 0.987,
+            "0.05": 0.499,
+            "0.1": 0.0
+          },
+          "non_rejection": null,
+          "mean_quality": 0.8199108333333334,
+          "mean_cost_usd": 0.0005866560258333333,
+          "mean_savings_vs_strong": 0.8244712868030734,
+          "mean_strong_fraction": 0.09999999999999998
+        },
+        {
+          "policy": "CertiRoute",
+          "epsilon": 0.01,
+          "probability": null,
+          "repeats": 1000,
+          "mean_regret": 0.007583333333333333,
+          "regret_ci": [
+            0.006901707180973096,
+            0.008264959485693571
+          ],
+          "regret_ci_bonferroni": [
+            0.00671469422277726,
+            0.008451972443889406
+          ],
+          "regret_quantiles": {
+            "0.05": 0.0,
+            "0.5": 0.0,
+            "0.95": 0.03333333333333333
+          },
+          "max_regret": 0.075,
+          "fraction_exceeding_epsilon": {
+            "0.01": 0.219,
+            "0.02": 0.105,
+            "0.05": 0.005,
+            "0.1": 0.0
+          },
+          "non_rejection": true,
+          "mean_quality": 0.80665,
+          "mean_cost_usd": 0.003095595025,
+          "mean_savings_vs_strong": 0.0741564326688737,
+          "mean_strong_fraction": 0.8869583333333333,
+          "regret_ci_family16": [
+            0.006555600668992981,
+            0.008611065997673686
+          ],
+          "non_rejection_family16": true
+        },
+        {
+          "policy": "CertiRoute",
+          "epsilon": 0.02,
+          "probability": null,
+          "repeats": 1000,
+          "mean_regret": 0.015141666666666666,
+          "regret_ci": [
+            0.014171115827987206,
+            0.016112217505346124
+          ],
+          "regret_ci_bonferroni": [
+            0.013904832642119993,
+            0.016378500691213337
+          ],
+          "regret_quantiles": {
+            "0.05": 0.0,
+            "0.5": 0.008333333333333333,
+            "0.95": 0.05
+          },
+          "max_regret": 0.1,
+          "fraction_exceeding_epsilon": {
+            "0.01": 0.452,
+            "0.02": 0.275,
+            "0.05": 0.03,
+            "0.1": 0.0
+          },
+          "non_rejection": true,
+          "mean_quality": 0.8061833333333334,
+          "mean_cost_usd": 0.0027210149375,
+          "mean_savings_vs_strong": 0.1862827656449163,
+          "mean_strong_fraction": 0.7442833333333333,
+          "regret_ci_family16": [
+            0.013678303214633732,
+            0.016605030118699602
+          ],
+          "non_rejection_family16": true
+        },
+        {
+          "policy": "CertiRoute",
+          "epsilon": 0.05,
+          "probability": null,
+          "repeats": 1000,
+          "mean_regret": 0.045491666666666666,
+          "regret_ci": [
+            0.044176801719120994,
+            0.04680653161421234
+          ],
+          "regret_ci_bonferroni": [
+            0.04381605150051939,
+            0.04716728183281394
+          ],
+          "regret_quantiles": {
+            "0.05": 0.008333333333333333,
+            "0.5": 0.041666666666666664,
+            "0.95": 0.075
+          },
+          "max_regret": 0.1,
+          "fraction_exceeding_epsilon": {
+            "0.01": 0.943,
+            "0.02": 0.857,
+            "0.05": 0.374,
+            "0.1": 0.0
+          },
+          "non_rejection": true,
+          "mean_quality": 0.8180666666666666,
+          "mean_cost_usd": 0.0008047126666666667,
+          "mean_savings_vs_strong": 0.7593408396853413,
+          "mean_strong_fraction": 0.131725,
+          "regret_ci_family16": [
+            0.043509158144789006,
+            0.047474175188544326
+          ],
+          "non_rejection_family16": true
+        },
+        {
+          "policy": "CertiRoute",
+          "epsilon": 0.1,
+          "probability": null,
+          "repeats": 1000,
+          "mean_regret": 0.05391666666666667,
+          "regret_ci": [
+            0.053006958913944434,
+            0.0548263744193889
+          ],
+          "regret_ci_bonferroni": [
+            0.052757368816291665,
+            0.05507596451704167
+          ],
+          "regret_quantiles": {
+            "0.05": 0.03333333333333333,
+            "0.5": 0.05,
+            "0.95": 0.075
+          },
+          "max_regret": 0.1,
+          "fraction_exceeding_epsilon": {
+            "0.01": 0.997,
+            "0.02": 0.987,
+            "0.05": 0.499,
+            "0.1": 0.0
+          },
+          "non_rejection": true,
+          "mean_quality": 0.820825,
+          "mean_cost_usd": 0.0002808653375,
+          "mean_savings_vs_strong": 0.9159491709548462,
+          "mean_strong_fraction": 9.166666666666656e-05,
+          "regret_ci_family16": [
+            0.052545040344468004,
+            0.05528829298886533
+          ],
+          "non_rejection_family16": true
+        },
+        {
+          "policy": "random-score-CRC",
+          "epsilon": 0.01,
+          "probability": null,
+          "repeats": 1000,
+          "mean_regret": 0.007816666666666666,
+          "regret_ci": [
+            0.007131863678441345,
+            0.008501469654891987
+          ],
+          "regret_ci_bonferroni": [
+            0.006943979114203438,
+            0.008689354219129895
+          ],
+          "regret_quantiles": {
+            "0.05": 0.0,
+            "0.5": 0.0,
+            "0.95": 0.03333333333333333
+          },
+          "max_regret": 0.06666666666666667,
+          "fraction_exceeding_epsilon": {
+            "0.01": 0.222,
+            "0.02": 0.11,
+            "0.05": 0.005,
+            "0.1": 0.0
+          },
+          "non_rejection": true,
+          "mean_quality": 0.8080833333333334,
+          "mean_cost_usd": 0.0029599443458333333,
+          "mean_savings_vs_strong": 0.11442846599497059,
+          "mean_strong_fraction": 0.8753833333333333
+        },
+        {
+          "policy": "random-score-CRC",
+          "epsilon": 0.02,
+          "probability": null,
+          "repeats": 1000,
+          "mean_regret": 0.016108333333333332,
+          "regret_ci": [
+            0.015106774574474737,
+            0.01710989209219193
+          ],
+          "regret_ci_bonferroni": [
+            0.014831983964324988,
+            0.017384682702341676
+          ],
+          "regret_quantiles": {
+            "0.05": 0.0,
+            "0.5": 0.008333333333333333,
+            "0.95": 0.05
+          },
+          "max_regret": 0.1,
+          "fraction_exceeding_epsilon": {
+            "0.01": 0.494,
+            "0.02": 0.305,
+            "0.05": 0.037,
+            "0.1": 0.0
+          },
+          "non_rejection": true,
+          "mean_quality": 0.8096833333333333,
+          "mean_cost_usd": 0.0025048761041666667,
+          "mean_savings_vs_strong": 0.25057452897046634,
+          "mean_strong_fraction": 0.7185833333333334
+        },
+        {
+          "policy": "random-score-CRC",
+          "epsilon": 0.05,
+          "probability": null,
+          "repeats": 1000,
+          "mean_regret": 0.045766666666666664,
+          "regret_ci": [
+            0.04445082552657313,
+            0.047082507806760196
+          ],
+          "regret_ci_bonferroni": [
+            0.044089807476909715,
+            0.04744352585642361
+          ],
+          "regret_quantiles": {
+            "0.05": 0.008333333333333333,
+            "0.5": 0.05,
+            "0.95": 0.075
+          },
+          "max_regret": 0.1,
+          "fraction_exceeding_epsilon": {
+            "0.01": 0.944,
+            "0.02": 0.853,
+            "0.05": 0.381,
+            "0.1": 0.0
+          },
+          "non_rejection": true,
+          "mean_quality": 0.8205666666666667,
+          "mean_cost_usd": 0.000860241875,
+          "mean_savings_vs_strong": 0.7424359602990338,
+          "mean_strong_fraction": 0.187
+        },
+        {
+          "policy": "random-score-CRC",
+          "epsilon": 0.1,
+          "probability": null,
+          "repeats": 1000,
+          "mean_regret": 0.05391666666666667,
+          "regret_ci": [
+            0.053006958913944434,
+            0.0548263744193889
+          ],
+          "regret_ci_bonferroni": [
+            0.052757368816291665,
+            0.05507596451704167
+          ],
+          "regret_quantiles": {
+            "0.05": 0.03333333333333333,
+            "0.5": 0.05,
+            "0.95": 0.075
+          },
+          "max_regret": 0.1,
+          "fraction_exceeding_epsilon": {
+            "0.01": 0.997,
+            "0.02": 0.987,
+            "0.05": 0.499,
+            "0.1": 0.0
+          },
+          "non_rejection": true,
+          "mean_quality": 0.8208166666666666,
+          "mean_cost_usd": 0.0002818127625,
+          "mean_savings_vs_strong": 0.9156683965035344,
+          "mean_strong_fraction": 0.00041666666666666664
+        }
+      ],
+      "gateway_check": "All first-draw thresholds and decisions match.",
+      "router_sha256": "5f4687121efa9a5e3060bb6e9a97a20c3077333b193574201d51bf580814b2fa"
+    },
+    {
+      "task": "equal-task portfolio",
+      "summaries": [
+        {
+          "policy": "cheap-only",
+          "epsilon": null,
+          "probability": null,
+          "repeats": 1000,
+          "mean_regret": 0.15882263107263106,
+          "regret_ci": [
+            0.158326855797113,
+            0.15931840634814912
+          ],
+          "regret_ci_bonferroni": [
+            0.1581908334327217,
+            0.15945442871254042
+          ],
+          "regret_quantiles": {
+            "0.05": 0.14602719370576514,
+            "0.5": 0.15856180856180857,
+            "0.95": 0.17219190201333057
+          },
+          "max_regret": 0.18397753040610182,
+          "fraction_exceeding_epsilon": {
+            "0.01": 1.0,
+            "0.02": 1.0,
+            "0.05": 1.0,
+            "0.1": 1.0
+          },
+          "non_rejection": null,
+          "mean_quality": 0.7653184618291761,
+          "mean_cost_usd": 0.0001877064692857143,
+          "mean_savings_vs_strong": 0.9678589289141823,
+          "mean_strong_fraction": 0.0
+        },
+        {
+          "policy": "strong-only",
+          "epsilon": null,
+          "probability": null,
+          "repeats": 1000,
+          "mean_regret": 0.0,
+          "regret_ci": [
+            0,
+            0.0
+          ],
+          "regret_ci_bonferroni": [
+            0,
+            0.0
+          ],
+          "regret_quantiles": {
+            "0.05": 0.0,
+            "0.5": 0.0,
+            "0.95": 0.0
+          },
+          "max_regret": 0.0,
+          "fraction_exceeding_epsilon": {
+            "0.01": 0.0,
+            "0.02": 0.0,
+            "0.05": 0.0,
+            "0.1": 0.0
+          },
+          "non_rejection": null,
+          "mean_quality": 0.8753398852470281,
+          "mean_cost_usd": 0.005840085424276781,
+          "mean_savings_vs_strong": 0.0,
+          "mean_strong_fraction": 1.0
+        },
+        {
+          "policy": "fixed-threshold",
+          "epsilon": null,
+          "probability": null,
+          "repeats": 1000,
+          "mean_regret": 0.15473486566343708,
+          "regret_ci": [
+            0.1542411495094168,
+            0.15522858181745736
+          ],
+          "regret_ci_bonferroni": [
+            0.1541056920916627,
+            0.15536403923521147
+          ],
+          "regret_quantiles": {
+            "0.05": 0.1414913591699306,
+            "0.5": 0.15445097230811516,
+            "0.95": 0.16858216518930805
+          },
+          "max_regret": 0.17817116745688175,
+          "fraction_exceeding_epsilon": {
+            "0.01": 1.0,
+            "0.02": 1.0,
+            "0.05": 1.0,
+            "0.1": 1.0
+          },
+          "non_rejection": null,
+          "mean_quality": 0.76940622723837,
+          "mean_cost_usd": 0.00025428730255720467,
+          "mean_savings_vs_strong": 0.9564595921645602,
+          "mean_strong_fraction": 0.008427592249020822
+        },
+        {
+          "policy": "random-mix-expected",
+          "epsilon": null,
+          "probability": 0.1,
+          "repeats": 1000,
+          "mean_regret": 0.01588226310726311,
+          "regret_ci": [
+            0.015832685579711302,
+            0.015931840634814915
+          ],
+          "regret_ci_bonferroni": [
+            0.015819083343272172,
+            0.015945442871254045
+          ],
+          "regret_quantiles": {
+            "0.05": 0.014602719370576514,
+            "0.5": 0.015856180856180856,
+            "0.95": 0.01721919020133306
+          },
+          "max_regret": 0.018397753040610185,
+          "fraction_exceeding_epsilon": {
+            "0.01": 1.0,
+            "0.02": 0.0,
+            "0.05": 0.0,
+            "0.1": 0.0
+          },
+          "non_rejection": null,
+          "mean_quality": 0.8643377429052429,
+          "mean_cost_usd": 0.0052748475287776745,
+          "mean_savings_vs_strong": 0.09678589289141822,
+          "mean_strong_fraction": 0.9
+        },
+        {
+          "policy": "random-mix-expected",
+          "epsilon": null,
+          "probability": 0.25,
+          "repeats": 1000,
+          "mean_regret": 0.039705657768157765,
+          "regret_ci": [
+            0.03958171394927825,
+            0.03982960158703728
+          ],
+          "regret_ci_bonferroni": [
+            0.039547708358180424,
+            0.039863607178135106
+          ],
+          "regret_quantiles": {
+            "0.05": 0.036506798426441285,
+            "0.5": 0.03964045214045214,
+            "0.95": 0.04304797550333264
+          },
+          "max_regret": 0.045994382601525455,
+          "fraction_exceeding_epsilon": {
+            "0.01": 1.0,
+            "0.02": 1.0,
+            "0.05": 0.0,
+            "0.1": 0.0
+          },
+          "non_rejection": null,
+          "mean_quality": 0.8478345293925651,
+          "mean_cost_usd": 0.004426990685529015,
+          "mean_savings_vs_strong": 0.2419647322285456,
+          "mean_strong_fraction": 0.75
+        },
+        {
+          "policy": "random-mix-expected",
+          "epsilon": null,
+          "probability": 0.5,
+          "repeats": 1000,
+          "mean_regret": 0.07941131553631553,
+          "regret_ci": [
+            0.0791634278985565,
+            0.07965920317407456
+          ],
+          "regret_ci_bonferroni": [
+            0.07909541671636085,
+            0.07972721435627021
+          ],
+          "regret_quantiles": {
+            "0.05": 0.07301359685288257,
+            "0.5": 0.07928090428090429,
+            "0.95": 0.08609595100666528
+          },
+          "max_regret": 0.09198876520305091,
+          "fraction_exceeding_epsilon": {
+            "0.01": 1.0,
+            "0.02": 1.0,
+            "0.05": 1.0,
+            "0.1": 0.0
+          },
+          "non_rejection": null,
+          "mean_quality": 0.8203291735381021,
+          "mean_cost_usd": 0.003013895946781248,
+          "mean_savings_vs_strong": 0.4839294644570912,
+          "mean_strong_fraction": 0.5
+        },
+        {
+          "policy": "random-mix-expected",
+          "epsilon": null,
+          "probability": 0.75,
+          "repeats": 1000,
+          "mean_regret": 0.11911697330447331,
+          "regret_ci": [
+            0.11874514184783477,
+            0.11948880476111184
+          ],
+          "regret_ci_bonferroni": [
+            0.11864312507454129,
+            0.11959082153440533
+          ],
+          "regret_quantiles": {
+            "0.05": 0.10952039527932385,
+            "0.5": 0.11892135642135643,
+            "0.95": 0.12914392650999793
+          },
+          "max_regret": 0.13798314780457638,
+          "fraction_exceeding_epsilon": {
+            "0.01": 1.0,
+            "0.02": 1.0,
+            "0.05": 1.0,
+            "0.1": 0.999
+          },
+          "non_rejection": null,
+          "mean_quality": 0.7928238176836391,
+          "mean_cost_usd": 0.001600801208033481,
+          "mean_savings_vs_strong": 0.7258941966856368,
+          "mean_strong_fraction": 0.25
+        },
+        {
+          "policy": "random-mix-expected",
+          "epsilon": null,
+          "probability": 0.9,
+          "repeats": 1000,
+          "mean_regret": 0.14294036796536796,
+          "regret_ci": [
+            0.1424941702174017,
+            0.14338656571333422
+          ],
+          "regret_ci_bonferroni": [
+            0.14237175008944955,
+            0.14350898584128638
+          ],
+          "regret_quantiles": {
+            "0.05": 0.1314244743351886,
+            "0.5": 0.1427056277056277,
+            "0.95": 0.15497271181199754
+          },
+          "max_regret": 0.16557977736549165,
+          "fraction_exceeding_epsilon": {
+            "0.01": 1.0,
+            "0.02": 1.0,
+            "0.05": 1.0,
+            "0.1": 1.0
+          },
+          "non_rejection": null,
+          "mean_quality": 0.7763206041709613,
+          "mean_cost_usd": 0.0007529443647848209,
+          "mean_savings_vs_strong": 0.8710730360227642,
+          "mean_strong_fraction": 0.09999999999999994
+        },
+        {
+          "policy": "CertiRoute",
+          "epsilon": 0.01,
+          "probability": null,
+          "repeats": 1000,
+          "mean_regret": 0.008004346182917612,
+          "regret_ci": [
+            0.007711006659535583,
+            0.008297685706299643
+          ],
+          "regret_ci_bonferroni": [
+            0.0076305251641682545,
+            0.00837816720166697
+          ],
+          "regret_quantiles": {
+            "0.05": 0.0016835016835016836,
+            "0.5": 0.007232185803614375,
+            "0.95": 0.016410963375249086
+          },
+          "max_regret": 0.03179413179413179,
+          "fraction_exceeding_epsilon": {
+            "0.01": 0.303,
+            "0.02": 0.024,
+            "0.05": 0.0,
+            "0.1": 0.0
+          },
+          "non_rejection": true,
+          "mean_quality": 0.8708656737442452,
+          "mean_cost_usd": 0.005566543670246341,
+          "mean_savings_vs_strong": 0.046843813675364374,
+          "mean_strong_fraction": 0.9254592437985295,
+          "regret_ci_family16": [
+            0.007562058854478351,
+            0.008446633511356874
+          ],
+          "non_rejection_family16": true
+        },
+        {
+          "policy": "CertiRoute",
+          "epsilon": 0.02,
+          "probability": null,
+          "repeats": 1000,
+          "mean_regret": 0.016758364254792827,
+          "regret_ci": [
+            0.01633909392155353,
+            0.017177634588032124
+          ],
+          "regret_ci_bonferroni": [
+            0.016224061678393065,
+            0.01729266683119259
+          ],
+          "regret_quantiles": {
+            "0.05": 0.007232185803614375,
+            "0.5": 0.01590050161478733,
+            "0.95": 0.02869167869167869
+          },
+          "max_regret": 0.0553459767745482,
+          "fraction_exceeding_epsilon": {
+            "0.01": 0.853,
+            "0.02": 0.28,
+            "0.05": 0.001,
+            "0.1": 0.0
+          },
+          "non_rejection": true,
+          "mean_quality": 0.8666378306878307,
+          "mean_cost_usd": 0.0052675379966847045,
+          "mean_savings_vs_strong": 0.0980457211897469,
+          "mean_strong_fraction": 0.8499296846011132,
+          "regret_ci_family16": [
+            0.016126202746366485,
+            0.01739052576321917
+          ],
+          "non_rejection_family16": true
+        },
+        {
+          "policy": "CertiRoute",
+          "epsilon": 0.05,
+          "probability": null,
+          "repeats": 1000,
+          "mean_regret": 0.04769278327492613,
+          "regret_ci": [
+            0.04705632100947542,
+            0.04832924554037685
+          ],
+          "regret_ci_bonferroni": [
+            0.046881699348276226,
+            0.04850386720157604
+          ],
+          "regret_quantiles": {
+            "0.05": 0.0313380402666117,
+            "0.5": 0.04781058888201745,
+            "0.95": 0.06434875970590255
+          },
+          "max_regret": 0.08409949838521268,
+          "fraction_exceeding_epsilon": {
+            "0.01": 1.0,
+            "0.02": 1.0,
+            "0.05": 0.411,
+            "0.1": 0.0
+          },
+          "non_rejection": true,
+          "mean_quality": 0.8548764103621247,
+          "mean_cost_usd": 0.003926541798547379,
+          "mean_savings_vs_strong": 0.32766513726225605,
+          "mean_strong_fraction": 0.5207738249845393,
+          "regret_ci_family16": [
+            0.04673314717886558,
+            0.04865241937098669
+          ],
+          "non_rejection_family16": true
+        },
+        {
+          "policy": "CertiRoute",
+          "epsilon": 0.1,
+          "probability": null,
+          "repeats": 1000,
+          "mean_regret": 0.08358233697519411,
+          "regret_ci": [
+            0.08290654007495225,
+            0.08425813387543597
+          ],
+          "regret_ci_bonferroni": [
+            0.08272112644753173,
+            0.0844435475028565
+          ],
+          "regret_quantiles": {
+            "0.05": 0.06568147461004603,
+            "0.5": 0.08321823678966536,
+            "0.95": 0.10220366934652649
+          },
+          "max_regret": 0.11849618635332922,
+          "fraction_exceeding_epsilon": {
+            "0.01": 1.0,
+            "0.02": 1.0,
+            "0.05": 1.0,
+            "0.1": 0.072
+          },
+          "non_rejection": true,
+          "mean_quality": 0.829054736136879,
+          "mean_cost_usd": 0.0028908521646377034,
+          "mean_savings_vs_strong": 0.5050047567136319,
+          "mean_strong_fraction": 0.2584010805332234,
+          "regret_ci_family16": [
+            0.08256339345837985,
+            0.08460128049200838
+          ],
+          "non_rejection_family16": true
+        },
+        {
+          "policy": "random-score-CRC",
+          "epsilon": 0.01,
+          "probability": null,
+          "repeats": 1000,
+          "mean_regret": 0.008082639318353605,
+          "regret_ci": [
+            0.007793258865456253,
+            0.008372019771250957
+          ],
+          "regret_ci_bonferroni": [
+            0.007713863592324503,
+            0.008451415044382706
+          ],
+          "regret_quantiles": {
+            "0.05": 0.0016835016835016836,
+            "0.5": 0.007398818113103827,
+            "0.95": 0.016660138802995945
+          },
+          "max_regret": 0.029196729196729197,
+          "fraction_exceeding_epsilon": {
+            "0.01": 0.284,
+            "0.02": 0.026,
+            "0.05": 0.0,
+            "0.1": 0.0
+          },
+          "non_rejection": true,
+          "mean_quality": 0.8689264241049955,
+          "mean_cost_usd": 0.005637369919896757,
+          "mean_savings_vs_strong": 0.03470275679931061,
+          "mean_strong_fraction": 0.9397636604136604
+        },
+        {
+          "policy": "random-score-CRC",
+          "epsilon": 0.02,
+          "probability": null,
+          "repeats": 1000,
+          "mean_regret": 0.017181510685082113,
+          "regret_ci": [
+            0.01677272384362635,
+            0.017590297526537877
+          ],
+          "regret_ci_bonferroni": [
+            0.016660567882140043,
+            0.017702453488024184
+          ],
+          "regret_quantiles": {
+            "0.05": 0.007816257816257817,
+            "0.5": 0.016317941317941318,
+            "0.95": 0.028931148216862504
+          },
+          "max_regret": 0.04718958290386862,
+          "fraction_exceeding_epsilon": {
+            "0.01": 0.882,
+            "0.02": 0.296,
+            "0.05": 0.0,
+            "0.1": 0.0
+          },
+          "non_rejection": true,
+          "mean_quality": 0.8651540300968872,
+          "mean_cost_usd": 0.005312270695906857,
+          "mean_savings_vs_strong": 0.0903597250056019,
+          "mean_strong_fraction": 0.8552823816395245
+        },
+        {
+          "policy": "random-score-CRC",
+          "epsilon": 0.05,
+          "probability": null,
+          "repeats": 1000,
+          "mean_regret": 0.04781336150621865,
+          "regret_ci": [
+            0.047241072835452376,
+            0.04838565017698492
+          ],
+          "regret_ci_bonferroni": [
+            0.04708405803064865,
+            0.04854266498178865
+          ],
+          "regret_quantiles": {
+            "0.05": 0.03296742939600082,
+            "0.5": 0.04802875695732839,
+            "0.95": 0.06241556723699581
+          },
+          "max_regret": 0.07401738473167044,
+          "fraction_exceeding_epsilon": {
+            "0.01": 1.0,
+            "0.02": 1.0,
+            "0.05": 0.424,
+            "0.1": 0.0
+          },
+          "non_rejection": true,
+          "mean_quality": 0.8522582732082732,
+          "mean_cost_usd": 0.004114251548977187,
+          "mean_savings_vs_strong": 0.2954910430419194,
+          "mean_strong_fraction": 0.5542657355871642
+        },
+        {
+          "policy": "random-score-CRC",
+          "epsilon": 0.1,
+          "probability": null,
+          "repeats": 1000,
+          "mean_regret": 0.08377092352092352,
+          "regret_ci": [
+            0.08311820786367723,
+            0.08442363917816982
+          ],
+          "regret_ci_bonferroni": [
+            0.08293912687404721,
+            0.08460272016779984
+          ],
+          "regret_quantiles": {
+            "0.05": 0.06650896722325293,
+            "0.5": 0.08359788359788359,
+            "0.95": 0.10148964131106988
+          },
+          "max_regret": 0.12017453446024874,
+          "fraction_exceeding_epsilon": {
+            "0.01": 1.0,
+            "0.02": 1.0,
+            "0.05": 1.0,
+            "0.1": 0.066
+          },
+          "non_rejection": true,
+          "mean_quality": 0.8246168418882704,
+          "mean_cost_usd": 0.003123619362247475,
+          "mean_savings_vs_strong": 0.46510981284864167,
+          "mean_strong_fraction": 0.30694269222840653
+        }
+      ]
+    }
+  ],
+  "cost_unit": "USD per request",
+  "mixture": "Equal task weights, separate frozen router/calibration per task.",
+  "inference": "Normal Monte Carlo intervals conditional on fixed pools/training; 16-comparison Bonferroni family. Not population confidence.",
+  "code": {
+    "git_sha": "6e33f753d6650a989e4e14afd26e3f80d1e808e9",
+    "source_sha256": "2cbe7224b46d98f34121ce4d7e4b1d09d5d6fada00b5e3c3347b8d9bba85a58c",
+    "files": {
+      "eval/__init__.py": "5ed0dde16db9d19cfbae65156e607f09bf1684ab47f6c53cad95dd210638df40",
+      "eval/benchmarks.py": "59d0ac194adea7d6f3fac32f21bdaf8d4f2a27b864fb12d2580aeaf2332d0bcf",
+      "eval/calibrate.py": "735f94829129690b5992b54ff1f98aaa444d8b5120c1a5796e77ac7f14a2515f",
+      "eval/code_worker.py": "e7618c55c3ac2bc083d3d90c0c0c0d36968ec969b04a05e223292846e4bad516",
+      "eval/drift.py": "360f30241f07989508c9fbc074596c6989253795201f1401e346f7f4e610083f",
+      "eval/fit_router.py": "7722a25f71de28e3cd1fd128a3fcf55d849ccf66969c5598903d82a1c3e5e0c9",
+      "eval/fixtures.py": "64c1e8a0ee1dfdc367b81141bd258e0845bbb5ad44e3af3b233644d939d88393",
+      "eval/import_benchmarks.py": "d6c42b24fb15dc80fff2a46e8cff7262b84072a92b460aa6b34dc3f79b47d33b",
+      "eval/import_gsm8k.py": "edaacf4ef5cc391075ea307396c30bac89dffcdf7361131884fb0c0f5ce73bb1",
+      "eval/live.py": "1041b4d3e6cbbd957ebe512a3560ca42317873bb5439592c90e663e847047185",
+      "eval/live_study.py": "ef7555290b8b5eeb65441b803b203d4820e8f1d2117b458b5b1a6b58437b5a4c",
+      "eval/make_fixture.py": "52e1a6e48b010335c88754594a274cb8e9584ef30a78be839677406cf532984b",
+      "eval/manifest.py": "4e1cef93aaf20e088bb3bab4957918048513a46bd05b413cce0771af439a4134",
+      "eval/multibench.py": "86a94d779cdcf38d0d0fe976c075432d1f44ad661910761e5e3581da54cdaaf0",
+      "eval/offline.py": "dd8ae9e6549c7ad8d8ac6acfae117be8c7c72f6da54daa682b6d265fc2ce3697",
+      "eval/plot_expansion.py": "d35deeab1bfdc5d8afdb6453e323be3e5352716425ddd790226a1ee6f727ca00",
+      "eval/plot_sensitivity.py": "9b6d5fa7ec878d965ffff3c8c1f12ccd18002312c68af83a222dd4e774b528c7",
+      "eval/plot_shift.py": "e98597d3b9145db4530987274f2ef9ba8d0e4a2ee85a38bf7c8993a47da21031",
+      "eval/repeated.py": "5ade6d222292d5d9076db668afbab9221b9a6fa5ee812e8b909602be20d43b9a",
+      "eval/score_code.py": "01693996bc9a107804ebbaeefc615f24f28c96570dad467d5351be39b9a3f039",
+      "eval/sensitivity.py": "0d222c72e5d62c180512626a3e5b4ebe235048e32371174435fead19ed1e946a",
+      "eval/shift.py": "aa7d7ec3901e85da12e6fd5cc2b0e89d9d087c475112bcc51e822a9556345552",
+      "pyproject.toml": "b194ad27c2375fb154ad3b336e59d2008c5bfcf7e5aa74a89ad5df19a324790e",
+      "requirements-eval.lock": "ee79767244ad366cba6fa39d0ed398a9d236f84f13f15c68f939f5378b7e77a8",
+      "requirements-plot.lock": "17348dcf0e5cfca3bc1ecde01f1ea0d1b11d2681ff447981807c20f55056befd",
+      "src/certiroute/__init__.py": "41f151721d584f09ce252daecfa641d4ac68e20e883fbee8906a071deb6fef27",
+      "src/certiroute/calibration/__init__.py": "9d71bc6f63412f5a88262f2f46fd32ab14b9a49cd47bd119949c5bb38fcc2fb3",
+      "src/certiroute/calibration/artifact.py": "a648155746ea5e1392cec32fe10dc1634903a39775e6832968e436f76b694226",
+      "src/certiroute/calibration/crc.py": "f14c20f353f7a482b4878af7fcdf7739f03ddd70db26027f4af618830f54fe5c",
+      "src/certiroute/calibration/losses.py": "70bd93be7a5260fb7dfe0ee78cd9319aaea62b8c69bcba9c56ed1d03543566ab",
+      "src/certiroute/config.py": "8f37daaa5e90798ed3697c64c83a6081b45a35809106eca54e3e039348901497",
+      "src/certiroute/dashboard/__init__.py": "69526b66dca14af934ca84e7cfbee8dddbb2500a2fa710e1790ba733e9389989",
+      "src/certiroute/dashboard/app.py": "0894d6be849c4038b56e2800afc694167b1add6a40b2b3f42cebebc612316614",
+      "src/certiroute/dashboard/data.py": "af75421d6d34d9a3f16d64e060f3035c4d997fbf8b4f9080ada0f8493ad61215",
+      "src/certiroute/gateway/__init__.py": "d2fd433cf9318d7ab8158833900d1841d61c56af3dbb36a1d816efbf20053efa",
+      "src/certiroute/gateway/app.py": "5e350f738c1b3a2096f2c148184dd911e89e039862796fc181a1a67db1135a8e",
+      "src/certiroute/gateway/schemas.py": "23ea39538a46720c50cdfe09296a2dca93727938d9aa99299a3643c029aca485",
+      "src/certiroute/monitor/__init__.py": "a1a45737936105e1fec97e897e65003105d0df2ebe49a657e7caf98e26826cdd",
+      "src/certiroute/monitor/drift.py": "08efbb652f6a058e9540fd388fde6c6b4540ca55e0a1b603fd881de62addec08",
+      "src/certiroute/provenance.py": "d2fd028bb04984d74467123eaefdbe0289974392026620badca80bb53d64d48c",
+      "src/certiroute/providers/__init__.py": "dc085752313fe564111e94f141841e8c5cbd5789017cf1b8aad0fcc8a35adc39",
+      "src/certiroute/providers/base.py": "45235c860a31463aaec02829b266838e71a4e9a83893f1f25bfefae82b882afd",
+      "src/certiroute/providers/openai_compat.py": "9261cb85f4cba07418bbbf9dbeee5b9f0afd80780c4b06b612a1bfd4f389e927",
+      "src/certiroute/router/__init__.py": "767d79ff4f938cc36967a7cbdf9691d2ba36045e69c3fc1f8235ba532ccc431d",
+      "src/certiroute/router/features.py": "9741eec7a7d22fe745149f301d78a0bda5a109a83666b1e7bbc6c7f75f86602e",
+      "src/certiroute/router/policy.py": "8861dc1827df09e0b7bcfa76f2693902705dfea394889997a552040fedb5a6ff",
+      "src/certiroute/router/predictor.py": "40384ef9dac21824229420bcfcc6aed83d810df5e89ea4cb89da71572e35e42f",
+      "src/certiroute/router/scope.py": "409310f1b73cb7e49437c17bcfbbad472aa9e40e64d18fd67080e092596dfb4a",
+      "src/certiroute/scoring/__init__.py": "95fdda94da14194091541817f9bf8a8ff3fa41c7c4753ee6e4a21e08df32b2be",
+      "src/certiroute/telemetry/__init__.py": "15d9d0deeb498c1c4ad9a3d95d2e49a792603200f345d107b441efe3700537a7"
+    },
+    "python": "3.13.14",
+    "dependencies": {
+      "fastapi": "0.161.1",
+      "httpx": "0.28.1",
+      "pydantic": "2.14.1",
+      "PyYAML": "6.0.3"
+    }
+  }
+}

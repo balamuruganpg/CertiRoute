@@ -1,0 +1,6 @@
+{
+  "https://huggingface.co/datasets/withmartian/routerbench/resolve/784021482c3f320c6619ed4b3bb3b41a21424fcb/routerbench_0shot.pkl": "ba4f77f19517610a707c374e99322d7750c30fc4ae7ff5527888595a1e65d36d",
+  "https://raw.githubusercontent.com/google-research/google-research/f82046ba5aabbbb427dbfd38a254d26bff08b533/mbpp/sanitized-mbpp.json": "ca95deaa9a01ef0a6f439f88bcf0dd3db3563d22f22aad6cae04ebb9a8d8c8e9",
+  "https://github.com/evalplus/evalplus/releases/download/v0.2.0/gpt-3.5-turbo_temp_0.0.zip": "44c228692d438ffe788cee12a997d711d1e87ea4a904c2149fea9cb2f9f1f7cf",
+  "https://github.com/evalplus/evalplus/releases/download/v0.2.0/gpt-4-1106-preview_temp_0.0.zip": "4e060bf3473b09b763567e042c693fd99d4922d9602124dcb70ab184bcbb252d"
+}

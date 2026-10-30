@@ -1,13 +1,13 @@
 # Paths are relative to the repository root; start the app from that directory.
 models:
   cheap:
-    base_url: http://127.0.0.1:8001/v1
-    model: replace-with-cheap-model-id
+    base_url: https://api.groq.com/openai/v1
+    model: openai/gpt-oss-20b
     api_key_env: CHEAP_API_KEY
   strong:
-    base_url: http://127.0.0.1:8002/v1
-    model: replace-with-strong-model-id
-    api_key_env: STRONG_API_KEY
+    base_url: https://api.x.ai/v1
+    model: grok-4.20-0309-non-reasoning
+    api_key_env: XAI_API_KEY
 calibration:
   artifact: artifacts/calibration.json
   allowed_epsilons: [0.01, 0.02, 0.05, 0.10]

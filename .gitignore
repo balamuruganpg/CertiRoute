@@ -22,6 +22,7 @@ data/eval/*
 !data/eval/README.md
 !data/eval/gsm8k/
 !data/eval/gsm8k-full/
+!data/eval/multibench/
 artifacts/*.pkl
 artifacts/*.joblib
 
@@ -33,6 +34,10 @@ results/*
 !results/gsm8k-repeated/
 !results/gsm8k-sensitivity/
 !results/gsm8k-shift/
+!results/multibench-v1/
+!results/drift-v1/
+!results/live-gsm8k-v1/
+results/drift-v1/*.jsonl
 results/**/plots-draft*/
 # Detailed generated draw logs remain local and are recreated by the eval commands.
 results/**/draws.jsonl

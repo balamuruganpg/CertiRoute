@@ -1,0 +1,2153 @@
+[
+  {
+    "id": "mbpp/16",
+    "score": 0.8815681898802623,
+    "random_score": 0.2909263037111618,
+    "q_cheap": 1.0,
+    "q_strong": 1.0,
+    "cheap_cost": 0.0003345,
+    "strong_cost": 0.00444
+  },
+  {
+    "id": "mbpp/286",
+    "score": 0.8850299380133428,
+    "random_score": 0.44919427725548133,
+    "q_cheap": 1.0,
+    "q_strong": 1.0,
+    "cheap_cost": 0.000484,
+    "strong_cost": 0.00638
+  },
+  {
+    "id": "mbpp/749",
+    "score": 0.8882932091059852,
+    "random_score": 0.85638227679768,
+    "q_cheap": 1.0,
+    "q_strong": 0.0,
+    "cheap_cost": 0.0002565,
+    "strong_cost": 0.00453
+  },
+  {
+    "id": "mbpp/786",
+    "score": 0.9213777359442591,
+    "random_score": 0.9998746213988624,
+    "q_cheap": 1.0,
+    "q_strong": 1.0,
+    "cheap_cost": 0.0006265,
+    "strong_cost": 0.00479
+  },
+  {
+    "id": "mbpp/120",
+    "score": 0.909220643127695,
+    "random_score": 0.36940963701036733,
+    "q_cheap": 1.0,
+    "q_strong": 1.0,
+    "cheap_cost": 0.0003695,
+    "strong_cost": 0.00274
+  },
+  {
+    "id": "mbpp/306",
+    "score": 0.8579446273423074,
+    "random_score": 0.7285891641889042,
+    "q_cheap": 0.0,
+    "q_strong": 0.0,
+    "cheap_cost": 0.000537,
+    "strong_cost": 0.00798
+  },
+  {
+    "id": "mbpp/419",
+    "score": 0.8940713950805519,
+    "random_score": 0.2740362865701362,
+    "q_cheap": 1.0,
+    "q_strong": 1.0,
+    "cheap_cost": 0.0002875,
+    "strong_cost": 0.00401
+  },
+  {
+    "id": "mbpp/7",
+    "score": 0.9040460592655045,
+    "random_score": 0.06454044021876129,
+    "q_cheap": 1.0,
+    "q_strong": 1.0,
+    "cheap_cost": 0.00012,
+    "strong_cost": 0.00363
+  },
+  {
+    "id": "mbpp/745",
+    "score": 0.7500865832375005,
+    "random_score": 0.7399667006441762,
+    "q_cheap": 0.0,
+    "q_strong": 1.0,
+    "cheap_cost": 0.0003575,
+    "strong_cost": 0.00544
+  },
+  {
+    "id": "mbpp/90",
+    "score": 0.9371682055613483,
+    "random_score": 0.2067464649948935,
+    "q_cheap": 1.0,
+    "q_strong": 1.0,
+    "cheap_cost": 0.000239,
+    "strong_cost": 0.00193
+  },
+  {
+    "id": "mbpp/759",
+    "score": 0.9005559050187613,
+    "random_score": 0.3779758206216371,
+    "q_cheap": 1.0,
+    "q_strong": 1.0,
+    "cheap_cost": 0.000424,
+    "strong_cost": 0.00308
+  },
+  {
+    "id": "mbpp/56",
+    "score": 0.9238778495923776,
+    "random_score": 0.6649742781585911,
+    "q_cheap": 1.0,
+    "q_strong": 1.0,
+    "cheap_cost": 0.000236,
+    "strong_cost": 0.00229
+  },
+  {
+    "id": "mbpp/128",
+    "score": 0.9201133031933838,
+    "random_score": 0.25479495342317854,
+    "q_cheap": 1.0,
+    "q_strong": 1.0,
+    "cheap_cost": 0.000322,
+    "strong_cost": 0.00329
+  },
+  {
+    "id": "mbpp/283",
+    "score": 0.8765409624468863,
+    "random_score": 0.49108506351334164,
+    "q_cheap": 1.0,
+    "q_strong": 1.0,
+    "cheap_cost": 0.000107,
+    "strong_cost": 0.00565
+  },
+  {
+    "id": "mbpp/125",
+    "score": 0.849996416221465,
+    "random_score": 0.5143607953221823,
+    "q_cheap": 1.0,
+    "q_strong": 0.0,
+    "cheap_cost": 0.000437,
+    "strong_cost": 0.00481
+  },
+  {
+    "id": "mbpp/771",
+    "score": 0.8826553918852695,
+    "random_score": 0.6279912551625141,
+    "q_cheap": 1.0,
+    "q_strong": 1.0,
+    "cheap_cost": 0.0005555,
+    "strong_cost": 0.00817
+  },
+  {
+    "id": "mbpp/566",
+    "score": 0.9322341642702161,
+    "random_score": 0.8084902514790355,
+    "q_cheap": 1.0,
+    "q_strong": 1.0,
+    "cheap_cost": 0.00036,
+    "strong_cost": 0.00174
+  },
+  {
+    "id": "mbpp/92",
+    "score": 0.9325299806019777,
+    "random_score": 0.8174088499488807,
+    "q_cheap": 0.0,
+    "q_strong": 1.0,
+    "cheap_cost": 0.000474,
+    "strong_cost": 0.00312
+  },
+  {
+    "id": "mbpp/454",
+    "score": 0.9428838582973906,
+    "random_score": 0.7589619689903403,
+    "q_cheap": 1.0,
+    "q_strong": 1.0,
+    "cheap_cost": 7.85e-05,
+    "strong_cost": 0.00205
+  },
+  {
+    "id": "mbpp/793",
+    "score": 0.9264031083108084,
+    "random_score": 0.7238876618964324,
+    "q_cheap": 1.0,
+    "q_strong": 1.0,
+    "cheap_cost": 0.0006435,
+    "strong_cost": 0.00237
+  },
+  {
+    "id": "mbpp/427",
+    "score": 0.929987702701448,
+    "random_score": 0.9736380652887344,
+    "q_cheap": 1.0,
+    "q_strong": 1.0,
+    "cheap_cost": 0.0001555,
+    "strong_cost": 0.00473
+  },
+  {
+    "id": "mbpp/8",
+    "score": 0.9357502664973638,
+    "random_score": 0.06325040140287684,
+    "q_cheap": 1.0,
+    "q_strong": 1.0,
+    "cheap_cost": 0.0002515,
+    "strong_cost": 0.00272
+  },
+  {
+    "id": "mbpp/250",
+    "score": 0.9033029498748459,
+    "random_score": 0.6742858149653994,
+    "q_cheap": 1.0,
+    "q_strong": 1.0,
+    "cheap_cost": 0.000292,
+    "strong_cost": 0.00263
+  },
+  {
+    "id": "mbpp/93",
+    "score": 0.9364200487851698,
+    "random_score": 0.8681646234180329,
+    "q_cheap": 1.0,
+    "q_strong": 1.0,
+    "cheap_cost": 0.00014,
+    "strong_cost": 0.00139
+  },
+  {
+    "id": "mbpp/744",
+    "score": 0.932439278706021,
+    "random_score": 0.9568330927558717,
+    "q_cheap": 1.0,
+    "q_strong": 1.0,
+    "cheap_cost": 0.0002175,
+    "strong_cost": 0.00228
+  },
+  {
+    "id": "mbpp/445",
+    "score": 0.9184519874815501,
+    "random_score": 0.5405880353129054,
+    "q_cheap": 0.0,
+    "q_strong": 0.0,
+    "cheap_cost": 0.0003045,
+    "strong_cost": 0.00417
+  },
+  {
+    "id": "mbpp/58",
+    "score": 0.9219512467714359,
+    "random_score": 0.6134608601304067,
+    "q_cheap": 1.0,
+    "q_strong": 1.0,
+    "cheap_cost": 0.000307,
+    "strong_cost": 0.00206
+  },
+  {
+    "id": "mbpp/809",
+    "score": 0.9016183215374796,
+    "random_score": 0.9963421769974881,
+    "q_cheap": 1.0,
+    "q_strong": 1.0,
+    "cheap_cost": 0.0002655,
+    "strong_cost": 0.00306
+  },
+  {
+    "id": "mbpp/797",
+    "score": 0.9197677308879253,
+    "random_score": 0.4762812362828797,
+    "q_cheap": 1.0,
+    "q_strong": 1.0,
+    "cheap_cost": 0.000307,
+    "strong_cost": 0.00275
+  },
+  {
+    "id": "mbpp/453",
+    "score": 0.9342140846228021,
+    "random_score": 0.9703249544781947,
+    "q_cheap": 1.0,
+    "q_strong": 1.0,
+    "cheap_cost": 0.0003355,
+    "strong_cost": 0.00332
+  },
+  {
+    "id": "mbpp/278",
+    "score": 0.9124460178096604,
+    "random_score": 0.7364138803358266,
+    "q_cheap": 1.0,
+    "q_strong": 1.0,
+    "cheap_cost": 0.000337,
+    "strong_cost": 0.00371
+  },
+  {
+    "id": "mbpp/142",
+    "score": 0.9153157519693975,
+    "random_score": 0.033632394486304035,
+    "q_cheap": 1.0,
+    "q_strong": 1.0,
+    "cheap_cost": 0.00029,
+    "strong_cost": 0.00382
+  },
+  {
+    "id": "mbpp/282",
+    "score": 0.9431360215166041,
+    "random_score": 0.44562654258022266,
+    "q_cheap": 1.0,
+    "q_strong": 1.0,
+    "cheap_cost": 0.0002975,
+    "strong_cost": 0.00208
+  },
+  {
+    "id": "mbpp/404",
+    "score": 0.9392815490087043,
+    "random_score": 0.5558188589748263,
+    "q_cheap": 1.0,
+    "q_strong": 1.0,
+    "cheap_cost": 0.000192,
+    "strong_cost": 0.00144
+  },
+  {
+    "id": "mbpp/428",
+    "score": 0.9380972231684362,
+    "random_score": 0.028239281180598118,
+    "q_cheap": 1.0,
+    "q_strong": 1.0,
+    "cheap_cost": 0.000317,
+    "strong_cost": 0.00463
+  },
+  {
+    "id": "mbpp/643",
+    "score": 0.9173914730777073,
+    "random_score": 0.31722461065833046,
+    "q_cheap": 1.0,
+    "q_strong": 1.0,
+    "cheap_cost": 9.45e-05,
+    "strong_cost": 0.00312
+  },
+  {
+    "id": "mbpp/586",
+    "score": 0.9188303267995143,
+    "random_score": 0.6974207903941024,
+    "q_cheap": 1.0,
+    "q_strong": 1.0,
+    "cheap_cost": 0.000279,
+    "strong_cost": 0.00249
+  },
+  {
+    "id": "mbpp/300",
+    "score": 0.8702622007463493,
+    "random_score": 0.19624328058519028,
+    "q_cheap": 0.0,
+    "q_strong": 1.0,
+    "cheap_cost": 0.0004455,
+    "strong_cost": 0.00507
+  },
+  {
+    "id": "mbpp/82",
+    "score": 0.9443249512501802,
+    "random_score": 0.5884031639783072,
+    "q_cheap": 1.0,
+    "q_strong": 1.0,
+    "cheap_cost": 7.05e-05,
+    "strong_cost": 0.00222
+  },
+  {
+    "id": "mbpp/620",
+    "score": 0.908052095661414,
+    "random_score": 0.10012862601685163,
+    "q_cheap": 1.0,
+    "q_strong": 0.0,
+    "cheap_cost": 0.0005945,
+    "strong_cost": 0.00421
+  },
+  {
+    "id": "mbpp/606",
+    "score": 0.9452289778133397,
+    "random_score": 0.6948956734441999,
+    "q_cheap": 1.0,
+    "q_strong": 1.0,
+    "cheap_cost": 7.95e-05,
+    "strong_cost": 0.00195
+  },
+  {
+    "id": "mbpp/111",
+    "score": 0.9352710334575149,
+    "random_score": 0.5008258229866103,
+    "q_cheap": 1.0,
+    "q_strong": 1.0,
+    "cheap_cost": 0.0003265,
+    "strong_cost": 0.00545
+  },
+  {
+    "id": "mbpp/247",
+    "score": 0.919044965043951,
+    "random_score": 0.18279346935422228,
+    "q_cheap": 1.0,
+    "q_strong": 1.0,
+    "cheap_cost": 0.000588,
+    "strong_cost": 0.00366
+  },
+  {
+    "id": "mbpp/268",
+    "score": 0.9453970632022783,
+    "random_score": 0.6630570831460761,
+    "q_cheap": 1.0,
+    "q_strong": 1.0,
+    "cheap_cost": 0.0002745,
+    "strong_cost": 0.00183
+  },
+  {
+    "id": "mbpp/751",
+    "score": 0.8736575923064711,
+    "random_score": 0.006115498991773508,
+    "q_cheap": 1.0,
+    "q_strong": 1.0,
+    "cheap_cost": 0.0003365,
+    "strong_cost": 0.00469
+  },
+  {
+    "id": "mbpp/108",
+    "score": 0.9366988333437024,
+    "random_score": 0.7027308515700853,
+    "q_cheap": 1.0,
+    "q_strong": 0.0,
+    "cheap_cost": 0.0002675,
+    "strong_cost": 0.0058
+  },
+  {
+    "id": "mbpp/262",
+    "score": 0.824380338613083,
+    "random_score": 0.06998804454336546,
+    "q_cheap": 1.0,
+    "q_strong": 1.0,
+    "cheap_cost": 0.000216,
+    "strong_cost": 0.00357
+  },
+  {
+    "id": "mbpp/579",
+    "score": 0.9320284725013701,
+    "random_score": 0.6874415810820746,
+    "q_cheap": 1.0,
+    "q_strong": 1.0,
+    "cheap_cost": 0.000287,
+    "strong_cost": 0.00283
+  },
+  {
+    "id": "mbpp/277",
+    "score": 0.8761886747658537,
+    "random_score": 0.2808346424038916,
+    "q_cheap": 1.0,
+    "q_strong": 1.0,
+    "cheap_cost": 0.000356,
+    "strong_cost": 0.00529
+  },
+  {
+    "id": "mbpp/165",
+    "score": 0.8694978339564647,
+    "random_score": 0.5039858742742149,
+    "q_cheap": 1.0,
+    "q_strong": 1.0,
+    "cheap_cost": 0.0004185,
+    "strong_cost": 0.00438
+  },
+  {
+    "id": "mbpp/455",
+    "score": 0.8794441225691177,
+    "random_score": 0.34308616950250087,
+    "q_cheap": 1.0,
+    "q_strong": 1.0,
+    "cheap_cost": 0.000273,
+    "strong_cost": 0.00303
+  },
+  {
+    "id": "mbpp/105",
+    "score": 0.9362261933811004,
+    "random_score": 0.7215597941178832,
+    "q_cheap": 1.0,
+    "q_strong": 1.0,
+    "cheap_cost": 5.95e-05,
+    "strong_cost": 0.00206
+  },
+  {
+    "id": "mbpp/629",
+    "score": 0.9345018653065676,
+    "random_score": 0.779520479994429,
+    "q_cheap": 1.0,
+    "q_strong": 1.0,
+    "cheap_cost": 0.000322,
+    "strong_cost": 0.0023
+  },
+  {
+    "id": "mbpp/778",
+    "score": 0.9243080343464368,
+    "random_score": 0.11209842048111801,
+    "q_cheap": 1.0,
+    "q_strong": 1.0,
+    "cheap_cost": 0.000524,
+    "strong_cost": 0.00427
+  },
+  {
+    "id": "mbpp/750",
+    "score": 0.9394667174415022,
+    "random_score": 0.41357904290125785,
+    "q_cheap": 1.0,
+    "q_strong": 1.0,
+    "cheap_cost": 0.000288,
+    "strong_cost": 0.0015
+  },
+  {
+    "id": "mbpp/753",
+    "score": 0.847890082786257,
+    "random_score": 0.7721546325093844,
+    "q_cheap": 1.0,
+    "q_strong": 1.0,
+    "cheap_cost": 0.000131,
+    "strong_cost": 0.00472
+  },
+  {
+    "id": "mbpp/94",
+    "score": 0.9050856084296669,
+    "random_score": 0.3788789726520403,
+    "q_cheap": 1.0,
+    "q_strong": 1.0,
+    "cheap_cost": 0.000286,
+    "strong_cost": 0.00458
+  },
+  {
+    "id": "mbpp/770",
+    "score": 0.9233173181648595,
+    "random_score": 0.74458975779305,
+    "q_cheap": 1.0,
+    "q_strong": 1.0,
+    "cheap_cost": 7.85e-05,
+    "strong_cost": 0.00193
+  },
+  {
+    "id": "mbpp/587",
+    "score": 0.945154343498334,
+    "random_score": 0.8244023615119531,
+    "q_cheap": 1.0,
+    "q_strong": 1.0,
+    "cheap_cost": 0.00015,
+    "strong_cost": 0.00198
+  },
+  {
+    "id": "mbpp/611",
+    "score": 0.9120704480764124,
+    "random_score": 0.9754372605343649,
+    "q_cheap": 1.0,
+    "q_strong": 1.0,
+    "cheap_cost": 0.000289,
+    "strong_cost": 0.00275
+  },
+  {
+    "id": "mbpp/432",
+    "score": 0.9397330027768175,
+    "random_score": 0.6527015350185167,
+    "q_cheap": 1.0,
+    "q_strong": 1.0,
+    "cheap_cost": 0.0004425,
+    "strong_cost": 0.00171
+  },
+  {
+    "id": "mbpp/126",
+    "score": 0.9277939454835691,
+    "random_score": 0.8340312144423118,
+    "q_cheap": 0.0,
+    "q_strong": 0.0,
+    "cheap_cost": 0.0004135,
+    "strong_cost": 0.00374
+  },
+  {
+    "id": "mbpp/400",
+    "score": 0.9312236067383535,
+    "random_score": 0.5183233321754058,
+    "q_cheap": 0.0,
+    "q_strong": 0.0,
+    "cheap_cost": 0.0002015,
+    "strong_cost": 0.00454
+  },
+  {
+    "id": "mbpp/796",
+    "score": 0.9345018653065676,
+    "random_score": 0.35803634095569237,
+    "q_cheap": 1.0,
+    "q_strong": 1.0,
+    "cheap_cost": 7.3e-05,
+    "strong_cost": 0.00227
+  },
+  {
+    "id": "mbpp/422",
+    "score": 0.9277939454835691,
+    "random_score": 0.8685092887039833,
+    "q_cheap": 1.0,
+    "q_strong": 1.0,
+    "cheap_cost": 0.000295,
+    "strong_cost": 0.00338
+  },
+  {
+    "id": "mbpp/264",
+    "score": 0.9401813136664104,
+    "random_score": 0.11746941369710501,
+    "q_cheap": 1.0,
+    "q_strong": 1.0,
+    "cheap_cost": 0.0003165,
+    "strong_cost": 0.00366
+  },
+  {
+    "id": "mbpp/760",
+    "score": 0.914697994081125,
+    "random_score": 0.31859995448282014,
+    "q_cheap": 1.0,
+    "q_strong": 0.0,
+    "cheap_cost": 0.000292,
+    "strong_cost": 0.00233
+  },
+  {
+    "id": "mbpp/607",
+    "score": 0.8855065062218257,
+    "random_score": 0.12600880582815652,
+    "q_cheap": 1.0,
+    "q_strong": 1.0,
+    "cheap_cost": 0.000124,
+    "strong_cost": 0.00479
+  },
+  {
+    "id": "mbpp/767",
+    "score": 0.8840716223638005,
+    "random_score": 0.7342034606868633,
+    "q_cheap": 1.0,
+    "q_strong": 0.0,
+    "cheap_cost": 0.0004,
+    "strong_cost": 0.00179
+  },
+  {
+    "id": "mbpp/222",
+    "score": 0.9260825585367564,
+    "random_score": 0.9519154833896863,
+    "q_cheap": 1.0,
+    "q_strong": 1.0,
+    "cheap_cost": 0.0002655,
+    "strong_cost": 0.00336
+  },
+  {
+    "id": "mbpp/269",
+    "score": 0.9406265003864178,
+    "random_score": 0.9645405614986647,
+    "q_cheap": 1.0,
+    "q_strong": 1.0,
+    "cheap_cost": 0.000154,
+    "strong_cost": 0.00143
+  },
+  {
+    "id": "mbpp/780",
+    "score": 0.8616409570184167,
+    "random_score": 0.324714992419194,
+    "q_cheap": 1.0,
+    "q_strong": 1.0,
+    "cheap_cost": 0.00038,
+    "strong_cost": 0.00484
+  },
+  {
+    "id": "mbpp/626",
+    "score": 0.8979066480429054,
+    "random_score": 0.5835532517317886,
+    "q_cheap": 0.0,
+    "q_strong": 0.0,
+    "cheap_cost": 0.0003515,
+    "strong_cost": 0.00562
+  },
+  {
+    "id": "mbpp/405",
+    "score": 0.9352710334575149,
+    "random_score": 0.8114768938490415,
+    "q_cheap": 1.0,
+    "q_strong": 1.0,
+    "cheap_cost": 0.000271,
+    "strong_cost": 0.00245
+  },
+  {
+    "id": "mbpp/734",
+    "score": 0.8685093373552343,
+    "random_score": 0.007244824094094572,
+    "q_cheap": 0.0,
+    "q_strong": 0.0,
+    "cheap_cost": 0.000355,
+    "strong_cost": 0.00449
+  },
+  {
+    "id": "mbpp/227",
+    "score": 0.9437334393879268,
+    "random_score": 0.9894542597014367,
+    "q_cheap": 1.0,
+    "q_strong": 1.0,
+    "cheap_cost": 6.35e-05,
+    "strong_cost": 0.00151
+  },
+  {
+    "id": "mbpp/290",
+    "score": 0.932439278706021,
+    "random_score": 0.8855771469842157,
+    "q_cheap": 1.0,
+    "q_strong": 1.0,
+    "cheap_cost": 0.0003135,
+    "strong_cost": 0.00369
+  },
+  {
+    "id": "mbpp/130",
+    "score": 0.9317306183244789,
+    "random_score": 0.744412728662998,
+    "q_cheap": 1.0,
+    "q_strong": 1.0,
+    "cheap_cost": 0.000389,
+    "strong_cost": 0.00418
+  },
+  {
+    "id": "mbpp/396",
+    "score": 0.9165391006676353,
+    "random_score": 0.34770826500686386,
+    "q_cheap": 1.0,
+    "q_strong": 1.0,
+    "cheap_cost": 8.9e-05,
+    "strong_cost": 0.0025
+  },
+  {
+    "id": "mbpp/406",
+    "score": 0.9298938400820831,
+    "random_score": 0.09864348627802769,
+    "q_cheap": 1.0,
+    "q_strong": 1.0,
+    "cheap_cost": 0.0002165,
+    "strong_cost": 0.0019
+  },
+  {
+    "id": "mbpp/97",
+    "score": 0.9111684885276088,
+    "random_score": 0.7899328869961142,
+    "q_cheap": 1.0,
+    "q_strong": 1.0,
+    "cheap_cost": 0.0003825,
+    "strong_cost": 0.00348
+  },
+  {
+    "id": "mbpp/599",
+    "score": 0.9345018653065676,
+    "random_score": 0.29337086422575626,
+    "q_cheap": 1.0,
+    "q_strong": 1.0,
+    "cheap_cost": 7e-05,
+    "strong_cost": 0.00209
+  },
+  {
+    "id": "mbpp/99",
+    "score": 0.8973089896554807,
+    "random_score": 0.35099462379253515,
+    "q_cheap": 1.0,
+    "q_strong": 1.0,
+    "cheap_cost": 0.000226,
+    "strong_cost": 0.00395
+  },
+  {
+    "id": "mbpp/266",
+    "score": 0.9264031083108084,
+    "random_score": 0.24089705852590995,
+    "q_cheap": 1.0,
+    "q_strong": 1.0,
+    "cheap_cost": 0.000165,
+    "strong_cost": 0.00312
+  },
+  {
+    "id": "mbpp/803",
+    "score": 0.8748881253930682,
+    "random_score": 0.9906629606464962,
+    "q_cheap": 1.0,
+    "q_strong": 1.0,
+    "cheap_cost": 0.000309,
+    "strong_cost": 0.00327
+  },
+  {
+    "id": "mbpp/19",
+    "score": 0.9222882089612263,
+    "random_score": 0.7068854926256031,
+    "q_cheap": 1.0,
+    "q_strong": 1.0,
+    "cheap_cost": 0.0003265,
+    "strong_cost": 0.00215
+  },
+  {
+    "id": "mbpp/785",
+    "score": 0.9399981915395292,
+    "random_score": 0.7692090485118528,
+    "q_cheap": 1.0,
+    "q_strong": 1.0,
+    "cheap_cost": 0.000174,
+    "strong_cost": 0.00321
+  },
+  {
+    "id": "mbpp/573",
+    "score": 0.923648870997235,
+    "random_score": 0.9481676055626362,
+    "q_cheap": 1.0,
+    "q_strong": 0.0,
+    "cheap_cost": 0.000113,
+    "strong_cost": 0.00307
+  },
+  {
+    "id": "mbpp/582",
+    "score": 0.9434837666644124,
+    "random_score": 0.16442912504063043,
+    "q_cheap": 0.0,
+    "q_strong": 1.0,
+    "cheap_cost": 7.7e-05,
+    "strong_cost": 0.0016
+  },
+  {
+    "id": "mbpp/772",
+    "score": 0.9304099219867448,
+    "random_score": 0.8957043189757201,
+    "q_cheap": 1.0,
+    "q_strong": 1.0,
+    "cheap_cost": 0.0002645,
+    "strong_cost": 0.00337
+  },
+  {
+    "id": "mbpp/65",
+    "score": 0.9368913488923518,
+    "random_score": 0.8830805107641295,
+    "q_cheap": 1.0,
+    "q_strong": 1.0,
+    "cheap_cost": 0.000278,
+    "strong_cost": 0.0034
+  },
+  {
+    "id": "mbpp/580",
+    "score": 0.9343025716797558,
+    "random_score": 0.6487556297059598,
+    "q_cheap": 0.0,
+    "q_strong": 1.0,
+    "cheap_cost": 0.0002085,
+    "strong_cost": 0.00489
+  },
+  {
+    "id": "mbpp/805",
+    "score": 0.9179914736225578,
+    "random_score": 0.6942556739162422,
+    "q_cheap": 1.0,
+    "q_strong": 1.0,
+    "cheap_cost": 0.000399,
+    "strong_cost": 0.00276
+  },
+  {
+    "id": "mbpp/619",
+    "score": 0.9319371456210352,
+    "random_score": 0.18389990654521826,
+    "q_cheap": 1.0,
+    "q_strong": 1.0,
+    "cheap_cost": 0.0002505,
+    "strong_cost": 0.00333
+  },
+  {
+    "id": "mbpp/230",
+    "score": 0.889613573176624,
+    "random_score": 0.6082304193185886,
+    "q_cheap": 1.0,
+    "q_strong": 1.0,
+    "cheap_cost": 0.000293,
+    "strong_cost": 0.00316
+  },
+  {
+    "id": "mbpp/628",
+    "score": 0.8804004335988995,
+    "random_score": 0.902563068912807,
+    "q_cheap": 1.0,
+    "q_strong": 1.0,
+    "cheap_cost": 0.0001785,
+    "strong_cost": 0.00249
+  },
+  {
+    "id": "mbpp/256",
+    "score": 0.8848455665440793,
+    "random_score": 0.25240916193705826,
+    "q_cheap": 1.0,
+    "q_strong": 1.0,
+    "cheap_cost": 0.0003355,
+    "strong_cost": 0.00548
+  },
+  {
+    "id": "mbpp/234",
+    "score": 0.9342140846228021,
+    "random_score": 0.6569313564250102,
+    "q_cheap": 1.0,
+    "q_strong": 1.0,
+    "cheap_cost": 0.0002095,
+    "strong_cost": 0.00164
+  },
+  {
+    "id": "mbpp/799",
+    "score": 0.8693327516280599,
+    "random_score": 0.2397364712796683,
+    "q_cheap": 1.0,
+    "q_strong": 1.0,
+    "cheap_cost": 0.0004495,
+    "strong_cost": 0.00296
+  },
+  {
+    "id": "mbpp/596",
+    "score": 0.9373593890865789,
+    "random_score": 0.20010249838267485,
+    "q_cheap": 1.0,
+    "q_strong": 1.0,
+    "cheap_cost": 6.35e-05,
+    "strong_cost": 0.00181
+  },
+  {
+    "id": "mbpp/739",
+    "score": 0.8650063596466255,
+    "random_score": 0.45166945903624783,
+    "q_cheap": 1.0,
+    "q_strong": 1.0,
+    "cheap_cost": 0.0003585,
+    "strong_cost": 0.0102
+  },
+  {
+    "id": "mbpp/3",
+    "score": 0.9422779716109841,
+    "random_score": 0.22059800164634402,
+    "q_cheap": 1.0,
+    "q_strong": 1.0,
+    "cheap_cost": 0.0004165,
+    "strong_cost": 0.00266
+  },
+  {
+    "id": "mbpp/287",
+    "score": 0.908443105886247,
+    "random_score": 0.5500370676805971,
+    "q_cheap": 1.0,
+    "q_strong": 0.0,
+    "cheap_cost": 0.0003485,
+    "strong_cost": 0.00319
+  },
+  {
+    "id": "mbpp/640",
+    "score": 0.925636182588622,
+    "random_score": 0.5312390265505014,
+    "q_cheap": 0.0,
+    "q_strong": 0.0,
+    "cheap_cost": 0.0002295,
+    "strong_cost": 0.00309
+  },
+  {
+    "id": "mbpp/790",
+    "score": 0.9180998683649959,
+    "random_score": 0.187593627982247,
+    "q_cheap": 1.0,
+    "q_strong": 1.0,
+    "cheap_cost": 0.0003615,
+    "strong_cost": 0.00264
+  },
+  {
+    "id": "mbpp/592",
+    "score": 0.9205629330960021,
+    "random_score": 0.9305410579177332,
+    "q_cheap": 1.0,
+    "q_strong": 1.0,
+    "cheap_cost": 0.0004785,
+    "strong_cost": 0.00384
+  },
+  {
+    "id": "mbpp/310",
+    "score": 0.9345018653065676,
+    "random_score": 0.18137890588706213,
+    "q_cheap": 0.0,
+    "q_strong": 0.0,
+    "cheap_cost": 0.0001315,
+    "strong_cost": 0.00257
+  },
+  {
+    "id": "mbpp/792",
+    "score": 0.9274789792567153,
+    "random_score": 0.7609621739871454,
+    "q_cheap": 1.0,
+    "q_strong": 1.0,
+    "cheap_cost": 0.0001045,
+    "strong_cost": 0.00386
+  },
+  {
+    "id": "mbpp/280",
+    "score": 0.7805159630807859,
+    "random_score": 0.013310847168180606,
+    "q_cheap": 1.0,
+    "q_strong": 1.0,
+    "cheap_cost": 0.0002715,
+    "strong_cost": 0.0045
+  },
+  {
+    "id": "mbpp/639",
+    "score": 0.889009884622638,
+    "random_score": 0.13688730315906134,
+    "q_cheap": 1.0,
+    "q_strong": 1.0,
+    "cheap_cost": 0.0004265,
+    "strong_cost": 0.00466
+  },
+  {
+    "id": "mbpp/635",
+    "score": 0.9480374352336494,
+    "random_score": 0.6564475315887709,
+    "q_cheap": 1.0,
+    "q_strong": 1.0,
+    "cheap_cost": 0.0003845,
+    "strong_cost": 0.00196
+  },
+  {
+    "id": "mbpp/391",
+    "score": 0.9347884749684706,
+    "random_score": 0.8674446255026507,
+    "q_cheap": 1.0,
+    "q_strong": 1.0,
+    "cheap_cost": 0.000364,
+    "strong_cost": 0.00383
+  },
+  {
+    "id": "mbpp/392",
+    "score": 0.9110861776300564,
+    "random_score": 0.392237064296325,
+    "q_cheap": 0.0,
+    "q_strong": 1.0,
+    "cheap_cost": 0.000339,
+    "strong_cost": 0.00372
+  },
+  {
+    "id": "mbpp/798",
+    "score": 0.9423763774949606,
+    "random_score": 0.9677238146372472,
+    "q_cheap": 1.0,
+    "q_strong": 1.0,
+    "cheap_cost": 0.0001385,
+    "strong_cost": 0.00145
+  },
+  {
+    "id": "mbpp/777",
+    "score": 0.9272599801421227,
+    "random_score": 0.34737633307866295,
+    "q_cheap": 0.0,
+    "q_strong": 0.0,
+    "cheap_cost": 0.000357,
+    "strong_cost": 0.00402
+  },
+  {
+    "id": "mbpp/637",
+    "score": 0.9298938400820831,
+    "random_score": 0.040634901675593964,
+    "q_cheap": 1.0,
+    "q_strong": 1.0,
+    "cheap_cost": 0.000284,
+    "strong_cost": 0.00217
+  },
+  {
+    "id": "mbpp/409",
+    "score": 0.9216129476772504,
+    "random_score": 0.3758130100643397,
+    "q_cheap": 1.0,
+    "q_strong": 1.0,
+    "cheap_cost": 0.0003415,
+    "strong_cost": 0.00248
+  },
+  {
+    "id": "mbpp/95",
+    "score": 0.9255369531785279,
+    "random_score": 0.6629975592151983,
+    "q_cheap": 1.0,
+    "q_strong": 1.0,
+    "cheap_cost": 0.0001155,
+    "strong_cost": 0.00234
+  },
+  {
+    "id": "mbpp/728",
+    "score": 0.8920453950574904,
+    "random_score": 0.4638859251800091,
+    "q_cheap": 1.0,
+    "q_strong": 1.0,
+    "cheap_cost": 0.000219,
+    "strong_cost": 0.00252
+  },
+  {
+    "id": "mbpp/616",
+    "score": 0.9180998683649959,
+    "random_score": 0.9794407822713567,
+    "q_cheap": 1.0,
+    "q_strong": 1.0,
+    "cheap_cost": 0.0003285,
+    "strong_cost": 0.00273
+  },
+  {
+    "id": "mbpp/574",
+    "score": 0.9406265003864178,
+    "random_score": 0.1032079973291765,
+    "q_cheap": 0.0,
+    "q_strong": 0.0,
+    "cheap_cost": 0.0003145,
+    "strong_cost": 0.00326
+  },
+  {
+    "id": "mbpp/475",
+    "score": 0.9449855544193304,
+    "random_score": 0.8782683434245692,
+    "q_cheap": 1.0,
+    "q_strong": 1.0,
+    "cheap_cost": 0.0003015,
+    "strong_cost": 0.00234
+  },
+  {
+    "id": "mbpp/311",
+    "score": 0.9410685815816852,
+    "random_score": 0.9742056669370514,
+    "q_cheap": 0.0,
+    "q_strong": 0.0,
+    "cheap_cost": 0.000184,
+    "strong_cost": 0.00293
+  },
+  {
+    "id": "mbpp/631",
+    "score": 0.9208003729163228,
+    "random_score": 0.5479370250128026,
+    "q_cheap": 0.0,
+    "q_strong": 1.0,
+    "cheap_cost": 0.0002515,
+    "strong_cost": 0.00413
+  },
+  {
+    "id": "mbpp/478",
+    "score": 0.9350739176058417,
+    "random_score": 0.9645153211513612,
+    "q_cheap": 1.0,
+    "q_strong": 1.0,
+    "cheap_cost": 0.0001045,
+    "strong_cost": 0.00224
+  },
+  {
+    "id": "mbpp/477",
+    "score": 0.9357502664973638,
+    "random_score": 0.6048342894964326,
+    "q_cheap": 1.0,
+    "q_strong": 1.0,
+    "cheap_cost": 0.000142,
+    "strong_cost": 0.00194
+  },
+  {
+    "id": "mbpp/446",
+    "score": 0.9264031083108084,
+    "random_score": 0.5018987290518473,
+    "q_cheap": 1.0,
+    "q_strong": 1.0,
+    "cheap_cost": 0.000327,
+    "strong_cost": 0.00261
+  },
+  {
+    "id": "mbpp/421",
+    "score": 0.9333206530188427,
+    "random_score": 0.3989714684756969,
+    "q_cheap": 1.0,
+    "q_strong": 1.0,
+    "cheap_cost": 0.0002325,
+    "strong_cost": 0.00246
+  },
+  {
+    "id": "mbpp/757",
+    "score": 0.8677649301885076,
+    "random_score": 0.07106298563818335,
+    "q_cheap": 1.0,
+    "q_strong": 1.0,
+    "cheap_cost": 0.0003325,
+    "strong_cost": 0.00707
+  },
+  {
+    "id": "mbpp/413",
+    "score": 0.9322341642702161,
+    "random_score": 0.2613749292410107,
+    "q_cheap": 1.0,
+    "q_strong": 1.0,
+    "cheap_cost": 0.000237,
+    "strong_cost": 0.00474
+  },
+  {
+    "id": "mbpp/605",
+    "score": 0.935945469613119,
+    "random_score": 0.9399605844732413,
+    "q_cheap": 1.0,
+    "q_strong": 1.0,
+    "cheap_cost": 0.0004615,
+    "strong_cost": 0.00347
+  },
+  {
+    "id": "mbpp/450",
+    "score": 0.9225209259093583,
+    "random_score": 0.4117398969495368,
+    "q_cheap": 1.0,
+    "q_strong": 1.0,
+    "cheap_cost": 0.0003625,
+    "strong_cost": 0.00353
+  },
+  {
+    "id": "mbpp/781",
+    "score": 0.8007771847752845,
+    "random_score": 0.10873057481234144,
+    "q_cheap": 1.0,
+    "q_strong": 1.0,
+    "cheap_cost": 0.000292,
+    "strong_cost": 0.00383
+  },
+  {
+    "id": "mbpp/644",
+    "score": 0.9357502664973638,
+    "random_score": 0.6693075864085404,
+    "q_cheap": 1.0,
+    "q_strong": 1.0,
+    "cheap_cost": 0.00025,
+    "strong_cost": 0.00344
+  },
+  {
+    "id": "mbpp/736",
+    "score": 0.7743041780027817,
+    "random_score": 0.3836566761707017,
+    "q_cheap": 1.0,
+    "q_strong": 1.0,
+    "cheap_cost": 0.0005055,
+    "strong_cost": 0.00408
+  },
+  {
+    "id": "mbpp/479",
+    "score": 0.9354675921652057,
+    "random_score": 0.2387457382438713,
+    "q_cheap": 1.0,
+    "q_strong": 1.0,
+    "cheap_cost": 0.000157,
+    "strong_cost": 0.002
+  },
+  {
+    "id": "mbpp/429",
+    "score": 0.9275758232331252,
+    "random_score": 0.38282934059877044,
+    "q_cheap": 1.0,
+    "q_strong": 1.0,
+    "cheap_cost": 0.0003255,
+    "strong_cost": 0.00294
+  },
+  {
+    "id": "mbpp/447",
+    "score": 0.9366988333437024,
+    "random_score": 0.7201616099912485,
+    "q_cheap": 1.0,
+    "q_strong": 1.0,
+    "cheap_cost": 0.000263,
+    "strong_cost": 0.00262
+  },
+  {
+    "id": "mbpp/414",
+    "score": 0.9195274657746934,
+    "random_score": 0.48845008103575666,
+    "q_cheap": 1.0,
+    "q_strong": 1.0,
+    "cheap_cost": 9.6e-05,
+    "strong_cost": 0.00255
+  },
+  {
+    "id": "mbpp/591",
+    "score": 0.929681580482758,
+    "random_score": 0.25906711479549743,
+    "q_cheap": 1.0,
+    "q_strong": 1.0,
+    "cheap_cost": 0.000163,
+    "strong_cost": 0.00272
+  },
+  {
+    "id": "mbpp/742",
+    "score": 0.9408880048615599,
+    "random_score": 0.8314272500177177,
+    "q_cheap": 1.0,
+    "q_strong": 1.0,
+    "cheap_cost": 0.0002455,
+    "strong_cost": 0.00524
+  },
+  {
+    "id": "mbpp/558",
+    "score": 0.9228556344048597,
+    "random_score": 0.32628197385452584,
+    "q_cheap": 1.0,
+    "q_strong": 1.0,
+    "cheap_cost": 0.0003445,
+    "strong_cost": 0.00455
+  },
+  {
+    "id": "mbpp/557",
+    "score": 0.9354675921652057,
+    "random_score": 0.9076804947657808,
+    "q_cheap": 1.0,
+    "q_strong": 1.0,
+    "cheap_cost": 0.0002545,
+    "strong_cost": 0.00176
+  },
+  {
+    "id": "mbpp/430",
+    "score": 0.9421995619723033,
+    "random_score": 0.801080046223181,
+    "q_cheap": 0.0,
+    "q_strong": 0.0,
+    "cheap_cost": 0.000295,
+    "strong_cost": 0.00392
+  },
+  {
+    "id": "mbpp/801",
+    "score": 0.9239791083243634,
+    "random_score": 0.3032002177852095,
+    "q_cheap": 1.0,
+    "q_strong": 1.0,
+    "cheap_cost": 8.3e-05,
+    "strong_cost": 0.00394
+  },
+  {
+    "id": "mbpp/101",
+    "score": 0.9052609826910176,
+    "random_score": 0.5375850068673356,
+    "q_cheap": 0.0,
+    "q_strong": 0.0,
+    "cheap_cost": 0.0001905,
+    "strong_cost": 0.00273
+  },
+  {
+    "id": "mbpp/806",
+    "score": 0.9275758232331252,
+    "random_score": 0.9821590631988023,
+    "q_cheap": 1.0,
+    "q_strong": 1.0,
+    "cheap_cost": 0.000147,
+    "strong_cost": 0.00366
+  },
+  {
+    "id": "mbpp/741",
+    "score": 0.9301991076335276,
+    "random_score": 0.6296168474720908,
+    "q_cheap": 1.0,
+    "q_strong": 1.0,
+    "cheap_cost": 0.000239,
+    "strong_cost": 0.00211
+  },
+  {
+    "id": "mbpp/765",
+    "score": 0.9291361499036511,
+    "random_score": 0.9976847281409287,
+    "q_cheap": 0.0,
+    "q_strong": 0.0,
+    "cheap_cost": 0.0003555,
+    "strong_cost": 0.00513
+  },
+  {
+    "id": "mbpp/397",
+    "score": 0.9421995619723033,
+    "random_score": 0.8140754904504037,
+    "q_cheap": 1.0,
+    "q_strong": 1.0,
+    "cheap_cost": 0.00034,
+    "strong_cost": 0.00191
+  },
+  {
+    "id": "mbpp/160",
+    "score": 0.9227588768824728,
+    "random_score": 0.5726048167769343,
+    "q_cheap": 1.0,
+    "q_strong": 0.0,
+    "cheap_cost": 0.000296,
+    "strong_cost": 0.00727
+  },
+  {
+    "id": "mbpp/67",
+    "score": 0.9280114617917096,
+    "random_score": 0.21301885521165473,
+    "q_cheap": 1.0,
+    "q_strong": 1.0,
+    "cheap_cost": 0.0004225,
+    "strong_cost": 0.00341
+  },
+  {
+    "id": "mbpp/83",
+    "score": 0.8546253930832782,
+    "random_score": 0.15721446244936185,
+    "q_cheap": 0.0,
+    "q_strong": 0.0,
+    "cheap_cost": 0.000243,
+    "strong_cost": 0.00282
+  },
+  {
+    "id": "mbpp/800",
+    "score": 0.940444654774841,
+    "random_score": 0.26718377899861645,
+    "q_cheap": 1.0,
+    "q_strong": 1.0,
+    "cheap_cost": 7.5e-05,
+    "strong_cost": 0.00222
+  },
+  {
+    "id": "mbpp/140",
+    "score": 0.9304099219867448,
+    "random_score": 0.8531774325260363,
+    "q_cheap": 1.0,
+    "q_strong": 1.0,
+    "cheap_cost": 0.000242,
+    "strong_cost": 0.00319
+  },
+  {
+    "id": "mbpp/293",
+    "score": 0.9349863971720457,
+    "random_score": 0.6490712341767618,
+    "q_cheap": 1.0,
+    "q_strong": 1.0,
+    "cheap_cost": 0.0002575,
+    "strong_cost": 0.00425
+  },
+  {
+    "id": "mbpp/168",
+    "score": 0.9274789792567153,
+    "random_score": 0.5819990141810422,
+    "q_cheap": 1.0,
+    "q_strong": 1.0,
+    "cheap_cost": 8.5e-05,
+    "strong_cost": 0.00185
+  },
+  {
+    "id": "mbpp/602",
+    "score": 0.9286358715346003,
+    "random_score": 0.0044707990935533405,
+    "q_cheap": 1.0,
+    "q_strong": 1.0,
+    "cheap_cost": 0.000334,
+    "strong_cost": 0.00302
+  },
+  {
+    "id": "mbpp/456",
+    "score": 0.9317306183244789,
+    "random_score": 0.28221037349359374,
+    "q_cheap": 1.0,
+    "q_strong": 1.0,
+    "cheap_cost": 0.0004175,
+    "strong_cost": 0.00319
+  },
+  {
+    "id": "mbpp/123",
+    "score": 0.9088899861901442,
+    "random_score": 0.12497656925749369,
+    "q_cheap": 1.0,
+    "q_strong": 1.0,
+    "cheap_cost": 0.000506,
+    "strong_cost": 0.00466
+  },
+  {
+    "id": "mbpp/276",
+    "score": 0.9189377106954142,
+    "random_score": 0.9716900412076783,
+    "q_cheap": 1.0,
+    "q_strong": 1.0,
+    "cheap_cost": 8.25e-05,
+    "strong_cost": 0.00282
+  },
+  {
+    "id": "mbpp/57",
+    "score": 0.9149513447831721,
+    "random_score": 0.7912666250198522,
+    "q_cheap": 1.0,
+    "q_strong": 1.0,
+    "cheap_cost": 0.000275,
+    "strong_cost": 0.00439
+  },
+  {
+    "id": "mbpp/554",
+    "score": 0.9247617346182221,
+    "random_score": 0.5594710043166135,
+    "q_cheap": 1.0,
+    "q_strong": 1.0,
+    "cheap_cost": 0.0002975,
+    "strong_cost": 0.00241
+  },
+  {
+    "id": "mbpp/145",
+    "score": 0.9175005895996331,
+    "random_score": 0.5347791015952996,
+    "q_cheap": 1.0,
+    "q_strong": 1.0,
+    "cheap_cost": 0.0002495,
+    "strong_cost": 0.00217
+  },
+  {
+    "id": "mbpp/791",
+    "score": 0.9413282604064214,
+    "random_score": 0.21908035712551174,
+    "q_cheap": 0.0,
+    "q_strong": 1.0,
+    "cheap_cost": 0.000322,
+    "strong_cost": 0.00227
+  },
+  {
+    "id": "mbpp/308",
+    "score": 0.8980386413078683,
+    "random_score": 0.7424714663717475,
+    "q_cheap": 1.0,
+    "q_strong": 1.0,
+    "cheap_cost": 0.000317,
+    "strong_cost": 0.00454
+  },
+  {
+    "id": "mbpp/267",
+    "score": 0.8989283263052915,
+    "random_score": 0.02766396854272443,
+    "q_cheap": 1.0,
+    "q_strong": 0.0,
+    "cheap_cost": 0.0002855,
+    "strong_cost": 0.00304
+  },
+  {
+    "id": "mbpp/238",
+    "score": 0.924535197611173,
+    "random_score": 0.4636015880975725,
+    "q_cheap": 1.0,
+    "q_strong": 1.0,
+    "cheap_cost": 0.0002435,
+    "strong_cost": 0.00223
+  },
+  {
+    "id": "mbpp/468",
+    "score": 0.9031446749838686,
+    "random_score": 0.764020176848941,
+    "q_cheap": 0.0,
+    "q_strong": 0.0,
+    "cheap_cost": 0.000474,
+    "strong_cost": 0.00621
+  },
+  {
+    "id": "mbpp/162",
+    "score": 0.9919668316135271,
+    "random_score": 0.1482023883182701,
+    "q_cheap": 1.0,
+    "q_strong": 1.0,
+    "cheap_cost": 0.0002535,
+    "strong_cost": 0.00222
+  },
+  {
+    "id": "mbpp/77",
+    "score": 0.8800726410617961,
+    "random_score": 0.5167790366414768,
+    "q_cheap": 1.0,
+    "q_strong": 0.0,
+    "cheap_cost": 0.000418,
+    "strong_cost": 0.00179
+  },
+  {
+    "id": "mbpp/102",
+    "score": 0.9340139771847369,
+    "random_score": 0.9427885630393417,
+    "q_cheap": 1.0,
+    "q_strong": 1.0,
+    "cheap_cost": 0.0002685,
+    "strong_cost": 0.00258
+  },
+  {
+    "id": "mbpp/426",
+    "score": 0.9486563835550025,
+    "random_score": 0.4461074664931427,
+    "q_cheap": 1.0,
+    "q_strong": 1.0,
+    "cheap_cost": 0.0002885,
+    "strong_cost": 0.00265
+  },
+  {
+    "id": "mbpp/595",
+    "score": 0.8931440389608066,
+    "random_score": 0.7148052722059266,
+    "q_cheap": 0.0,
+    "q_strong": 0.0,
+    "cheap_cost": 0.000303,
+    "strong_cost": 0.00552
+  },
+  {
+    "id": "mbpp/14",
+    "score": 0.9362261933811004,
+    "random_score": 0.677812551837811,
+    "q_cheap": 1.0,
+    "q_strong": 1.0,
+    "cheap_cost": 0.0002995,
+    "strong_cost": 0.00359
+  },
+  {
+    "id": "mbpp/86",
+    "score": 0.9415868659929849,
+    "random_score": 0.7329029101046148,
+    "q_cheap": 1.0,
+    "q_strong": 1.0,
+    "cheap_cost": 5.2e-05,
+    "strong_cost": 0.00233
+  },
+  {
+    "id": "mbpp/80",
+    "score": 0.9428838582973906,
+    "random_score": 0.35301611547825207,
+    "q_cheap": 1.0,
+    "q_strong": 1.0,
+    "cheap_cost": 0.0002735,
+    "strong_cost": 0.00166
+  },
+  {
+    "id": "mbpp/737",
+    "score": 0.9183440173196739,
+    "random_score": 0.22441821624228253,
+    "q_cheap": 1.0,
+    "q_strong": 1.0,
+    "cheap_cost": 7.8e-05,
+    "strong_cost": 0.00453
+  },
+  {
+    "id": "mbpp/604",
+    "score": 0.9325299806019777,
+    "random_score": 0.6627642165272248,
+    "q_cheap": 1.0,
+    "q_strong": 1.0,
+    "cheap_cost": 9.9e-05,
+    "strong_cost": 0.00219
+  },
+  {
+    "id": "mbpp/273",
+    "score": 0.8795945868295,
+    "random_score": 0.912709167891234,
+    "q_cheap": 0.0,
+    "q_strong": 1.0,
+    "cheap_cost": 0.0003315,
+    "strong_cost": 0.00327
+  },
+  {
+    "id": "mbpp/410",
+    "score": 0.9320284725013701,
+    "random_score": 0.9705967376734911,
+    "q_cheap": 0.0,
+    "q_strong": 1.0,
+    "cheap_cost": 0.000326,
+    "strong_cost": 0.00364
+  },
+  {
+    "id": "mbpp/730",
+    "score": 0.9360317872880434,
+    "random_score": 0.5634271660947706,
+    "q_cheap": 1.0,
+    "q_strong": 1.0,
+    "cheap_cost": 0.0003415,
+    "strong_cost": 0.00302
+  },
+  {
+    "id": "mbpp/471",
+    "score": 0.9275758232331252,
+    "random_score": 0.7094162213317851,
+    "q_cheap": 1.0,
+    "q_strong": 1.0,
+    "cheap_cost": 0.0003345,
+    "strong_cost": 0.00267
+  },
+  {
+    "id": "mbpp/117",
+    "score": 0.9213777359442591,
+    "random_score": 0.6409426957499863,
+    "q_cheap": 1.0,
+    "q_strong": 1.0,
+    "cheap_cost": 0.0003295,
+    "strong_cost": 0.00506
+  },
+  {
+    "id": "mbpp/6",
+    "score": 0.9177463649852357,
+    "random_score": 0.21378352397398503,
+    "q_cheap": 1.0,
+    "q_strong": 1.0,
+    "cheap_cost": 0.0004245,
+    "strong_cost": 0.00417
+  },
+  {
+    "id": "mbpp/272",
+    "score": 0.908443105886247,
+    "random_score": 0.5260677982680771,
+    "q_cheap": 1.0,
+    "q_strong": 1.0,
+    "cheap_cost": 0.0002075,
+    "strong_cost": 0.00328
+  },
+  {
+    "id": "mbpp/63",
+    "score": 0.9184519874815501,
+    "random_score": 0.218824233513006,
+    "q_cheap": 1.0,
+    "q_strong": 1.0,
+    "cheap_cost": 0.0003855,
+    "strong_cost": 0.00255
+  },
+  {
+    "id": "mbpp/473",
+    "score": 0.9072344349190444,
+    "random_score": 0.03509442759109664,
+    "q_cheap": 0.0,
+    "q_strong": 0.0,
+    "cheap_cost": 0.0003245,
+    "strong_cost": 0.00571
+  },
+  {
+    "id": "mbpp/418",
+    "score": 0.9301991076335276,
+    "random_score": 0.5554837953820161,
+    "q_cheap": 1.0,
+    "q_strong": 1.0,
+    "cheap_cost": 0.0001445,
+    "strong_cost": 0.00235
+  },
+  {
+    "id": "mbpp/448",
+    "score": 0.9408880048615599,
+    "random_score": 0.5551044717724132,
+    "q_cheap": 1.0,
+    "q_strong": 0.0,
+    "cheap_cost": 0.0004075,
+    "strong_cost": 0.0038
+  },
+  {
+    "id": "mbpp/388",
+    "score": 0.9019496140946838,
+    "random_score": 0.6382370837797039,
+    "q_cheap": 1.0,
+    "q_strong": 1.0,
+    "cheap_cost": 0.000236,
+    "strong_cost": 0.00265
+  },
+  {
+    "id": "mbpp/463",
+    "score": 0.9320284725013701,
+    "random_score": 0.6725190968609315,
+    "q_cheap": 1.0,
+    "q_strong": 0.0,
+    "cheap_cost": 0.0005615,
+    "strong_cost": 0.00472
+  },
+  {
+    "id": "mbpp/764",
+    "score": 0.9345018653065676,
+    "random_score": 0.44819491110048687,
+    "q_cheap": 1.0,
+    "q_strong": 1.0,
+    "cheap_cost": 0.000271,
+    "strong_cost": 0.002
+  },
+  {
+    "id": "mbpp/731",
+    "score": 0.9197677308879253,
+    "random_score": 0.5083947786620372,
+    "q_cheap": 1.0,
+    "q_strong": 1.0,
+    "cheap_cost": 0.0003565,
+    "strong_cost": 0.00344
+  },
+  {
+    "id": "mbpp/167",
+    "score": 0.9044530944461657,
+    "random_score": 0.028780698645434984,
+    "q_cheap": 1.0,
+    "q_strong": 1.0,
+    "cheap_cost": 0.0002265,
+    "strong_cost": 0.00255
+  },
+  {
+    "id": "mbpp/299",
+    "score": 0.9305031452826641,
+    "random_score": 0.23336079928175896,
+    "q_cheap": 1.0,
+    "q_strong": 1.0,
+    "cheap_cost": 0.000611,
+    "strong_cost": 0.00505
+  },
+  {
+    "id": "mbpp/237",
+    "score": 0.8790967706648494,
+    "random_score": 0.31864452425979495,
+    "q_cheap": 0.0,
+    "q_strong": 1.0,
+    "cheap_cost": 0.0003555,
+    "strong_cost": 0.0039
+  },
+  {
+    "id": "mbpp/435",
+    "score": 0.935945469613119,
+    "random_score": 0.6093753749021676,
+    "q_cheap": 0.0,
+    "q_strong": 1.0,
+    "cheap_cost": 0.000157,
+    "strong_cost": 0.00191
+  },
+  {
+    "id": "mbpp/623",
+    "score": 0.9342140846228021,
+    "random_score": 0.6701831526710224,
+    "q_cheap": 1.0,
+    "q_strong": 1.0,
+    "cheap_cost": 0.000196,
+    "strong_cost": 0.00275
+  },
+  {
+    "id": "mbpp/412",
+    "score": 0.9366988333437024,
+    "random_score": 0.04448703140316424,
+    "q_cheap": 1.0,
+    "q_strong": 1.0,
+    "cheap_cost": 0.00029,
+    "strong_cost": 0.00196
+  },
+  {
+    "id": "mbpp/132",
+    "score": 0.9443249512501802,
+    "random_score": 0.7513855265436264,
+    "q_cheap": 1.0,
+    "q_strong": 1.0,
+    "cheap_cost": 0.000174,
+    "strong_cost": 0.00213
+  },
+  {
+    "id": "mbpp/431",
+    "score": 0.9177463649852357,
+    "random_score": 0.6285552966084483,
+    "q_cheap": 0.0,
+    "q_strong": 0.0,
+    "cheap_cost": 9.9e-05,
+    "strong_cost": 0.00255
+  },
+  {
+    "id": "mbpp/226",
+    "score": 0.9186951797069833,
+    "random_score": 0.917842559105291,
+    "q_cheap": 1.0,
+    "q_strong": 1.0,
+    "cheap_cost": 0.0001815,
+    "strong_cost": 0.00207
+  },
+  {
+    "id": "mbpp/171",
+    "score": 0.9216129476772504,
+    "random_score": 0.7503377274948844,
+    "q_cheap": 1.0,
+    "q_strong": 1.0,
+    "cheap_cost": 0.000163,
+    "strong_cost": 0.00239
+  },
+  {
+    "id": "mbpp/603",
+    "score": 0.9258596795976693,
+    "random_score": 0.8531453207828156,
+    "q_cheap": 0.0,
+    "q_strong": 0.0,
+    "cheap_cost": 0.000384,
+    "strong_cost": 0.00357
+  },
+  {
+    "id": "mbpp/96",
+    "score": 0.9312236067383535,
+    "random_score": 0.07159877499546438,
+    "q_cheap": 1.0,
+    "q_strong": 1.0,
+    "cheap_cost": 0.0002855,
+    "strong_cost": 0.00226
+  },
+  {
+    "id": "mbpp/720",
+    "score": 0.9274789792567153,
+    "random_score": 0.8024671721699156,
+    "q_cheap": 1.0,
+    "q_strong": 1.0,
+    "cheap_cost": 0.0002005,
+    "strong_cost": 0.00233
+  },
+  {
+    "id": "mbpp/143",
+    "score": 0.9345018653065676,
+    "random_score": 0.2696928587291613,
+    "q_cheap": 0.0,
+    "q_strong": 0.0,
+    "cheap_cost": 0.000241,
+    "strong_cost": 0.00227
+  },
+  {
+    "id": "mbpp/608",
+    "score": 0.9445711261769091,
+    "random_score": 0.7121104410329447,
+    "q_cheap": 0.0,
+    "q_strong": 0.0,
+    "cheap_cost": 0.0002295,
+    "strong_cost": 0.00312
+  },
+  {
+    "id": "mbpp/390",
+    "score": 0.9266244830751148,
+    "random_score": 0.25589592720354176,
+    "q_cheap": 1.0,
+    "q_strong": 1.0,
+    "cheap_cost": 0.000273,
+    "strong_cost": 0.00288
+  },
+  {
+    "id": "mbpp/172",
+    "score": 0.9227530043289092,
+    "random_score": 0.7279316599652392,
+    "q_cheap": 1.0,
+    "q_strong": 1.0,
+    "cheap_cost": 0.0001355,
+    "strong_cost": 0.00229
+  },
+  {
+    "id": "mbpp/555",
+    "score": 0.8773980153970229,
+    "random_score": 0.8405211459193761,
+    "q_cheap": 1.0,
+    "q_strong": 1.0,
+    "cheap_cost": 0.0001055,
+    "strong_cost": 0.00364
+  },
+  {
+    "id": "mbpp/572",
+    "score": 0.9275758232331252,
+    "random_score": 0.3805049316437198,
+    "q_cheap": 0.0,
+    "q_strong": 1.0,
+    "cheap_cost": 0.000186,
+    "strong_cost": 0.00387
+  },
+  {
+    "id": "mbpp/590",
+    "score": 0.932914820477718,
+    "random_score": 0.4187545605759613,
+    "q_cheap": 0.0,
+    "q_strong": 0.0,
+    "cheap_cost": 0.000245,
+    "strong_cost": 0.00415
+  },
+  {
+    "id": "mbpp/461",
+    "score": 0.929681580482758,
+    "random_score": 0.06275689353291138,
+    "q_cheap": 0.0,
+    "q_strong": 0.0,
+    "cheap_cost": 8.95e-05,
+    "strong_cost": 0.00188
+  },
+  {
+    "id": "mbpp/758",
+    "score": 0.8034535303540177,
+    "random_score": 0.9013884170716764,
+    "q_cheap": 1.0,
+    "q_strong": 1.0,
+    "cheap_cost": 0.000349,
+    "strong_cost": 0.00527
+  },
+  {
+    "id": "mbpp/129",
+    "score": 0.9352710334575149,
+    "random_score": 0.6195892939850074,
+    "q_cheap": 1.0,
+    "q_strong": 0.0,
+    "cheap_cost": 0.000556,
+    "strong_cost": 0.00542
+  },
+  {
+    "id": "mbpp/794",
+    "score": 0.9210371638987545,
+    "random_score": 0.8705160334540413,
+    "q_cheap": 1.0,
+    "q_strong": 1.0,
+    "cheap_cost": 0.0002815,
+    "strong_cost": 0.00257
+  },
+  {
+    "id": "mbpp/458",
+    "score": 0.9439058420277195,
+    "random_score": 0.06857996649112484,
+    "q_cheap": 1.0,
+    "q_strong": 1.0,
+    "cheap_cost": 0.0002705,
+    "strong_cost": 0.0016
+  },
+  {
+    "id": "mbpp/577",
+    "score": 0.9288510460874922,
+    "random_score": 0.23060233089309398,
+    "q_cheap": 1.0,
+    "q_strong": 1.0,
+    "cheap_cost": 0.000316,
+    "strong_cost": 0.00401
+  },
+  {
+    "id": "mbpp/161",
+    "score": 0.9267223779844853,
+    "random_score": 0.35195009007283923,
+    "q_cheap": 1.0,
+    "q_strong": 1.0,
+    "cheap_cost": 0.0002925,
+    "strong_cost": 0.00264
+  },
+  {
+    "id": "mbpp/270",
+    "score": 0.9249876467612922,
+    "random_score": 0.34416202524608774,
+    "q_cheap": 1.0,
+    "q_strong": 1.0,
+    "cheap_cost": 0.000177,
+    "strong_cost": 0.00279
+  },
+  {
+    "id": "mbpp/260",
+    "score": 0.9348762432843467,
+    "random_score": 0.4943139616018915,
+    "q_cheap": 0.0,
+    "q_strong": 0.0,
+    "cheap_cost": 0.0003795,
+    "strong_cost": 0.00423
+  },
+  {
+    "id": "mbpp/281",
+    "score": 0.9255369531785279,
+    "random_score": 0.6682466275235117,
+    "q_cheap": 1.0,
+    "q_strong": 1.0,
+    "cheap_cost": 0.0003075,
+    "strong_cost": 0.00204
+  },
+  {
+    "id": "mbpp/240",
+    "score": 0.8952621389334169,
+    "random_score": 0.5018817807579554,
+    "q_cheap": 1.0,
+    "q_strong": 1.0,
+    "cheap_cost": 0.0002185,
+    "strong_cost": 0.00428
+  },
+  {
+    "id": "mbpp/235",
+    "score": 0.9368913488923518,
+    "random_score": 0.6522463747073844,
+    "q_cheap": 0.0,
+    "q_strong": 0.0,
+    "cheap_cost": 0.0003365,
+    "strong_cost": 0.00445
+  },
+  {
+    "id": "mbpp/116",
+    "score": 0.9250875489286647,
+    "random_score": 0.1488869854414523,
+    "q_cheap": 1.0,
+    "q_strong": 1.0,
+    "cheap_cost": 0.000143,
+    "strong_cost": 0.00205
+  },
+  {
+    "id": "mbpp/624",
+    "score": 0.9374439287608041,
+    "random_score": 0.6837914318156959,
+    "q_cheap": 1.0,
+    "q_strong": 1.0,
+    "cheap_cost": 0.0001445,
+    "strong_cost": 0.0019
+  },
+  {
+    "id": "mbpp/638",
+    "score": 0.8838859157189435,
+    "random_score": 0.6450696364767683,
+    "q_cheap": 1.0,
+    "q_strong": 0.0,
+    "cheap_cost": 0.0002965,
+    "strong_cost": 0.00449
+  },
+  {
+    "id": "mbpp/465",
+    "score": 0.9383691376840871,
+    "random_score": 0.8085667569364753,
+    "q_cheap": 1.0,
+    "q_strong": 1.0,
+    "cheap_cost": 0.0003335,
+    "strong_cost": 0.00319
+  },
+  {
+    "id": "mbpp/124",
+    "score": 0.9415075758324309,
+    "random_score": 0.564205022020939,
+    "q_cheap": 0.0,
+    "q_strong": 0.0,
+    "cheap_cost": 0.0002905,
+    "strong_cost": 0.00254
+  },
+  {
+    "id": "mbpp/589",
+    "score": 0.9355545094699912,
+    "random_score": 0.9989692557169322,
+    "q_cheap": 1.0,
+    "q_strong": 1.0,
+    "cheap_cost": 0.0003895,
+    "strong_cost": 0.0035
+  },
+  {
+    "id": "mbpp/722",
+    "score": 0.7430969767269365,
+    "random_score": 0.9846979984883694,
+    "q_cheap": 0.0,
+    "q_strong": 0.0,
+    "cheap_cost": 0.000462,
+    "strong_cost": 0.00687
+  },
+  {
+    "id": "mbpp/296",
+    "score": 0.9408880048615599,
+    "random_score": 0.12920522299884551,
+    "q_cheap": 1.0,
+    "q_strong": 1.0,
+    "cheap_cost": 0.0003175,
+    "strong_cost": 0.00239
+  },
+  {
+    "id": "mbpp/743",
+    "score": 0.8720956615877185,
+    "random_score": 0.9652860287054689,
+    "q_cheap": 1.0,
+    "q_strong": 1.0,
+    "cheap_cost": 0.0003875,
+    "strong_cost": 0.00319
+  },
+  {
+    "id": "mbpp/769",
+    "score": 0.9369764777627219,
+    "random_score": 0.32971537159884756,
+    "q_cheap": 0.0,
+    "q_strong": 0.0,
+    "cheap_cost": 0.0002135,
+    "strong_cost": 0.00265
+  },
+  {
+    "id": "mbpp/4",
+    "score": 0.910523434461573,
+    "random_score": 0.0815869121281226,
+    "q_cheap": 1.0,
+    "q_strong": 1.0,
+    "cheap_cost": 0.000219,
+    "strong_cost": 0.00351
+  },
+  {
+    "id": "mbpp/735",
+    "score": 0.8703130487150147,
+    "random_score": 0.4245051997906209,
+    "q_cheap": 0.0,
+    "q_strong": 0.0,
+    "cheap_cost": 0.0003095,
+    "strong_cost": 0.00631
+  },
+  {
+    "id": "mbpp/252",
+    "score": 0.9331180225030281,
+    "random_score": 0.9292266335654308,
+    "q_cheap": 1.0,
+    "q_strong": 1.0,
+    "cheap_cost": 0.0002235,
+    "strong_cost": 0.00312
+  }
+]

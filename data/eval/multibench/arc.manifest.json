@@ -1,0 +1,31 @@
+{
+  "models": {
+    "cheap": "mistralai/mixtral-8x7b-chat",
+    "strong": "gpt-4-1106-preview"
+  },
+  "source_files": [
+    {
+      "url": "https://huggingface.co/datasets/withmartian/routerbench/resolve/784021482c3f320c6619ed4b3bb3b41a21424fcb/routerbench_0shot.pkl",
+      "sha256": "ba4f77f19517610a707c374e99322d7750c30fc4ae7ff5527888595a1e65d36d"
+    }
+  ],
+  "selection": "All ARC-Challenge rows, original order; no outcome selection.",
+  "quality": "RouterBench published exact-match correctness; retained, not regraded.",
+  "generation": "Frozen zero-shot prompts/responses; upstream decoding metadata unavailable.",
+  "pricing": {
+    "as_of": "2024-06-26",
+    "cheap": [
+      0.24,
+      0.24
+    ],
+    "strong": [
+      10,
+      30
+    ],
+    "description": "Historical scenario, USD per million estimated tokens."
+  },
+  "dataset_sha256": "bb9322ee2e06bf0e43ccd28fea824ba762a82e52f0b31f48a6fbeae26e82af94",
+  "rows": 1470,
+  "token_counts": "Estimated ceil(characters/4); excludes hidden chat-template tokens.",
+  "frozen_at": "2026-10-26"
+}

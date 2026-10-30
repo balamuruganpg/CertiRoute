@@ -1,0 +1,42 @@
+{
+  "schema_version": 1,
+  "calibration_id": "cal_ac68471a516c1e2625687259e3e7feca74ad378d87e5a1336bd29dfa80b262c9",
+  "method": "crc",
+  "loss": "clipped_regret_v1",
+  "B": 1.0,
+  "n": 441,
+  "lambda_by_epsilon": {
+    "0.01": 0.8723667310489589,
+    "0.02": 0.8704396416139863,
+    "0.05": 0.8678173157682685,
+    "0.1": 0.8631678927601136
+  },
+  "router": {
+    "version": "logistic_surface_v1",
+    "sha256": "82b8cadbc9c6647f2bef9a706471564f1bcf410ac711e473ead0daed7b23e7a6"
+  },
+  "models": {
+    "cheap": "https://replay-cheap.invalid/v1::mistralai/mixtral-8x7b-chat",
+    "strong": "https://replay-strong.invalid/v1::gpt-4-1106-preview"
+  },
+  "quality_metric": {
+    "name": "routerbench_arc_published_exact_match",
+    "version": "1"
+  },
+  "scope": {
+    "max_chars": 32000,
+    "temperature": 0,
+    "max_tokens": 1024,
+    "top_p": 1
+  },
+  "data": {
+    "sources": [
+      "arc",
+      "bb9322ee2e06bf0e43ccd28fea824ba762a82e52f0b31f48a6fbeae26e82af94"
+    ],
+    "sha256": "420498e9189b99d8f0e32fc165a935e3b65072f392a67eb1b81e2a2fbf8e94d0",
+    "collected_at": "2026-10-26T00:00:00Z"
+  },
+  "created_at": "2026-10-26T16:59:58.741770Z",
+  "expires_at": "2026-11-02T16:59:58.741770Z"
+}

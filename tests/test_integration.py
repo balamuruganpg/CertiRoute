@@ -1,5 +1,6 @@
 """Synthetic contract fixtures only; not evidence for evaluation-plan claims."""
 
+import asyncio
 import json
 import subprocess
 import sys
@@ -391,3 +392,87 @@ def test_mode_override_bypass_and_conflict(setup):
         )
         assert response.status_code == 400
     assert calls == ["cheap-v1"]
+
+
+def test_total_deadline_cancels_upstream_and_falls_back(setup):
+    settings, _, _, _ = setup
+    data = yaml.safe_load(settings.config_file.read_text())
+    data["models"]["cheap"]["total_timeout"] = 0.02
+    settings.config_file.write_text(yaml.safe_dump(data))
+    cancelled = []
+
+    async def upstream(request):
+        model = json.loads(request.content)["model"]
+        if model == "cheap-v1":
+            try:
+                await asyncio.sleep(1)
+            except asyncio.CancelledError:
+                cancelled.append(model)
+                raise
+        return httpx.Response(200, json=completion(model))
+
+    with TestClient(create_app(settings, transport=httpx.MockTransport(upstream))) as client:
+        response = client.post("/v1/chat/completions", json=payload(), headers=AUTH)
+        assert response.status_code == 200
+        assert response.headers["x-certiroute-tier"] == "strong"
+        assert response.headers["x-certiroute-reason"] == "cheap_upstream_failure"
+    assert cancelled == ["cheap-v1"]
+
+
+def test_both_tiers_timeout_returns_504_without_retry_loop(setup):
+    settings, _, _, _ = setup
+    calls = []
+
+    def upstream(request):
+        calls.append(json.loads(request.content)["model"])
+        raise httpx.ReadTimeout("private diagnostic")
+
+    with TestClient(create_app(settings, transport=httpx.MockTransport(upstream))) as client:
+        response = client.post("/v1/chat/completions", json=payload(), headers=AUTH)
+        assert response.status_code == 504
+        assert "private diagnostic" not in response.text
+        assert client.get("/healthz").status_code == 200
+    assert calls == ["cheap-v1", "strong-v1"]
+
+
+def test_concurrent_requests_keep_outputs_and_request_ids_isolated(setup):
+    settings, _, _, _ = setup
+    active, peak = 0, 0
+
+    async def upstream(request):
+        nonlocal active, peak
+        body = json.loads(request.content)
+        active += 1
+        peak = max(peak, active)
+        try:
+            await asyncio.sleep(0.01)
+            if body["messages"][0]["content"] == "request-7" and body["model"] == "cheap-v1":
+                return httpx.Response(503)
+            result = completion(body["model"])
+            result["choices"][0]["message"]["content"] = body["messages"][0]["content"]
+            return httpx.Response(200, json=result)
+        finally:
+            active -= 1
+
+    async def run():
+        app = create_app(settings, transport=httpx.MockTransport(upstream))
+        async with app.router.lifespan_context(app):
+            async with httpx.AsyncClient(
+                transport=httpx.ASGITransport(app), base_url="http://gateway.test"
+            ) as client:
+                responses = await asyncio.gather(
+                    *[
+                        client.post(
+                            "/v1/chat/completions", json=payload(f"request-{i}"), headers=AUTH
+                        )
+                        for i in range(32)
+                    ]
+                )
+        assert len({r.headers["x-certiroute-request-id"] for r in responses}) == 32
+        for i, response in enumerate(responses):
+            assert response.status_code == 200
+            assert response.json()["choices"][0]["message"]["content"] == f"request-{i}"
+            assert response.headers["x-certiroute-tier"] == ("strong" if i == 7 else "cheap")
+
+    asyncio.run(run())
+    assert peak >= 8 and active == 0

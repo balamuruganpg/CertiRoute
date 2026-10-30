@@ -1,0 +1,2568 @@
+{
+  "task": "mbpp",
+  "sizes": {
+    "raw": 399,
+    "train": 158,
+    "calibration": 119,
+    "test": 120
+  },
+  "dataset_manifest": {
+    "models": {
+      "cheap": "gpt-3.5-turbo",
+      "strong": "gpt-4-1106-preview"
+    },
+    "source_files": [
+      {
+        "url": "https://raw.githubusercontent.com/google-research/google-research/f82046ba5aabbbb427dbfd38a254d26bff08b533/mbpp/sanitized-mbpp.json",
+        "sha256": "ca95deaa9a01ef0a6f439f88bcf0dd3db3563d22f22aad6cae04ebb9a8d8c8e9"
+      },
+      {
+        "url": "https://github.com/evalplus/evalplus/releases/download/v0.2.0/gpt-3.5-turbo_temp_0.0.zip",
+        "sha256": "44c228692d438ffe788cee12a997d711d1e87ea4a904c2149fea9cb2f9f1f7cf"
+      },
+      {
+        "url": "https://github.com/evalplus/evalplus/releases/download/v0.2.0/gpt-4-1106-preview_temp_0.0.zip",
+        "sha256": "4e060bf3473b09b763567e042c693fd99d4922d9602124dcb70ab184bcbb252d"
+      }
+    ],
+    "selection": "Intersection of sanitized MBPP and both archives.",
+    "quality": "Pass all sanitized MBPP base assertions after fenced-code extraction; timeout=15s.",
+    "generation": "EvalPlus v0.2.0 greedy chat generations; gpt-3.5 alias snapshot unknown. Prompt field is task text; original chat wrapper not recoverable here.",
+    "pricing": {
+      "as_of": "2024-06-26",
+      "cheap": [
+        0.5,
+        1.5
+      ],
+      "strong": [
+        10,
+        30
+      ],
+      "description": "Historical scenario using GPT-3.5 Feb-2024 rates; generation snapshot unknown, not actual bills."
+    },
+    "dataset_sha256": "4e30daeea2939957456a6a8973917fad2c243cc072d0c00d8165ed1cb18648ec",
+    "rows": 399,
+    "token_counts": "Estimated ceil(characters/4); excludes hidden chat-template tokens.",
+    "frozen_at": "2026-10-26",
+    "execution": {
+      "image": "python:3.12-slim@sha256:a0f57064cbdcd6285fa45f51237ab0b35ea8ebaed06a1f5973e89e19dfb86704",
+      "network": "none",
+      "memory_mb": 512,
+      "worker_sha256": "e7618c55c3ac2bc083d3d90c0c0c0d36968ec969b04a05e223292846e4bad516",
+      "unscored_sha256": "62c89dcb3b225aea3510c5eaf73469015d2855f48a67e0a9e57ab339e3a707c3",
+      "verdicts": [
+        {
+          "id": "mbpp/2",
+          "cheap": "pass",
+          "strong": "pass"
+        },
+        {
+          "id": "mbpp/3",
+          "cheap": "pass",
+          "strong": "pass"
+        },
+        {
+          "id": "mbpp/4",
+          "cheap": "pass",
+          "strong": "pass"
+        },
+        {
+          "id": "mbpp/6",
+          "cheap": "pass",
+          "strong": "pass"
+        },
+        {
+          "id": "mbpp/7",
+          "cheap": "pass",
+          "strong": "pass"
+        },
+        {
+          "id": "mbpp/8",
+          "cheap": "pass",
+          "strong": "pass"
+        },
+        {
+          "id": "mbpp/9",
+          "cheap": "fail",
+          "strong": "pass"
+        },
+        {
+          "id": "mbpp/11",
+          "cheap": "pass",
+          "strong": "pass"
+        },
+        {
+          "id": "mbpp/12",
+          "cheap": "pass",
+          "strong": "fail"
+        },
+        {
+          "id": "mbpp/14",
+          "cheap": "pass",
+          "strong": "pass"
+        },
+        {
+          "id": "mbpp/16",
+          "cheap": "pass",
+          "strong": "pass"
+        },
+        {
+          "id": "mbpp/17",
+          "cheap": "pass",
+          "strong": "pass"
+        },
+        {
+          "id": "mbpp/18",
+          "cheap": "pass",
+          "strong": "pass"
+        },
+        {
+          "id": "mbpp/19",
+          "cheap": "pass",
+          "strong": "pass"
+        },
+        {
+          "id": "mbpp/20",
+          "cheap": "pass",
+          "strong": "fail"
+        },
+        {
+          "id": "mbpp/56",
+          "cheap": "pass",
+          "strong": "pass"
+        },
+        {
+          "id": "mbpp/57",
+          "cheap": "pass",
+          "strong": "pass"
+        },
+        {
+          "id": "mbpp/58",
+          "cheap": "pass",
+          "strong": "pass"
+        },
+        {
+          "id": "mbpp/59",
+          "cheap": "pass",
+          "strong": "pass"
+        },
+        {
+          "id": "mbpp/61",
+          "cheap": "pass",
+          "strong": "pass"
+        },
+        {
+          "id": "mbpp/62",
+          "cheap": "pass",
+          "strong": "pass"
+        },
+        {
+          "id": "mbpp/63",
+          "cheap": "pass",
+          "strong": "pass"
+        },
+        {
+          "id": "mbpp/64",
+          "cheap": "pass",
+          "strong": "pass"
+        },
+        {
+          "id": "mbpp/65",
+          "cheap": "pass",
+          "strong": "pass"
+        },
+        {
+          "id": "mbpp/66",
+          "cheap": "pass",
+          "strong": "pass"
+        },
+        {
+          "id": "mbpp/67",
+          "cheap": "pass",
+          "strong": "pass"
+        },
+        {
+          "id": "mbpp/68",
+          "cheap": "pass",
+          "strong": "pass"
+        },
+        {
+          "id": "mbpp/69",
+          "cheap": "pass",
+          "strong": "fail"
+        },
+        {
+          "id": "mbpp/70",
+          "cheap": "pass",
+          "strong": "pass"
+        },
+        {
+          "id": "mbpp/71",
+          "cheap": "pass",
+          "strong": "pass"
+        },
+        {
+          "id": "mbpp/72",
+          "cheap": "fail",
+          "strong": "pass"
+        },
+        {
+          "id": "mbpp/74",
+          "cheap": "fail",
+          "strong": "pass"
+        },
+        {
+          "id": "mbpp/75",
+          "cheap": "pass",
+          "strong": "pass"
+        },
+        {
+          "id": "mbpp/77",
+          "cheap": "pass",
+          "strong": "fail"
+        },
+        {
+          "id": "mbpp/79",
+          "cheap": "pass",
+          "strong": "pass"
+        },
+        {
+          "id": "mbpp/80",
+          "cheap": "pass",
+          "strong": "pass"
+        },
+        {
+          "id": "mbpp/82",
+          "cheap": "pass",
+          "strong": "pass"
+        },
+        {
+          "id": "mbpp/83",
+          "cheap": "fail",
+          "strong": "fail"
+        },
+        {
+          "id": "mbpp/84",
+          "cheap": "pass",
+          "strong": "pass"
+        },
+        {
+          "id": "mbpp/85",
+          "cheap": "pass",
+          "strong": "pass"
+        },
+        {
+          "id": "mbpp/86",
+          "cheap": "pass",
+          "strong": "pass"
+        },
+        {
+          "id": "mbpp/87",
+          "cheap": "fail",
+          "strong": "fail"
+        },
+        {
+          "id": "mbpp/88",
+          "cheap": "pass",
+          "strong": "pass"
+        },
+        {
+          "id": "mbpp/89",
+          "cheap": "pass",
+          "strong": "pass"
+        },
+        {
+          "id": "mbpp/90",
+          "cheap": "pass",
+          "strong": "pass"
+        },
+        {
+          "id": "mbpp/91",
+          "cheap": "pass",
+          "strong": "pass"
+        },
+        {
+          "id": "mbpp/92",
+          "cheap": "fail",
+          "strong": "pass"
+        },
+        {
+          "id": "mbpp/93",
+          "cheap": "pass",
+          "strong": "pass"
+        },
+        {
+          "id": "mbpp/94",
+          "cheap": "pass",
+          "strong": "pass"
+        },
+        {
+          "id": "mbpp/95",
+          "cheap": "pass",
+          "strong": "pass"
+        },
+        {
+          "id": "mbpp/96",
+          "cheap": "pass",
+          "strong": "pass"
+        },
+        {
+          "id": "mbpp/97",
+          "cheap": "pass",
+          "strong": "pass"
+        },
+        {
+          "id": "mbpp/98",
+          "cheap": "pass",
+          "strong": "pass"
+        },
+        {
+          "id": "mbpp/99",
+          "cheap": "pass",
+          "strong": "pass"
+        },
+        {
+          "id": "mbpp/100",
+          "cheap": "pass",
+          "strong": "pass"
+        },
+        {
+          "id": "mbpp/101",
+          "cheap": "fail",
+          "strong": "fail"
+        },
+        {
+          "id": "mbpp/102",
+          "cheap": "pass",
+          "strong": "pass"
+        },
+        {
+          "id": "mbpp/103",
+          "cheap": "pass",
+          "strong": "fail"
+        },
+        {
+          "id": "mbpp/104",
+          "cheap": "fail",
+          "strong": "pass"
+        },
+        {
+          "id": "mbpp/105",
+          "cheap": "pass",
+          "strong": "pass"
+        },
+        {
+          "id": "mbpp/106",
+          "cheap": "pass",
+          "strong": "pass"
+        },
+        {
+          "id": "mbpp/108",
+          "cheap": "pass",
+          "strong": "fail"
+        },
+        {
+          "id": "mbpp/109",
+          "cheap": "fail",
+          "strong": "fail"
+        },
+        {
+          "id": "mbpp/111",
+          "cheap": "pass",
+          "strong": "pass"
+        },
+        {
+          "id": "mbpp/113",
+          "cheap": "pass",
+          "strong": "pass"
+        },
+        {
+          "id": "mbpp/115",
+          "cheap": "fail",
+          "strong": "fail"
+        },
+        {
+          "id": "mbpp/116",
+          "cheap": "pass",
+          "strong": "pass"
+        },
+        {
+          "id": "mbpp/117",
+          "cheap": "pass",
+          "strong": "pass"
+        },
+        {
+          "id": "mbpp/118",
+          "cheap": "pass",
+          "strong": "pass"
+        },
+        {
+          "id": "mbpp/119",
+          "cheap": "pass",
+          "strong": "pass"
+        },
+        {
+          "id": "mbpp/120",
+          "cheap": "pass",
+          "strong": "pass"
+        },
+        {
+          "id": "mbpp/123",
+          "cheap": "pass",
+          "strong": "pass"
+        },
+        {
+          "id": "mbpp/124",
+          "cheap": "fail",
+          "strong": "fail"
+        },
+        {
+          "id": "mbpp/125",
+          "cheap": "pass",
+          "strong": "fail"
+        },
+        {
+          "id": "mbpp/126",
+          "cheap": "fail",
+          "strong": "fail"
+        },
+        {
+          "id": "mbpp/127",
+          "cheap": "pass",
+          "strong": "pass"
+        },
+        {
+          "id": "mbpp/128",
+          "cheap": "pass",
+          "strong": "pass"
+        },
+        {
+          "id": "mbpp/129",
+          "cheap": "pass",
+          "strong": "fail"
+        },
+        {
+          "id": "mbpp/130",
+          "cheap": "pass",
+          "strong": "pass"
+        },
+        {
+          "id": "mbpp/131",
+          "cheap": "pass",
+          "strong": "pass"
+        },
+        {
+          "id": "mbpp/132",
+          "cheap": "pass",
+          "strong": "pass"
+        },
+        {
+          "id": "mbpp/133",
+          "cheap": "pass",
+          "strong": "pass"
+        },
+        {
+          "id": "mbpp/135",
+          "cheap": "pass",
+          "strong": "pass"
+        },
+        {
+          "id": "mbpp/137",
+          "cheap": "pass",
+          "strong": "pass"
+        },
+        {
+          "id": "mbpp/138",
+          "cheap": "fail",
+          "strong": "fail"
+        },
+        {
+          "id": "mbpp/139",
+          "cheap": "pass",
+          "strong": "pass"
+        },
+        {
+          "id": "mbpp/140",
+          "cheap": "pass",
+          "strong": "pass"
+        },
+        {
+          "id": "mbpp/141",
+          "cheap": "pass",
+          "strong": "pass"
+        },
+        {
+          "id": "mbpp/142",
+          "cheap": "pass",
+          "strong": "pass"
+        },
+        {
+          "id": "mbpp/143",
+          "cheap": "fail",
+          "strong": "fail"
+        },
+        {
+          "id": "mbpp/145",
+          "cheap": "pass",
+          "strong": "pass"
+        },
+        {
+          "id": "mbpp/160",
+          "cheap": "pass",
+          "strong": "fail"
+        },
+        {
+          "id": "mbpp/161",
+          "cheap": "pass",
+          "strong": "pass"
+        },
+        {
+          "id": "mbpp/162",
+          "cheap": "pass",
+          "strong": "pass"
+        },
+        {
+          "id": "mbpp/164",
+          "cheap": "fail",
+          "strong": "fail"
+        },
+        {
+          "id": "mbpp/165",
+          "cheap": "pass",
+          "strong": "pass"
+        },
+        {
+          "id": "mbpp/166",
+          "cheap": "pass",
+          "strong": "pass"
+        },
+        {
+          "id": "mbpp/167",
+          "cheap": "pass",
+          "strong": "pass"
+        },
+        {
+          "id": "mbpp/168",
+          "cheap": "pass",
+          "strong": "pass"
+        },
+        {
+          "id": "mbpp/170",
+          "cheap": "pass",
+          "strong": "pass"
+        },
+        {
+          "id": "mbpp/171",
+          "cheap": "pass",
+          "strong": "pass"
+        },
+        {
+          "id": "mbpp/172",
+          "cheap": "pass",
+          "strong": "pass"
+        },
+        {
+          "id": "mbpp/222",
+          "cheap": "pass",
+          "strong": "pass"
+        },
+        {
+          "id": "mbpp/223",
+          "cheap": "fail",
+          "strong": "fail"
+        },
+        {
+          "id": "mbpp/224",
+          "cheap": "pass",
+          "strong": "pass"
+        },
+        {
+          "id": "mbpp/226",
+          "cheap": "pass",
+          "strong": "pass"
+        },
+        {
+          "id": "mbpp/227",
+          "cheap": "pass",
+          "strong": "pass"
+        },
+        {
+          "id": "mbpp/229",
+          "cheap": "fail",
+          "strong": "fail"
+        },
+        {
+          "id": "mbpp/230",
+          "cheap": "pass",
+          "strong": "pass"
+        },
+        {
+          "id": "mbpp/232",
+          "cheap": "pass",
+          "strong": "pass"
+        },
+        {
+          "id": "mbpp/233",
+          "cheap": "fail",
+          "strong": "fail"
+        },
+        {
+          "id": "mbpp/234",
+          "cheap": "pass",
+          "strong": "pass"
+        },
+        {
+          "id": "mbpp/235",
+          "cheap": "fail",
+          "strong": "fail"
+        },
+        {
+          "id": "mbpp/237",
+          "cheap": "fail",
+          "strong": "pass"
+        },
+        {
+          "id": "mbpp/238",
+          "cheap": "pass",
+          "strong": "pass"
+        },
+        {
+          "id": "mbpp/239",
+          "cheap": "fail",
+          "strong": "pass"
+        },
+        {
+          "id": "mbpp/240",
+          "cheap": "pass",
+          "strong": "pass"
+        },
+        {
+          "id": "mbpp/242",
+          "cheap": "pass",
+          "strong": "pass"
+        },
+        {
+          "id": "mbpp/244",
+          "cheap": "pass",
+          "strong": "fail"
+        },
+        {
+          "id": "mbpp/245",
+          "cheap": "fail",
+          "strong": "fail"
+        },
+        {
+          "id": "mbpp/247",
+          "cheap": "pass",
+          "strong": "pass"
+        },
+        {
+          "id": "mbpp/249",
+          "cheap": "fail",
+          "strong": "fail"
+        },
+        {
+          "id": "mbpp/250",
+          "cheap": "pass",
+          "strong": "pass"
+        },
+        {
+          "id": "mbpp/251",
+          "cheap": "pass",
+          "strong": "pass"
+        },
+        {
+          "id": "mbpp/252",
+          "cheap": "pass",
+          "strong": "pass"
+        },
+        {
+          "id": "mbpp/253",
+          "cheap": "pass",
+          "strong": "pass"
+        },
+        {
+          "id": "mbpp/255",
+          "cheap": "pass",
+          "strong": "fail"
+        },
+        {
+          "id": "mbpp/256",
+          "cheap": "pass",
+          "strong": "pass"
+        },
+        {
+          "id": "mbpp/257",
+          "cheap": "pass",
+          "strong": "pass"
+        },
+        {
+          "id": "mbpp/259",
+          "cheap": "pass",
+          "strong": "fail"
+        },
+        {
+          "id": "mbpp/260",
+          "cheap": "fail",
+          "strong": "fail"
+        },
+        {
+          "id": "mbpp/261",
+          "cheap": "pass",
+          "strong": "pass"
+        },
+        {
+          "id": "mbpp/262",
+          "cheap": "pass",
+          "strong": "pass"
+        },
+        {
+          "id": "mbpp/264",
+          "cheap": "pass",
+          "strong": "pass"
+        },
+        {
+          "id": "mbpp/265",
+          "cheap": "pass",
+          "strong": "pass"
+        },
+        {
+          "id": "mbpp/266",
+          "cheap": "pass",
+          "strong": "pass"
+        },
+        {
+          "id": "mbpp/267",
+          "cheap": "pass",
+          "strong": "fail"
+        },
+        {
+          "id": "mbpp/268",
+          "cheap": "pass",
+          "strong": "pass"
+        },
+        {
+          "id": "mbpp/269",
+          "cheap": "pass",
+          "strong": "pass"
+        },
+        {
+          "id": "mbpp/270",
+          "cheap": "pass",
+          "strong": "pass"
+        },
+        {
+          "id": "mbpp/271",
+          "cheap": "pass",
+          "strong": "pass"
+        },
+        {
+          "id": "mbpp/272",
+          "cheap": "pass",
+          "strong": "pass"
+        },
+        {
+          "id": "mbpp/273",
+          "cheap": "fail",
+          "strong": "pass"
+        },
+        {
+          "id": "mbpp/274",
+          "cheap": "fail",
+          "strong": "pass"
+        },
+        {
+          "id": "mbpp/276",
+          "cheap": "pass",
+          "strong": "pass"
+        },
+        {
+          "id": "mbpp/277",
+          "cheap": "pass",
+          "strong": "pass"
+        },
+        {
+          "id": "mbpp/278",
+          "cheap": "pass",
+          "strong": "pass"
+        },
+        {
+          "id": "mbpp/279",
+          "cheap": "fail",
+          "strong": "pass"
+        },
+        {
+          "id": "mbpp/280",
+          "cheap": "pass",
+          "strong": "pass"
+        },
+        {
+          "id": "mbpp/281",
+          "cheap": "pass",
+          "strong": "pass"
+        },
+        {
+          "id": "mbpp/282",
+          "cheap": "pass",
+          "strong": "pass"
+        },
+        {
+          "id": "mbpp/283",
+          "cheap": "pass",
+          "strong": "pass"
+        },
+        {
+          "id": "mbpp/284",
+          "cheap": "pass",
+          "strong": "pass"
+        },
+        {
+          "id": "mbpp/285",
+          "cheap": "pass",
+          "strong": "pass"
+        },
+        {
+          "id": "mbpp/286",
+          "cheap": "pass",
+          "strong": "pass"
+        },
+        {
+          "id": "mbpp/287",
+          "cheap": "pass",
+          "strong": "fail"
+        },
+        {
+          "id": "mbpp/290",
+          "cheap": "pass",
+          "strong": "pass"
+        },
+        {
+          "id": "mbpp/292",
+          "cheap": "pass",
+          "strong": "pass"
+        },
+        {
+          "id": "mbpp/293",
+          "cheap": "pass",
+          "strong": "pass"
+        },
+        {
+          "id": "mbpp/294",
+          "cheap": "pass",
+          "strong": "pass"
+        },
+        {
+          "id": "mbpp/295",
+          "cheap": "pass",
+          "strong": "pass"
+        },
+        {
+          "id": "mbpp/296",
+          "cheap": "pass",
+          "strong": "pass"
+        },
+        {
+          "id": "mbpp/297",
+          "cheap": "pass",
+          "strong": "pass"
+        },
+        {
+          "id": "mbpp/299",
+          "cheap": "pass",
+          "strong": "pass"
+        },
+        {
+          "id": "mbpp/300",
+          "cheap": "fail",
+          "strong": "pass"
+        },
+        {
+          "id": "mbpp/301",
+          "cheap": "pass",
+          "strong": "fail"
+        },
+        {
+          "id": "mbpp/305",
+          "cheap": "pass",
+          "strong": "pass"
+        },
+        {
+          "id": "mbpp/306",
+          "cheap": "fail",
+          "strong": "fail"
+        },
+        {
+          "id": "mbpp/308",
+          "cheap": "pass",
+          "strong": "pass"
+        },
+        {
+          "id": "mbpp/309",
+          "cheap": "pass",
+          "strong": "pass"
+        },
+        {
+          "id": "mbpp/310",
+          "cheap": "fail",
+          "strong": "fail"
+        },
+        {
+          "id": "mbpp/311",
+          "cheap": "fail",
+          "strong": "fail"
+        },
+        {
+          "id": "mbpp/312",
+          "cheap": "pass",
+          "strong": "pass"
+        },
+        {
+          "id": "mbpp/388",
+          "cheap": "pass",
+          "strong": "pass"
+        },
+        {
+          "id": "mbpp/389",
+          "cheap": "pass",
+          "strong": "pass"
+        },
+        {
+          "id": "mbpp/390",
+          "cheap": "pass",
+          "strong": "pass"
+        },
+        {
+          "id": "mbpp/391",
+          "cheap": "pass",
+          "strong": "pass"
+        },
+        {
+          "id": "mbpp/392",
+          "cheap": "fail",
+          "strong": "pass"
+        },
+        {
+          "id": "mbpp/394",
+          "cheap": "pass",
+          "strong": "pass"
+        },
+        {
+          "id": "mbpp/395",
+          "cheap": "pass",
+          "strong": "pass"
+        },
+        {
+          "id": "mbpp/396",
+          "cheap": "pass",
+          "strong": "pass"
+        },
+        {
+          "id": "mbpp/397",
+          "cheap": "pass",
+          "strong": "pass"
+        },
+        {
+          "id": "mbpp/398",
+          "cheap": "fail",
+          "strong": "fail"
+        },
+        {
+          "id": "mbpp/400",
+          "cheap": "fail",
+          "strong": "fail"
+        },
+        {
+          "id": "mbpp/404",
+          "cheap": "pass",
+          "strong": "pass"
+        },
+        {
+          "id": "mbpp/405",
+          "cheap": "pass",
+          "strong": "pass"
+        },
+        {
+          "id": "mbpp/406",
+          "cheap": "pass",
+          "strong": "pass"
+        },
+        {
+          "id": "mbpp/407",
+          "cheap": "fail",
+          "strong": "fail"
+        },
+        {
+          "id": "mbpp/409",
+          "cheap": "pass",
+          "strong": "pass"
+        },
+        {
+          "id": "mbpp/410",
+          "cheap": "fail",
+          "strong": "pass"
+        },
+        {
+          "id": "mbpp/412",
+          "cheap": "pass",
+          "strong": "pass"
+        },
+        {
+          "id": "mbpp/413",
+          "cheap": "pass",
+          "strong": "pass"
+        },
+        {
+          "id": "mbpp/414",
+          "cheap": "pass",
+          "strong": "pass"
+        },
+        {
+          "id": "mbpp/415",
+          "cheap": "pass",
+          "strong": "pass"
+        },
+        {
+          "id": "mbpp/418",
+          "cheap": "pass",
+          "strong": "pass"
+        },
+        {
+          "id": "mbpp/419",
+          "cheap": "pass",
+          "strong": "pass"
+        },
+        {
+          "id": "mbpp/420",
+          "cheap": "pass",
+          "strong": "fail"
+        },
+        {
+          "id": "mbpp/421",
+          "cheap": "pass",
+          "strong": "pass"
+        },
+        {
+          "id": "mbpp/422",
+          "cheap": "pass",
+          "strong": "pass"
+        },
+        {
+          "id": "mbpp/424",
+          "cheap": "pass",
+          "strong": "pass"
+        },
+        {
+          "id": "mbpp/425",
+          "cheap": "pass",
+          "strong": "pass"
+        },
+        {
+          "id": "mbpp/426",
+          "cheap": "pass",
+          "strong": "pass"
+        },
+        {
+          "id": "mbpp/427",
+          "cheap": "pass",
+          "strong": "pass"
+        },
+        {
+          "id": "mbpp/428",
+          "cheap": "pass",
+          "strong": "pass"
+        },
+        {
+          "id": "mbpp/429",
+          "cheap": "pass",
+          "strong": "pass"
+        },
+        {
+          "id": "mbpp/430",
+          "cheap": "fail",
+          "strong": "fail"
+        },
+        {
+          "id": "mbpp/431",
+          "cheap": "fail",
+          "strong": "fail"
+        },
+        {
+          "id": "mbpp/432",
+          "cheap": "pass",
+          "strong": "pass"
+        },
+        {
+          "id": "mbpp/433",
+          "cheap": "pass",
+          "strong": "pass"
+        },
+        {
+          "id": "mbpp/435",
+          "cheap": "fail",
+          "strong": "pass"
+        },
+        {
+          "id": "mbpp/436",
+          "cheap": "pass",
+          "strong": "pass"
+        },
+        {
+          "id": "mbpp/437",
+          "cheap": "pass",
+          "strong": "pass"
+        },
+        {
+          "id": "mbpp/438",
+          "cheap": "fail",
+          "strong": "fail"
+        },
+        {
+          "id": "mbpp/439",
+          "cheap": "pass",
+          "strong": "pass"
+        },
+        {
+          "id": "mbpp/440",
+          "cheap": "fail",
+          "strong": "pass"
+        },
+        {
+          "id": "mbpp/441",
+          "cheap": "pass",
+          "strong": "pass"
+        },
+        {
+          "id": "mbpp/442",
+          "cheap": "pass",
+          "strong": "pass"
+        },
+        {
+          "id": "mbpp/445",
+          "cheap": "fail",
+          "strong": "fail"
+        },
+        {
+          "id": "mbpp/446",
+          "cheap": "pass",
+          "strong": "pass"
+        },
+        {
+          "id": "mbpp/447",
+          "cheap": "pass",
+          "strong": "pass"
+        },
+        {
+          "id": "mbpp/448",
+          "cheap": "pass",
+          "strong": "fail"
+        },
+        {
+          "id": "mbpp/450",
+          "cheap": "pass",
+          "strong": "pass"
+        },
+        {
+          "id": "mbpp/451",
+          "cheap": "pass",
+          "strong": "pass"
+        },
+        {
+          "id": "mbpp/453",
+          "cheap": "pass",
+          "strong": "pass"
+        },
+        {
+          "id": "mbpp/454",
+          "cheap": "pass",
+          "strong": "pass"
+        },
+        {
+          "id": "mbpp/455",
+          "cheap": "pass",
+          "strong": "pass"
+        },
+        {
+          "id": "mbpp/456",
+          "cheap": "pass",
+          "strong": "pass"
+        },
+        {
+          "id": "mbpp/457",
+          "cheap": "pass",
+          "strong": "pass"
+        },
+        {
+          "id": "mbpp/458",
+          "cheap": "pass",
+          "strong": "pass"
+        },
+        {
+          "id": "mbpp/459",
+          "cheap": "pass",
+          "strong": "pass"
+        },
+        {
+          "id": "mbpp/460",
+          "cheap": "pass",
+          "strong": "pass"
+        },
+        {
+          "id": "mbpp/461",
+          "cheap": "fail",
+          "strong": "fail"
+        },
+        {
+          "id": "mbpp/462",
+          "cheap": "fail",
+          "strong": "fail"
+        },
+        {
+          "id": "mbpp/463",
+          "cheap": "pass",
+          "strong": "fail"
+        },
+        {
+          "id": "mbpp/465",
+          "cheap": "pass",
+          "strong": "pass"
+        },
+        {
+          "id": "mbpp/468",
+          "cheap": "fail",
+          "strong": "fail"
+        },
+        {
+          "id": "mbpp/470",
+          "cheap": "pass",
+          "strong": "pass"
+        },
+        {
+          "id": "mbpp/471",
+          "cheap": "pass",
+          "strong": "pass"
+        },
+        {
+          "id": "mbpp/472",
+          "cheap": "pass",
+          "strong": "pass"
+        },
+        {
+          "id": "mbpp/473",
+          "cheap": "fail",
+          "strong": "fail"
+        },
+        {
+          "id": "mbpp/474",
+          "cheap": "pass",
+          "strong": "pass"
+        },
+        {
+          "id": "mbpp/475",
+          "cheap": "pass",
+          "strong": "pass"
+        },
+        {
+          "id": "mbpp/476",
+          "cheap": "pass",
+          "strong": "pass"
+        },
+        {
+          "id": "mbpp/477",
+          "cheap": "pass",
+          "strong": "pass"
+        },
+        {
+          "id": "mbpp/478",
+          "cheap": "pass",
+          "strong": "pass"
+        },
+        {
+          "id": "mbpp/479",
+          "cheap": "pass",
+          "strong": "pass"
+        },
+        {
+          "id": "mbpp/554",
+          "cheap": "pass",
+          "strong": "pass"
+        },
+        {
+          "id": "mbpp/555",
+          "cheap": "pass",
+          "strong": "pass"
+        },
+        {
+          "id": "mbpp/556",
+          "cheap": "pass",
+          "strong": "pass"
+        },
+        {
+          "id": "mbpp/557",
+          "cheap": "pass",
+          "strong": "pass"
+        },
+        {
+          "id": "mbpp/558",
+          "cheap": "pass",
+          "strong": "pass"
+        },
+        {
+          "id": "mbpp/559",
+          "cheap": "pass",
+          "strong": "pass"
+        },
+        {
+          "id": "mbpp/560",
+          "cheap": "pass",
+          "strong": "pass"
+        },
+        {
+          "id": "mbpp/562",
+          "cheap": "pass",
+          "strong": "pass"
+        },
+        {
+          "id": "mbpp/563",
+          "cheap": "pass",
+          "strong": "pass"
+        },
+        {
+          "id": "mbpp/564",
+          "cheap": "pass",
+          "strong": "pass"
+        },
+        {
+          "id": "mbpp/565",
+          "cheap": "pass",
+          "strong": "pass"
+        },
+        {
+          "id": "mbpp/566",
+          "cheap": "pass",
+          "strong": "pass"
+        },
+        {
+          "id": "mbpp/567",
+          "cheap": "pass",
+          "strong": "pass"
+        },
+        {
+          "id": "mbpp/568",
+          "cheap": "pass",
+          "strong": "pass"
+        },
+        {
+          "id": "mbpp/569",
+          "cheap": "pass",
+          "strong": "pass"
+        },
+        {
+          "id": "mbpp/572",
+          "cheap": "fail",
+          "strong": "pass"
+        },
+        {
+          "id": "mbpp/573",
+          "cheap": "pass",
+          "strong": "fail"
+        },
+        {
+          "id": "mbpp/574",
+          "cheap": "fail",
+          "strong": "fail"
+        },
+        {
+          "id": "mbpp/576",
+          "cheap": "pass",
+          "strong": "pass"
+        },
+        {
+          "id": "mbpp/577",
+          "cheap": "pass",
+          "strong": "pass"
+        },
+        {
+          "id": "mbpp/578",
+          "cheap": "pass",
+          "strong": "pass"
+        },
+        {
+          "id": "mbpp/579",
+          "cheap": "pass",
+          "strong": "pass"
+        },
+        {
+          "id": "mbpp/580",
+          "cheap": "fail",
+          "strong": "pass"
+        },
+        {
+          "id": "mbpp/581",
+          "cheap": "pass",
+          "strong": "fail"
+        },
+        {
+          "id": "mbpp/582",
+          "cheap": "fail",
+          "strong": "pass"
+        },
+        {
+          "id": "mbpp/583",
+          "cheap": "pass",
+          "strong": "pass"
+        },
+        {
+          "id": "mbpp/585",
+          "cheap": "pass",
+          "strong": "pass"
+        },
+        {
+          "id": "mbpp/586",
+          "cheap": "pass",
+          "strong": "pass"
+        },
+        {
+          "id": "mbpp/587",
+          "cheap": "pass",
+          "strong": "pass"
+        },
+        {
+          "id": "mbpp/588",
+          "cheap": "pass",
+          "strong": "pass"
+        },
+        {
+          "id": "mbpp/589",
+          "cheap": "pass",
+          "strong": "pass"
+        },
+        {
+          "id": "mbpp/590",
+          "cheap": "fail",
+          "strong": "fail"
+        },
+        {
+          "id": "mbpp/591",
+          "cheap": "pass",
+          "strong": "pass"
+        },
+        {
+          "id": "mbpp/592",
+          "cheap": "pass",
+          "strong": "pass"
+        },
+        {
+          "id": "mbpp/593",
+          "cheap": "pass",
+          "strong": "pass"
+        },
+        {
+          "id": "mbpp/594",
+          "cheap": "pass",
+          "strong": "pass"
+        },
+        {
+          "id": "mbpp/595",
+          "cheap": "fail",
+          "strong": "fail"
+        },
+        {
+          "id": "mbpp/596",
+          "cheap": "pass",
+          "strong": "pass"
+        },
+        {
+          "id": "mbpp/597",
+          "cheap": "pass",
+          "strong": "pass"
+        },
+        {
+          "id": "mbpp/598",
+          "cheap": "pass",
+          "strong": "pass"
+        },
+        {
+          "id": "mbpp/599",
+          "cheap": "pass",
+          "strong": "pass"
+        },
+        {
+          "id": "mbpp/600",
+          "cheap": "pass",
+          "strong": "pass"
+        },
+        {
+          "id": "mbpp/602",
+          "cheap": "pass",
+          "strong": "pass"
+        },
+        {
+          "id": "mbpp/603",
+          "cheap": "fail",
+          "strong": "timeout"
+        },
+        {
+          "id": "mbpp/604",
+          "cheap": "pass",
+          "strong": "pass"
+        },
+        {
+          "id": "mbpp/605",
+          "cheap": "pass",
+          "strong": "pass"
+        },
+        {
+          "id": "mbpp/606",
+          "cheap": "pass",
+          "strong": "pass"
+        },
+        {
+          "id": "mbpp/607",
+          "cheap": "pass",
+          "strong": "pass"
+        },
+        {
+          "id": "mbpp/608",
+          "cheap": "fail",
+          "strong": "fail"
+        },
+        {
+          "id": "mbpp/610",
+          "cheap": "pass",
+          "strong": "fail"
+        },
+        {
+          "id": "mbpp/611",
+          "cheap": "pass",
+          "strong": "pass"
+        },
+        {
+          "id": "mbpp/612",
+          "cheap": "fail",
+          "strong": "fail"
+        },
+        {
+          "id": "mbpp/614",
+          "cheap": "fail",
+          "strong": "pass"
+        },
+        {
+          "id": "mbpp/615",
+          "cheap": "fail",
+          "strong": "fail"
+        },
+        {
+          "id": "mbpp/616",
+          "cheap": "pass",
+          "strong": "pass"
+        },
+        {
+          "id": "mbpp/618",
+          "cheap": "pass",
+          "strong": "pass"
+        },
+        {
+          "id": "mbpp/619",
+          "cheap": "pass",
+          "strong": "pass"
+        },
+        {
+          "id": "mbpp/620",
+          "cheap": "pass",
+          "strong": "fail"
+        },
+        {
+          "id": "mbpp/622",
+          "cheap": "fail",
+          "strong": "pass"
+        },
+        {
+          "id": "mbpp/623",
+          "cheap": "pass",
+          "strong": "pass"
+        },
+        {
+          "id": "mbpp/624",
+          "cheap": "pass",
+          "strong": "pass"
+        },
+        {
+          "id": "mbpp/626",
+          "cheap": "fail",
+          "strong": "fail"
+        },
+        {
+          "id": "mbpp/628",
+          "cheap": "pass",
+          "strong": "pass"
+        },
+        {
+          "id": "mbpp/629",
+          "cheap": "pass",
+          "strong": "pass"
+        },
+        {
+          "id": "mbpp/630",
+          "cheap": "pass",
+          "strong": "fail"
+        },
+        {
+          "id": "mbpp/631",
+          "cheap": "fail",
+          "strong": "pass"
+        },
+        {
+          "id": "mbpp/632",
+          "cheap": "pass",
+          "strong": "pass"
+        },
+        {
+          "id": "mbpp/633",
+          "cheap": "pass",
+          "strong": "fail"
+        },
+        {
+          "id": "mbpp/635",
+          "cheap": "pass",
+          "strong": "pass"
+        },
+        {
+          "id": "mbpp/637",
+          "cheap": "pass",
+          "strong": "pass"
+        },
+        {
+          "id": "mbpp/638",
+          "cheap": "pass",
+          "strong": "fail"
+        },
+        {
+          "id": "mbpp/639",
+          "cheap": "pass",
+          "strong": "pass"
+        },
+        {
+          "id": "mbpp/640",
+          "cheap": "fail",
+          "strong": "fail"
+        },
+        {
+          "id": "mbpp/641",
+          "cheap": "pass",
+          "strong": "pass"
+        },
+        {
+          "id": "mbpp/643",
+          "cheap": "pass",
+          "strong": "pass"
+        },
+        {
+          "id": "mbpp/644",
+          "cheap": "pass",
+          "strong": "pass"
+        },
+        {
+          "id": "mbpp/720",
+          "cheap": "pass",
+          "strong": "pass"
+        },
+        {
+          "id": "mbpp/721",
+          "cheap": "pass",
+          "strong": "fail"
+        },
+        {
+          "id": "mbpp/722",
+          "cheap": "fail",
+          "strong": "fail"
+        },
+        {
+          "id": "mbpp/723",
+          "cheap": "pass",
+          "strong": "pass"
+        },
+        {
+          "id": "mbpp/724",
+          "cheap": "pass",
+          "strong": "pass"
+        },
+        {
+          "id": "mbpp/725",
+          "cheap": "pass",
+          "strong": "pass"
+        },
+        {
+          "id": "mbpp/726",
+          "cheap": "pass",
+          "strong": "pass"
+        },
+        {
+          "id": "mbpp/728",
+          "cheap": "pass",
+          "strong": "pass"
+        },
+        {
+          "id": "mbpp/730",
+          "cheap": "pass",
+          "strong": "pass"
+        },
+        {
+          "id": "mbpp/731",
+          "cheap": "pass",
+          "strong": "pass"
+        },
+        {
+          "id": "mbpp/732",
+          "cheap": "pass",
+          "strong": "pass"
+        },
+        {
+          "id": "mbpp/733",
+          "cheap": "pass",
+          "strong": "pass"
+        },
+        {
+          "id": "mbpp/734",
+          "cheap": "fail",
+          "strong": "fail"
+        },
+        {
+          "id": "mbpp/735",
+          "cheap": "fail",
+          "strong": "fail"
+        },
+        {
+          "id": "mbpp/736",
+          "cheap": "pass",
+          "strong": "pass"
+        },
+        {
+          "id": "mbpp/737",
+          "cheap": "pass",
+          "strong": "pass"
+        },
+        {
+          "id": "mbpp/739",
+          "cheap": "pass",
+          "strong": "pass"
+        },
+        {
+          "id": "mbpp/740",
+          "cheap": "pass",
+          "strong": "pass"
+        },
+        {
+          "id": "mbpp/741",
+          "cheap": "pass",
+          "strong": "pass"
+        },
+        {
+          "id": "mbpp/742",
+          "cheap": "pass",
+          "strong": "pass"
+        },
+        {
+          "id": "mbpp/743",
+          "cheap": "pass",
+          "strong": "pass"
+        },
+        {
+          "id": "mbpp/744",
+          "cheap": "pass",
+          "strong": "pass"
+        },
+        {
+          "id": "mbpp/745",
+          "cheap": "fail",
+          "strong": "pass"
+        },
+        {
+          "id": "mbpp/746",
+          "cheap": "pass",
+          "strong": "pass"
+        },
+        {
+          "id": "mbpp/748",
+          "cheap": "pass",
+          "strong": "pass"
+        },
+        {
+          "id": "mbpp/749",
+          "cheap": "pass",
+          "strong": "fail"
+        },
+        {
+          "id": "mbpp/750",
+          "cheap": "pass",
+          "strong": "pass"
+        },
+        {
+          "id": "mbpp/751",
+          "cheap": "pass",
+          "strong": "pass"
+        },
+        {
+          "id": "mbpp/752",
+          "cheap": "fail",
+          "strong": "pass"
+        },
+        {
+          "id": "mbpp/753",
+          "cheap": "pass",
+          "strong": "pass"
+        },
+        {
+          "id": "mbpp/754",
+          "cheap": "pass",
+          "strong": "pass"
+        },
+        {
+          "id": "mbpp/755",
+          "cheap": "pass",
+          "strong": "pass"
+        },
+        {
+          "id": "mbpp/757",
+          "cheap": "pass",
+          "strong": "pass"
+        },
+        {
+          "id": "mbpp/758",
+          "cheap": "pass",
+          "strong": "pass"
+        },
+        {
+          "id": "mbpp/759",
+          "cheap": "pass",
+          "strong": "pass"
+        },
+        {
+          "id": "mbpp/760",
+          "cheap": "pass",
+          "strong": "fail"
+        },
+        {
+          "id": "mbpp/762",
+          "cheap": "pass",
+          "strong": "pass"
+        },
+        {
+          "id": "mbpp/763",
+          "cheap": "fail",
+          "strong": "pass"
+        },
+        {
+          "id": "mbpp/764",
+          "cheap": "pass",
+          "strong": "pass"
+        },
+        {
+          "id": "mbpp/765",
+          "cheap": "fail",
+          "strong": "fail"
+        },
+        {
+          "id": "mbpp/766",
+          "cheap": "pass",
+          "strong": "pass"
+        },
+        {
+          "id": "mbpp/767",
+          "cheap": "pass",
+          "strong": "fail"
+        },
+        {
+          "id": "mbpp/769",
+          "cheap": "fail",
+          "strong": "fail"
+        },
+        {
+          "id": "mbpp/770",
+          "cheap": "pass",
+          "strong": "pass"
+        },
+        {
+          "id": "mbpp/771",
+          "cheap": "pass",
+          "strong": "pass"
+        },
+        {
+          "id": "mbpp/772",
+          "cheap": "pass",
+          "strong": "pass"
+        },
+        {
+          "id": "mbpp/773",
+          "cheap": "fail",
+          "strong": "pass"
+        },
+        {
+          "id": "mbpp/775",
+          "cheap": "pass",
+          "strong": "pass"
+        },
+        {
+          "id": "mbpp/777",
+          "cheap": "fail",
+          "strong": "fail"
+        },
+        {
+          "id": "mbpp/778",
+          "cheap": "pass",
+          "strong": "pass"
+        },
+        {
+          "id": "mbpp/780",
+          "cheap": "pass",
+          "strong": "pass"
+        },
+        {
+          "id": "mbpp/781",
+          "cheap": "pass",
+          "strong": "pass"
+        },
+        {
+          "id": "mbpp/782",
+          "cheap": "pass",
+          "strong": "pass"
+        },
+        {
+          "id": "mbpp/783",
+          "cheap": "fail",
+          "strong": "fail"
+        },
+        {
+          "id": "mbpp/784",
+          "cheap": "fail",
+          "strong": "pass"
+        },
+        {
+          "id": "mbpp/785",
+          "cheap": "pass",
+          "strong": "pass"
+        },
+        {
+          "id": "mbpp/786",
+          "cheap": "pass",
+          "strong": "pass"
+        },
+        {
+          "id": "mbpp/787",
+          "cheap": "pass",
+          "strong": "fail"
+        },
+        {
+          "id": "mbpp/788",
+          "cheap": "pass",
+          "strong": "pass"
+        },
+        {
+          "id": "mbpp/790",
+          "cheap": "pass",
+          "strong": "pass"
+        },
+        {
+          "id": "mbpp/791",
+          "cheap": "fail",
+          "strong": "pass"
+        },
+        {
+          "id": "mbpp/792",
+          "cheap": "pass",
+          "strong": "pass"
+        },
+        {
+          "id": "mbpp/793",
+          "cheap": "pass",
+          "strong": "pass"
+        },
+        {
+          "id": "mbpp/794",
+          "cheap": "pass",
+          "strong": "pass"
+        },
+        {
+          "id": "mbpp/796",
+          "cheap": "pass",
+          "strong": "pass"
+        },
+        {
+          "id": "mbpp/797",
+          "cheap": "pass",
+          "strong": "pass"
+        },
+        {
+          "id": "mbpp/798",
+          "cheap": "pass",
+          "strong": "pass"
+        },
+        {
+          "id": "mbpp/799",
+          "cheap": "pass",
+          "strong": "pass"
+        },
+        {
+          "id": "mbpp/800",
+          "cheap": "pass",
+          "strong": "pass"
+        },
+        {
+          "id": "mbpp/801",
+          "cheap": "pass",
+          "strong": "pass"
+        },
+        {
+          "id": "mbpp/803",
+          "cheap": "pass",
+          "strong": "pass"
+        },
+        {
+          "id": "mbpp/804",
+          "cheap": "pass",
+          "strong": "pass"
+        },
+        {
+          "id": "mbpp/805",
+          "cheap": "pass",
+          "strong": "pass"
+        },
+        {
+          "id": "mbpp/806",
+          "cheap": "pass",
+          "strong": "pass"
+        },
+        {
+          "id": "mbpp/807",
+          "cheap": "pass",
+          "strong": "pass"
+        },
+        {
+          "id": "mbpp/808",
+          "cheap": "pass",
+          "strong": "pass"
+        },
+        {
+          "id": "mbpp/809",
+          "cheap": "pass",
+          "strong": "pass"
+        }
+      ]
+    }
+  },
+  "summaries": [
+    {
+      "policy": "cheap-only",
+      "epsilon": null,
+      "probability": null,
+      "repeats": 1000,
+      "mean_regret": 0.05391666666666667,
+      "regret_ci": [
+        0.053006958913944434,
+        0.0548263744193889
+      ],
+      "regret_ci_bonferroni": [
+        0.052757368816291665,
+        0.05507596451704167
+      ],
+      "regret_quantiles": {
+        "0.05": 0.03333333333333333,
+        "0.5": 0.05,
+        "0.95": 0.075
+      },
+      "max_regret": 0.1,
+      "fraction_exceeding_epsilon": {
+        "0.01": 0.997,
+        "0.02": 0.987,
+        "0.05": 0.499,
+        "0.1": 0.0
+      },
+      "non_rejection": null,
+      "mean_quality": 0.820825,
+      "mean_cost_usd": 0.0002804249916666667,
+      "mean_savings_vs_strong": 0.9160792075589704,
+      "mean_strong_fraction": 0.0
+    },
+    {
+      "policy": "strong-only",
+      "epsilon": null,
+      "probability": null,
+      "repeats": 1000,
+      "mean_regret": 0.0,
+      "regret_ci": [
+        0,
+        0.0
+      ],
+      "regret_ci_bonferroni": [
+        0,
+        0.0
+      ],
+      "regret_quantiles": {
+        "0.05": 0.0,
+        "0.5": 0.0,
+        "0.95": 0.0
+      },
+      "max_regret": 0.0,
+      "fraction_exceeding_epsilon": {
+        "0.01": 0.0,
+        "0.02": 0.0,
+        "0.05": 0.0,
+        "0.1": 0.0
+      },
+      "non_rejection": null,
+      "mean_quality": 0.8116833333333333,
+      "mean_cost_usd": 0.0033427353333333335,
+      "mean_savings_vs_strong": 0.0,
+      "mean_strong_fraction": 1.0
+    },
+    {
+      "policy": "fixed-threshold",
+      "epsilon": null,
+      "probability": null,
+      "repeats": 1000,
+      "mean_regret": 0.05391666666666667,
+      "regret_ci": [
+        0.053006958913944434,
+        0.0548263744193889
+      ],
+      "regret_ci_bonferroni": [
+        0.052757368816291665,
+        0.05507596451704167
+      ],
+      "regret_quantiles": {
+        "0.05": 0.03333333333333333,
+        "0.5": 0.05,
+        "0.95": 0.075
+      },
+      "max_regret": 0.1,
+      "fraction_exceeding_epsilon": {
+        "0.01": 0.997,
+        "0.02": 0.987,
+        "0.05": 0.499,
+        "0.1": 0.0
+      },
+      "non_rejection": null,
+      "mean_quality": 0.820825,
+      "mean_cost_usd": 0.0002804249916666667,
+      "mean_savings_vs_strong": 0.9160792075589704,
+      "mean_strong_fraction": 0.0
+    },
+    {
+      "policy": "random-mix-expected",
+      "epsilon": null,
+      "probability": 0.1,
+      "repeats": 1000,
+      "mean_regret": 0.005391666666666667,
+      "regret_ci": [
+        0.005300695891394443,
+        0.005482637441938891
+      ],
+      "regret_ci_bonferroni": [
+        0.005275736881629167,
+        0.005507596451704167
+      ],
+      "regret_quantiles": {
+        "0.05": 0.0033333333333333335,
+        "0.5": 0.005000000000000001,
+        "0.95": 0.007500000000000001
+      },
+      "max_regret": 0.010000000000000002,
+      "fraction_exceeding_epsilon": {
+        "0.01": 0.001,
+        "0.02": 0.0,
+        "0.05": 0.0,
+        "0.1": 0.0
+      },
+      "non_rejection": null,
+      "mean_quality": 0.8125975,
+      "mean_cost_usd": 0.003036504299166667,
+      "mean_savings_vs_strong": 0.09160792075589702,
+      "mean_strong_fraction": 0.9
+    },
+    {
+      "policy": "random-mix-expected",
+      "epsilon": null,
+      "probability": 0.25,
+      "repeats": 1000,
+      "mean_regret": 0.013479166666666667,
+      "regret_ci": [
+        0.013251739728486108,
+        0.013706593604847226
+      ],
+      "regret_ci_bonferroni": [
+        0.013189342204072916,
+        0.013768991129260418
+      ],
+      "regret_quantiles": {
+        "0.05": 0.008333333333333333,
+        "0.5": 0.0125,
+        "0.95": 0.01875
+      },
+      "max_regret": 0.025,
+      "fraction_exceeding_epsilon": {
+        "0.01": 0.864,
+        "0.02": 0.042,
+        "0.05": 0.0,
+        "0.1": 0.0
+      },
+      "non_rejection": null,
+      "mean_quality": 0.81396875,
+      "mean_cost_usd": 0.0025771577479166666,
+      "mean_savings_vs_strong": 0.2290198018897426,
+      "mean_strong_fraction": 0.75
+    },
+    {
+      "policy": "random-mix-expected",
+      "epsilon": null,
+      "probability": 0.5,
+      "repeats": 1000,
+      "mean_regret": 0.026958333333333334,
+      "regret_ci": [
+        0.026503479456972217,
+        0.02741318720969445
+      ],
+      "regret_ci_bonferroni": [
+        0.026378684408145833,
+        0.027537982258520836
+      ],
+      "regret_quantiles": {
+        "0.05": 0.016666666666666666,
+        "0.5": 0.025,
+        "0.95": 0.0375
+      },
+      "max_regret": 0.05,
+      "fraction_exceeding_epsilon": {
+        "0.01": 0.987,
+        "0.02": 0.864,
+        "0.05": 0.0,
+        "0.1": 0.0
+      },
+      "non_rejection": null,
+      "mean_quality": 0.8162541666666666,
+      "mean_cost_usd": 0.0018115801625,
+      "mean_savings_vs_strong": 0.4580396037794852,
+      "mean_strong_fraction": 0.5
+    },
+    {
+      "policy": "random-mix-expected",
+      "epsilon": null,
+      "probability": 0.75,
+      "repeats": 1000,
+      "mean_regret": 0.0404375,
+      "regret_ci": [
+        0.039755219185458324,
+        0.04111978081454168
+      ],
+      "regret_ci_bonferroni": [
+        0.03956802661221875,
+        0.041306973387781255
+      ],
+      "regret_quantiles": {
+        "0.05": 0.025,
+        "0.5": 0.0375,
+        "0.95": 0.05625
+      },
+      "max_regret": 0.075,
+      "fraction_exceeding_epsilon": {
+        "0.01": 0.997,
+        "0.02": 0.962,
+        "0.05": 0.123,
+        "0.1": 0.0
+      },
+      "non_rejection": null,
+      "mean_quality": 0.8185395833333333,
+      "mean_cost_usd": 0.0010460025770833332,
+      "mean_savings_vs_strong": 0.6870594056692279,
+      "mean_strong_fraction": 0.25
+    },
+    {
+      "policy": "random-mix-expected",
+      "epsilon": null,
+      "probability": 0.9,
+      "repeats": 1000,
+      "mean_regret": 0.048525,
+      "regret_ci": [
+        0.04770626302254999,
+        0.04934373697745001
+      ],
+      "regret_ci_bonferroni": [
+        0.0474816319346625,
+        0.0495683680653375
+      ],
+      "regret_quantiles": {
+        "0.05": 0.030000000000000002,
+        "0.5": 0.045000000000000005,
+        "0.95": 0.06749999999999999
+      },
+      "max_regret": 0.09000000000000001,
+      "fraction_exceeding_epsilon": {
+        "0.01": 0.997,
+        "0.02": 0.987,
+        "0.05": 0.499,
+        "0.1": 0.0
+      },
+      "non_rejection": null,
+      "mean_quality": 0.8199108333333334,
+      "mean_cost_usd": 0.0005866560258333333,
+      "mean_savings_vs_strong": 0.8244712868030734,
+      "mean_strong_fraction": 0.09999999999999998
+    },
+    {
+      "policy": "CertiRoute",
+      "epsilon": 0.01,
+      "probability": null,
+      "repeats": 1000,
+      "mean_regret": 0.007583333333333333,
+      "regret_ci": [
+        0.006901707180973096,
+        0.008264959485693571
+      ],
+      "regret_ci_bonferroni": [
+        0.00671469422277726,
+        0.008451972443889406
+      ],
+      "regret_quantiles": {
+        "0.05": 0.0,
+        "0.5": 0.0,
+        "0.95": 0.03333333333333333
+      },
+      "max_regret": 0.075,
+      "fraction_exceeding_epsilon": {
+        "0.01": 0.219,
+        "0.02": 0.105,
+        "0.05": 0.005,
+        "0.1": 0.0
+      },
+      "non_rejection": true,
+      "mean_quality": 0.80665,
+      "mean_cost_usd": 0.003095595025,
+      "mean_savings_vs_strong": 0.0741564326688737,
+      "mean_strong_fraction": 0.8869583333333333
+    },
+    {
+      "policy": "CertiRoute",
+      "epsilon": 0.02,
+      "probability": null,
+      "repeats": 1000,
+      "mean_regret": 0.015141666666666666,
+      "regret_ci": [
+        0.014171115827987206,
+        0.016112217505346124
+      ],
+      "regret_ci_bonferroni": [
+        0.013904832642119993,
+        0.016378500691213337
+      ],
+      "regret_quantiles": {
+        "0.05": 0.0,
+        "0.5": 0.008333333333333333,
+        "0.95": 0.05
+      },
+      "max_regret": 0.1,
+      "fraction_exceeding_epsilon": {
+        "0.01": 0.452,
+        "0.02": 0.275,
+        "0.05": 0.03,
+        "0.1": 0.0
+      },
+      "non_rejection": true,
+      "mean_quality": 0.8061833333333334,
+      "mean_cost_usd": 0.0027210149375,
+      "mean_savings_vs_strong": 0.1862827656449163,
+      "mean_strong_fraction": 0.7442833333333333
+    },
+    {
+      "policy": "CertiRoute",
+      "epsilon": 0.05,
+      "probability": null,
+      "repeats": 1000,
+      "mean_regret": 0.045491666666666666,
+      "regret_ci": [
+        0.044176801719120994,
+        0.04680653161421234
+      ],
+      "regret_ci_bonferroni": [
+        0.04381605150051939,
+        0.04716728183281394
+      ],
+      "regret_quantiles": {
+        "0.05": 0.008333333333333333,
+        "0.5": 0.041666666666666664,
+        "0.95": 0.075
+      },
+      "max_regret": 0.1,
+      "fraction_exceeding_epsilon": {
+        "0.01": 0.943,
+        "0.02": 0.857,
+        "0.05": 0.374,
+        "0.1": 0.0
+      },
+      "non_rejection": true,
+      "mean_quality": 0.8180666666666666,
+      "mean_cost_usd": 0.0008047126666666667,
+      "mean_savings_vs_strong": 0.7593408396853413,
+      "mean_strong_fraction": 0.131725
+    },
+    {
+      "policy": "CertiRoute",
+      "epsilon": 0.1,
+      "probability": null,
+      "repeats": 1000,
+      "mean_regret": 0.05391666666666667,
+      "regret_ci": [
+        0.053006958913944434,
+        0.0548263744193889
+      ],
+      "regret_ci_bonferroni": [
+        0.052757368816291665,
+        0.05507596451704167
+      ],
+      "regret_quantiles": {
+        "0.05": 0.03333333333333333,
+        "0.5": 0.05,
+        "0.95": 0.075
+      },
+      "max_regret": 0.1,
+      "fraction_exceeding_epsilon": {
+        "0.01": 0.997,
+        "0.02": 0.987,
+        "0.05": 0.499,
+        "0.1": 0.0
+      },
+      "non_rejection": true,
+      "mean_quality": 0.820825,
+      "mean_cost_usd": 0.0002808653375,
+      "mean_savings_vs_strong": 0.9159491709548462,
+      "mean_strong_fraction": 9.166666666666656e-05
+    },
+    {
+      "policy": "random-score-CRC",
+      "epsilon": 0.01,
+      "probability": null,
+      "repeats": 1000,
+      "mean_regret": 0.007816666666666666,
+      "regret_ci": [
+        0.007131863678441345,
+        0.008501469654891987
+      ],
+      "regret_ci_bonferroni": [
+        0.006943979114203438,
+        0.008689354219129895
+      ],
+      "regret_quantiles": {
+        "0.05": 0.0,
+        "0.5": 0.0,
+        "0.95": 0.03333333333333333
+      },
+      "max_regret": 0.06666666666666667,
+      "fraction_exceeding_epsilon": {
+        "0.01": 0.222,
+        "0.02": 0.11,
+        "0.05": 0.005,
+        "0.1": 0.0
+      },
+      "non_rejection": true,
+      "mean_quality": 0.8080833333333334,
+      "mean_cost_usd": 0.0029599443458333333,
+      "mean_savings_vs_strong": 0.11442846599497059,
+      "mean_strong_fraction": 0.8753833333333333
+    },
+    {
+      "policy": "random-score-CRC",
+      "epsilon": 0.02,
+      "probability": null,
+      "repeats": 1000,
+      "mean_regret": 0.016108333333333332,
+      "regret_ci": [
+        0.015106774574474737,
+        0.01710989209219193
+      ],
+      "regret_ci_bonferroni": [
+        0.014831983964324988,
+        0.017384682702341676
+      ],
+      "regret_quantiles": {
+        "0.05": 0.0,
+        "0.5": 0.008333333333333333,
+        "0.95": 0.05
+      },
+      "max_regret": 0.1,
+      "fraction_exceeding_epsilon": {
+        "0.01": 0.494,
+        "0.02": 0.305,
+        "0.05": 0.037,
+        "0.1": 0.0
+      },
+      "non_rejection": true,
+      "mean_quality": 0.8096833333333333,
+      "mean_cost_usd": 0.0025048761041666667,
+      "mean_savings_vs_strong": 0.25057452897046634,
+      "mean_strong_fraction": 0.7185833333333334
+    },
+    {
+      "policy": "random-score-CRC",
+      "epsilon": 0.05,
+      "probability": null,
+      "repeats": 1000,
+      "mean_regret": 0.045766666666666664,
+      "regret_ci": [
+        0.04445082552657313,
+        0.047082507806760196
+      ],
+      "regret_ci_bonferroni": [
+        0.044089807476909715,
+        0.04744352585642361
+      ],
+      "regret_quantiles": {
+        "0.05": 0.008333333333333333,
+        "0.5": 0.05,
+        "0.95": 0.075
+      },
+      "max_regret": 0.1,
+      "fraction_exceeding_epsilon": {
+        "0.01": 0.944,
+        "0.02": 0.853,
+        "0.05": 0.381,
+        "0.1": 0.0
+      },
+      "non_rejection": true,
+      "mean_quality": 0.8205666666666667,
+      "mean_cost_usd": 0.000860241875,
+      "mean_savings_vs_strong": 0.7424359602990338,
+      "mean_strong_fraction": 0.187
+    },
+    {
+      "policy": "random-score-CRC",
+      "epsilon": 0.1,
+      "probability": null,
+      "repeats": 1000,
+      "mean_regret": 0.05391666666666667,
+      "regret_ci": [
+        0.053006958913944434,
+        0.0548263744193889
+      ],
+      "regret_ci_bonferroni": [
+        0.052757368816291665,
+        0.05507596451704167
+      ],
+      "regret_quantiles": {
+        "0.05": 0.03333333333333333,
+        "0.5": 0.05,
+        "0.95": 0.075
+      },
+      "max_regret": 0.1,
+      "fraction_exceeding_epsilon": {
+        "0.01": 0.997,
+        "0.02": 0.987,
+        "0.05": 0.499,
+        "0.1": 0.0
+      },
+      "non_rejection": true,
+      "mean_quality": 0.8208166666666666,
+      "mean_cost_usd": 0.0002818127625,
+      "mean_savings_vs_strong": 0.9156683965035344,
+      "mean_strong_fraction": 0.00041666666666666664
+    }
+  ],
+  "gateway_check": "All first-draw thresholds and decisions match.",
+  "router_sha256": "5f4687121efa9a5e3060bb6e9a97a20c3077333b193574201d51bf580814b2fa"
+}

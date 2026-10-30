@@ -1,0 +1,39 @@
+{
+  "models": {
+    "cheap": "gpt-3.5-turbo",
+    "strong": "gpt-4-1106-preview"
+  },
+  "source_files": [
+    {
+      "url": "https://raw.githubusercontent.com/google-research/google-research/f82046ba5aabbbb427dbfd38a254d26bff08b533/mbpp/sanitized-mbpp.json",
+      "sha256": "ca95deaa9a01ef0a6f439f88bcf0dd3db3563d22f22aad6cae04ebb9a8d8c8e9"
+    },
+    {
+      "url": "https://github.com/evalplus/evalplus/releases/download/v0.2.0/gpt-3.5-turbo_temp_0.0.zip",
+      "sha256": "44c228692d438ffe788cee12a997d711d1e87ea4a904c2149fea9cb2f9f1f7cf"
+    },
+    {
+      "url": "https://github.com/evalplus/evalplus/releases/download/v0.2.0/gpt-4-1106-preview_temp_0.0.zip",
+      "sha256": "4e060bf3473b09b763567e042c693fd99d4922d9602124dcb70ab184bcbb252d"
+    }
+  ],
+  "selection": "Intersection of sanitized MBPP and both archives.",
+  "quality": "Pending isolated base-test execution; not EvalPlus extended tests.",
+  "generation": "EvalPlus v0.2.0 greedy chat generations; gpt-3.5 alias snapshot unknown. Prompt field is task text; original chat wrapper not recoverable here.",
+  "pricing": {
+    "as_of": "2024-06-26",
+    "cheap": [
+      0.5,
+      1.5
+    ],
+    "strong": [
+      10,
+      30
+    ],
+    "description": "Historical scenario using GPT-3.5 Feb-2024 rates; generation snapshot unknown, not actual bills."
+  },
+  "dataset_sha256": "62c89dcb3b225aea3510c5eaf73469015d2855f48a67e0a9e57ab339e3a707c3",
+  "rows": 399,
+  "token_counts": "Estimated ceil(characters/4); excludes hidden chat-template tokens.",
+  "frozen_at": "2026-10-26"
+}

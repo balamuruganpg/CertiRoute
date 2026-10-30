@@ -1,0 +1,42 @@
+{
+  "schema_version": 1,
+  "calibration_id": "cal_96df02219eb901e391bd9f6e9cc7a18985af2d620eca479bc180bbe210743e5c",
+  "method": "crc",
+  "loss": "clipped_regret_v1",
+  "B": 1.0,
+  "n": 119,
+  "lambda_by_epsilon": {
+    "0.01": 0.9434837666644124,
+    "0.02": 0.9413282604064214,
+    "0.05": 0.9208003729163228,
+    "0.1": 0.0
+  },
+  "router": {
+    "version": "logistic_surface_v1",
+    "sha256": "5f4687121efa9a5e3060bb6e9a97a20c3077333b193574201d51bf580814b2fa"
+  },
+  "models": {
+    "cheap": "https://replay-cheap.invalid/v1::gpt-3.5-turbo",
+    "strong": "https://replay-strong.invalid/v1::gpt-4-1106-preview"
+  },
+  "quality_metric": {
+    "name": "mbpp_base_tests",
+    "version": "1"
+  },
+  "scope": {
+    "max_chars": 32000,
+    "temperature": 0,
+    "max_tokens": 1024,
+    "top_p": 1
+  },
+  "data": {
+    "sources": [
+      "mbpp",
+      "4e30daeea2939957456a6a8973917fad2c243cc072d0c00d8165ed1cb18648ec"
+    ],
+    "sha256": "90d4e3ef0eb9644167ef353bd5e804a1db2efe3db4b28ab7886ba5b4caa5bb77",
+    "collected_at": "2026-10-26T00:00:00Z"
+  },
+  "created_at": "2026-10-26T17:00:01.607885Z",
+  "expires_at": "2026-11-02T17:00:01.607885Z"
+}
