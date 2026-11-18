@@ -33,7 +33,9 @@ budget assumptions in configs and ADRs before collection.
 Liveness works; readiness is false without validated calibration. Unimplemented
 chat returns an explicit error, never a fabricated model output or guarantee.
 Resolve artifact expiry, canonical hashing, scope metadata and alias/header
-precedence before M3. CI remains outstanding until added and run.
+precedence before M3. CI runs on push and pull request for Python 3.12 and
+3.13 (`.github/workflows/ci.yml`): pytest, `ruff check`, `ruff format --check`,
+and mypy.
 
 ## M1 — Paired data, passthrough and CRC reference
 

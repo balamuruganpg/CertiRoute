@@ -39,8 +39,15 @@ Edit `configs/gateway.yaml`:
 - Set `CHEAP_API_KEY` and `STRONG_API_KEY` in .env. The adapter resolves each
   configured `api_key_env` name; process environment wins over .env. Blank keys
   omit Authorization, useful for local servers.
-- Replace the gateway development key before exposing the service. Gateway
-  credentials are never forwarded upstream.
+- Set `CERTIROUTE_API_KEY` to a secret you choose. The gateway ships no usable
+  default bearer. If that variable is unset or blank, `GET /v1/models` and
+  `POST /v1/chat/completions` reject every credential, including the old
+  published value `certiroute-local`. Gateway credentials are never forwarded
+  upstream.
+- A trusted local process may instead set `CERTIROUTE_ALLOW_INSECURE_LOCAL_KEY=1`
+  and leave `CERTIROUTE_API_KEY` unset. The gateway then accepts bearer
+  `certiroute-local` and writes a warning to the log. Do not enable that flag
+  on a shared or exposed host.
 - Choose models supporting the configured chat generation parameters:
   temperature 0, max_tokens 256 and top_p 1 by default. No model IDs/prices are
   assumed or recommended by the implementation.
@@ -64,7 +71,9 @@ $body = @{
     model = "certiroute/auto"
     messages = @(@{role = "user"; content = "What is 17 * 23?"})
 } | ConvertTo-Json -Depth 5
-Invoke-RestMethod -Uri http://127.0.0.1:8080/v1/chat/completions -Method Post -ContentType application/json -Headers @{Authorization = "Bearer certiroute-local"} -Body $body
+# Use the CERTIROUTE_API_KEY value from .env. Bearer certiroute-local is
+# accepted only when CERTIROUTE_ALLOW_INSECURE_LOCAL_KEY=1 and no API key is set.
+Invoke-RestMethod -Uri http://127.0.0.1:8080/v1/chat/completions -Method Post -ContentType application/json -Headers @{Authorization = "Bearer <CERTIROUTE_API_KEY>"} -Body $body
 ```
 
 This contacts the configured upstream and can incur provider costs. The gateway

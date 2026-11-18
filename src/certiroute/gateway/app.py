@@ -18,7 +18,7 @@ from fastapi.security import HTTPAuthorizationCredentials, HTTPBearer
 from starlette.background import BackgroundTask
 
 from certiroute.calibration.artifact import CalibrationArtifact, load_artifact
-from certiroute.config import Settings, load_config
+from certiroute.config import INSECURE_LOCAL_API_KEY, Settings, load_config
 from certiroute.gateway.schemas import ChatRequest
 from certiroute.providers.base import ProviderError, ProviderStream
 from certiroute.providers.openai_compat import OpenAICompatProvider
@@ -55,6 +55,20 @@ def create_app(
 ) -> FastAPI:
     settings = settings if settings is not None else Settings()
     config = load_config(settings.config_file)
+    api_key = settings.resolved_api_key()
+    if settings.api_key is None and settings.allow_insecure_local_key:
+        logger.warning(
+            "INSECURE LOCAL KEY: CERTIROUTE_ALLOW_INSECURE_LOCAL_KEY is set and "
+            "CERTIROUTE_API_KEY is unset. This process accepts the published bearer %r. "
+            "Do not expose it beyond a trusted local machine.",
+            INSECURE_LOCAL_API_KEY,
+        )
+    elif api_key is None:
+        logger.error(
+            "CERTIROUTE_API_KEY is not configured. Authenticated routes are disabled and "
+            "reject every bearer, including the published local key. Set CERTIROUTE_API_KEY, "
+            "or set CERTIROUTE_ALLOW_INSECURE_LOCAL_KEY=1 only for a trusted local process."
+        )
     artifact: CalibrationArtifact | None = None
     predictor: Predictor | None = None
     providers: dict[str, OpenAICompatProvider] = {}
@@ -85,12 +99,24 @@ def create_app(
     def authenticated(
         credentials: Annotated[HTTPAuthorizationCredentials | None, Depends(bearer)],
     ) -> bool:
-        return credentials is not None and secrets.compare_digest(
-            credentials.credentials.encode(), settings.api_key.get_secret_value().encode()
+        if api_key is None or credentials is None:
+            return False
+        return secrets.compare_digest(
+            credentials.credentials.encode(), api_key.get_secret_value().encode()
         )
 
     def unauthorized() -> JSONResponse:
-        response = error_response(401, "A valid gateway bearer key is required.", "invalid_api_key")
+        if api_key is None:
+            response = error_response(
+                401,
+                "Gateway API key is not configured. Set CERTIROUTE_API_KEY. "
+                "Authenticated routes are disabled.",
+                "api_key_not_configured",
+            )
+        else:
+            response = error_response(
+                401, "A valid gateway bearer key is required.", "invalid_api_key"
+            )
         response.headers["WWW-Authenticate"] = "Bearer"
         return response
 

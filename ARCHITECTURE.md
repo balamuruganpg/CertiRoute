@@ -158,10 +158,11 @@ sequenceDiagram
 
 ### 5.1 Gateway API (MVP)
 
-- Endpoints: `POST /v1/chat/completions`, `GET /v1/models` (exposes `certiroute/auto`), `GET /healthz`, `GET /readyz` (false if no valid artifact loaded), `GET /metrics` (Prometheus), `POST /admin/reload-calibration` (admin key).
+- Endpoints registered in `src/certiroute/gateway/app.py`: `POST /v1/chat/completions`, `GET /v1/models` (lists `certiroute/auto`, `certiroute/strong`, and `certiroute/cheap`), `GET /healthz`, and `GET /readyz` (200 with `ready: true` when a valid artifact is loaded; otherwise 503 with `ready: false`). FastAPI also serves its default schema routes `/docs`, `/redoc`, and `/openapi.json`. No other gateway routes are registered.
+- Planned, not implemented (no route is registered): `GET /metrics` (Prometheus) and `POST /admin/reload-calibration` (admin key).
 - Model aliases: `certiroute/auto` (calibrated routing), `certiroute/strong`, `certiroute/cheap` (bypass; for debugging and baselines).
 - Request headers: `x-certiroute-epsilon` (must be one of the calibrated ε values), `x-certiroute-mode: auto|strong|cheap`, `x-certiroute-allow-downgrade`.
-- Response headers: `x-certiroute-request-id`, `x-certiroute-tier`, `x-certiroute-score`, `x-certiroute-epsilon`, `x-certiroute-calibration-id`, `x-certiroute-degraded`.
+- Response headers: `x-certiroute-request-id`, `x-certiroute-tier`, `x-certiroute-score`, `x-certiroute-epsilon`, `x-certiroute-calibration-id`, `x-certiroute-degraded`, `x-certiroute-scope`, `x-certiroute-reason`.
 - ε is chosen by the caller **independently of calibration outcomes** (picking ε after seeing results would be a different, unvalidated procedure). The artifact stores `λ̂(ε)` for a grid, for example `{0.01, 0.02, 0.05, 0.10}`.
 
 ### 5.2 Scope guard (MVP)
@@ -214,7 +215,7 @@ Immutable JSON, content-addressed by hash:
 
 (The λ values above are illustrative placeholders.)
 
-The loader checks at startup and on reload: schema valid, `models` match gateway config, router hash matches, not expired. Otherwise `readyz` is false and traffic goes strong-only.
+The loader checks at startup: schema valid, `models` match gateway config, router hash matches, not expired. Those checks run again on the artifact loaded at startup for `GET /readyz` and for each calibrated route. There is no reload endpoint (`POST /admin/reload-calibration` is planned and not registered); a new artifact requires a process restart. If the checks fail, `readyz` is 503 and traffic goes strong-only.
 
 ### 5.6 Audit sampler and quality scoring (MVP)
 
@@ -344,7 +345,7 @@ certiroute/
 ## 12. Security, config and privacy
 
 - Upstream API keys only via environment variables / secrets; never in artifacts or logs.
-- Gateway auth: static bearer keys (MVP). Admin endpoints use a separate key.
+- Gateway auth: one static bearer key from `CERTIROUTE_API_KEY` (MVP). No usable default key is built in. If that variable is unset, `GET /v1/models` and `POST /v1/chat/completions` reject every bearer. `CERTIROUTE_ALLOW_INSECURE_LOCAL_KEY=1` is an explicit local opt-in that accepts the published development key and logs a warning. Admin endpoints are planned and not registered; they would use a separate key.
 - Rate limiting: in-memory token bucket per key (MVP); Redis-backed (stretch).
 - Prompt text redaction by default in logs and DB; opt-in flag for development.
 - Datasets keep their original licences; WildChat/LMSYS-style real-user data may be gated; check terms before use.

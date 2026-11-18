@@ -11,10 +11,15 @@ from pydantic import (
     HttpUrl,
     SecretStr,
     SerializerFunctionWrapHandler,
+    field_validator,
     model_serializer,
     model_validator,
 )
 from pydantic_settings import BaseSettings, SettingsConfigDict
+
+# Published development bearer. It is not a startup default: resolved_api_key()
+# returns it only when allow_insecure_local_key is set and api_key is unset.
+INSECURE_LOCAL_API_KEY = "certiroute-local"
 
 
 class Settings(BaseSettings):
@@ -23,8 +28,39 @@ class Settings(BaseSettings):
     )
 
     config_file: Path = Path("configs/gateway.yaml")
-    api_key: SecretStr = Field(default=SecretStr("certiroute-local"), min_length=1)
+    api_key: SecretStr | None = Field(default=None, min_length=1)
     admin_api_key: SecretStr | None = None
+    allow_insecure_local_key: bool = False
+
+    @field_validator("api_key", mode="before")
+    @classmethod
+    def blank_api_key_is_unset(cls, value: object) -> object:
+        if value is None:
+            return None
+        if isinstance(value, SecretStr):
+            secret = value.get_secret_value()
+        elif isinstance(value, str):
+            secret = value
+        else:
+            return value
+        if not secret.strip():
+            return None
+        return value
+
+    @field_validator("allow_insecure_local_key", mode="before")
+    @classmethod
+    def blank_opt_in_is_false(cls, value: object) -> object:
+        if isinstance(value, str) and not value.strip():
+            return False
+        return value
+
+    def resolved_api_key(self) -> SecretStr | None:
+        """Configured key, or the published local key only after an explicit opt-in."""
+        if self.api_key is not None:
+            return self.api_key
+        if self.allow_insecure_local_key:
+            return SecretStr(INSECURE_LOCAL_API_KEY)
+        return None
 
 
 class ConfigModel(BaseModel):
